@@ -204,3 +204,59 @@ def save_results_to_json(all_results, output_filename="story_evals_results.json"
         json.dump(json_output, jsonfile, indent=2, ensure_ascii=False)
     
     print(f"Results saved to {output_filename}")
+
+
+def save_critique_results_to_json(critique_results, output_filename="critique_evaluation_results.json"):
+    """
+    Save critique evaluation results to a JSON file
+    
+    Args:
+        critique_results: Dictionary of critique results by project
+        output_filename: Name of the output JSON file
+    """
+    json_output = {
+        "summary": {
+            "total_projects": len(critique_results),
+            "total_videos_evaluated": sum(len(results) for results in critique_results.values()),
+            "total_verifications": sum(
+                len(result.character_verifications) 
+                for project_results in critique_results.values() 
+                for result in project_results
+            )
+        },
+        "projects": {}
+    }
+    
+    for project_id, project_results in critique_results.items():
+        project_data = []
+        
+        for result in project_results:
+            # Convert critique result to dictionary
+            result_dict = {
+                "project_id": result.project_id,
+                "clip_url": result.video_output.clip_url,
+                "overall_accuracy": result.overall_accuracy,
+                "evaluation_notes": result.evaluation_notes,
+                "llm_metadata": result.llm_metadata,
+                "character_verifications": [
+                    {
+                        "character_name": v.character_name,
+                        "character_image": v.character_image,
+                        "video_clip_url": v.video_clip_url,
+                        "is_present": v.is_present,
+                        "confidence_score": v.confidence_score,
+                        "reasoning": v.reasoning,
+                        "timestamp_analysis": v.timestamp_analysis
+                    }
+                    for v in result.character_verifications
+                ]
+            }
+            project_data.append(result_dict)
+        
+        json_output["projects"][project_id] = project_data
+    
+    # Save to JSON file
+    with open(output_filename, 'w', encoding='utf-8') as jsonfile:
+        json.dump(json_output, jsonfile, indent=2, ensure_ascii=False)
+    
+    print(f"Critique evaluation results saved to {output_filename}")

@@ -1,5 +1,7 @@
 from data_processor import DataProcessor
-from utils import save_results_to_json
+from critique_agent import CritiqueAgent
+from utils import save_results_to_json, save_critique_results_to_json
+from config import Config
 
 
 def main():
@@ -13,15 +15,13 @@ def main():
     
     # Step 2: Run Evaluations
     print("\n=== Step 2: Running Evaluations ===")
-
     
     # Step 3: Save Results
     print("\n=== Step 3: Saving Results ===")
 
-    
     # Step 4: Display Evaluation Summary
     print("\n=== Evaluation Summary ===")
-
+    
     
     print("\nEvaluation pipeline complete!")
 
