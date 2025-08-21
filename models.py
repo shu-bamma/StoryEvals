@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import List, Optional, Dict, Any
+from typing import Any
 
 
 @dataclass
@@ -17,28 +17,30 @@ class VideoOutput:
     enhanced_prompt: str
     reference_image: str
     thumbnail_image: str
-    characters: List[Character]
-    debug: Optional[Dict[str, Any]] = None
+    characters: list[Character]
+    debug: dict[str, Any] | None = None
 
 
 @dataclass
 class CharacterVerification:
     """Result of verifying if a character appears in a video clip"""
+
     character_name: str
     character_image: str
     video_clip_url: str
     is_present: bool
     confidence_score: float
     reasoning: str
-    timestamp_analysis: Optional[Dict[str, Any]] = None
+    timestamp_analysis: dict[str, Any] | None = None
 
 
 @dataclass
 class CritiqueAgentResult:
     """Complete result from the critique agent evaluation"""
+
     project_id: str
     video_output: VideoOutput
-    character_verifications: List[CharacterVerification]
+    character_verifications: list[CharacterVerification]
     overall_accuracy: float
     evaluation_notes: str
-    llm_metadata: Optional[Dict[str, Any]] = None 
+    llm_metadata: dict[str, Any] | None = None
