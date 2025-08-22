@@ -4,9 +4,47 @@ from typing import Any
 
 @dataclass
 class Character:
+    char_id: str  # name in this case
     name: str
     image: str
+    description: str | None = None
+
+
+@dataclass
+class CharacterTraits:
+    """Structured traits extracted from character description"""
+
+    core: list[
+        str
+    ]  # concise discriminative phrases, e.g., "green eyes", "long blond wavy hair"
+    supportive: list[str]  # less discriminative traits
+    volatile: list[
+        str
+    ]  # clothes, accessories, mood, background style - situational appearances
+    age_band: str  # teen|young_adult|adult|etc
+    skin_tone: str  # fair|light|medium|tan|dark|etc
+    type: str  # animal|human|mix
+    notes: list[str]  # ambiguities or conflicts in text
+
+
+@dataclass
+class EnrichedCharacter:
+    """Character with enriched traits and embeddings"""
+
+    char_id: str
+    name: str
+    ref_image: str
     description: str
+    embedding: list[float]  # Empty array for now
+    traits: CharacterTraits
+
+
+@dataclass
+class CharacterEnrichmentResult:
+    """Result of character enrichment process"""
+
+    characters_vault: list[EnrichedCharacter]
+    enrichment_metadata: dict[str, Any] | None = None
 
 
 @dataclass

@@ -42,7 +42,10 @@ class DataProcessor:
 
                             if name and description:
                                 character = Character(
-                                    name=name, image=image_url, description=description
+                                    char_id=name,
+                                    name=name,
+                                    image=image_url,
+                                    description=description,
                                 )
                                 characters[name] = character
                                 print(f"  ✓ Added character: {name}")
