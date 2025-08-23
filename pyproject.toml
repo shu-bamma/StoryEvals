@@ -12,6 +12,10 @@ dependencies = [
     "matplotlib>=3.10.5",
     "ruff>=0.12.9",
     "streamlit>=1.28.0",
+    "opencv-python>=4.11.0.86",
+    "scenedetect>=0.6.6",
+    "ultralytics>=8.3.184",
+    "numpy>=2.3.2",
 ]
 
 [project.optional-dependencies]
