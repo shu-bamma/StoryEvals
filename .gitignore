@@ -40,8 +40,7 @@ venv.bak/
 
 # Pre-commit and linting
 .mypy_cache/
-.dmypy.json
-dmypy.json
+
 
 # OS
 .DS_Store
@@ -56,7 +55,7 @@ Thumbs.db
 
 # Data files (if they contain sensitive information)
 *.csv
-*.json
+
 *.db
 *.sqlite
 

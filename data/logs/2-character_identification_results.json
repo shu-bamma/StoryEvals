@@ -1,0 +1,147 @@
+{
+  "character_vault": [
+    {
+      "char_id": "GIRL_A",
+      "name": "GIRL_A",
+      "ref_image": "https://example.com/rina1.jpg",
+      "traits": {
+        "core": [
+          "green eyes",
+          "long blond wavy hair",
+          "mole under left eye"
+        ],
+        "supportive": [
+          "heart-shaped face"
+        ],
+        "volatile": [
+          "hoodie",
+          "earrings"
+        ],
+        "age_band": "young_adult",
+        "skin_tone": "light",
+        "type": "human",
+        "notes": []
+      }
+    },
+    {
+      "char_id": "BOY_B",
+      "name": "BOY_B",
+      "ref_image": "https://example.com/boy1.jpg",
+      "traits": {
+        "core": [
+          "spiky silver hair",
+          "eyebrow scar",
+          "blue eyes"
+        ],
+        "supportive": [
+          "angular jawline"
+        ],
+        "volatile": [
+          "leather jacket",
+          "sunglasses"
+        ],
+        "age_band": "young_adult",
+        "skin_tone": "medium",
+        "type": "human",
+        "notes": []
+      }
+    }
+  ],
+  "shots": [
+    {
+      "keyframes_ms": [
+        0,
+        420,
+        840,
+        1260,
+        1680
+      ],
+      "crops": {
+        "0": [],
+        "420": [
+          {
+            "crop_id": "c_shot0001_t0420_0",
+            "bbox_norm": [
+              0.31,
+              0.18,
+              0.14,
+              0.22
+            ],
+            "crop_url": "https://example.com/shot0001_t0420_face0.jpg",
+            "detector": "stylized_face_v2",
+            "face_conf": 0.98,
+            "quality": {
+              "blur": 142.3,
+              "pose": {
+                "yaw": 6.1,
+                "pitch": -2.3
+              }
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "No identifiable core traits match the character vault."
+          }
+        ],
+        "840": [
+          {
+            "crop_id": "c_shot0001_t0840_0",
+            "bbox_norm": [
+              0.31,
+              0.18,
+              0.14,
+              0.22
+            ],
+            "crop_url": "https://example.com/shot0001_t0840_face0.jpg",
+            "detector": "stylized_face_v2",
+            "face_conf": 0.98,
+            "quality": {
+              "blur": 142.3,
+              "pose": {
+                "yaw": 6.1,
+                "pitch": -2.3
+              }
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "No identifiable core traits match the character vault."
+          },
+          {
+            "crop_id": "c_shot0001_t0840_1",
+            "bbox_norm": [
+              0.52,
+              0.2,
+              0.13,
+              0.21
+            ],
+            "crop_url": "https://example.com/shot0001_t0840_face1.jpg",
+            "detector": "stylized_face_v2",
+            "face_conf": 0.95,
+            "quality": {
+              "blur": 120.9,
+              "pose": {
+                "yaw": -18.4,
+                "pitch": 1.8
+              }
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "No identifiable core traits match the character vault."
+          }
+        ]
+      },
+      "shot_id": "shot_0001"
+    }
+  ],
+  "project_id": "PROJ_test_001",
+  "job_id": "job_test_001",
+  "video_url": "https://example.com/test_video.mp4",
+  "identification_metadata": {
+    "total_characters": 2,
+    "total_shots": 1,
+    "total_crops": 3,
+    "model_used": "gpt-4o-mini",
+    "batch_size": 6,
+    "max_parallel_shots": 4,
+    "timestamp": 1755927700.618102
+  }
+}
