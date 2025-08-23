@@ -52,9 +52,7 @@ dmypy.json
 ehthumbs.db
 Thumbs.db
 
-# Logs
-*.log
-logs/
+
 
 # Data files (if they contain sensitive information)
 *.csv
