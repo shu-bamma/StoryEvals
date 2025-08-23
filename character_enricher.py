@@ -1,4 +1,3 @@
-import json
 import logging
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -11,6 +10,7 @@ from models import (
     Character,
     CharacterEnrichmentResult,
     CharacterTraits,
+    CharacterTraitsStructured,
     EnrichedCharacter,
 )
 
@@ -100,14 +100,12 @@ class CharacterEnricher:
         }
 
     def _extract_character_traits(self, character: Character) -> CharacterTraits | None:
-        """Extract traits from a single character description using VLM"""
+        """Extract traits from a single character description using VLM with structured outputs"""
 
         prompt = f"""Extract FACE-CENTRIC traits only from this character description. Focus on hair, eyes, eyebrows, skin tone, facial marks, age band, and other distinguishing features.
 
 Character: {character.name}
 Description: {character.description}
-
-Put clothing/accessories in volatile_traits (they can change). Return structured JSON with the traits organized by category.
 
 Guidelines:
 - core: Most important distinguishing features (hair color/style, eye color, unique facial features)
@@ -118,51 +116,43 @@ Guidelines:
 - type: Whether human, animal, mix, fantasy, or other
 - notes: Any unclear or conflicting information in the description
 
-IMPORTANT: Return ONLY valid JSON with these exact field names: core, supportive, volatile, age_band, skin_tone, type, notes"""
+Your response will be automatically structured to include these traits organized by category."""
 
         for attempt in range(self.config["max_retries"]):
             try:
-                response = self.client.chat.completions.create(
+                # Use OpenAI's structured outputs API
+                response = self.client.responses.parse(
                     model=self.config["model"],
-                    messages=[{"role": "user", "content": prompt}],
-                    response_format={"type": "json_object"},
-                    max_tokens=self.config["max_tokens"],
-                    temperature=self.config["temperature"],
+                    input=[
+                        {
+                            "role": "user",
+                            "content": [{"type": "input_text", "text": prompt}],
+                        }
+                    ],
+                    text_format=CharacterTraitsStructured,
                 )
 
-                content = response.choices[0].message.content
-                if not content:
-                    raise ValueError("Empty response from VLM")
+                # Extract the parsed output
+                if response.output_parsed:
+                    structured_traits = response.output_parsed
 
-                traits_data = json.loads(content)
+                    # Convert to CharacterTraits format
+                    traits = CharacterTraits(
+                        core=structured_traits.core,
+                        supportive=structured_traits.supportive,
+                        volatile=structured_traits.volatile,
+                        age_band=structured_traits.age_band,
+                        skin_tone=structured_traits.skin_tone,
+                        type=structured_traits.type,
+                        notes=structured_traits.notes,
+                    )
 
-                # Validate and create CharacterTraits object
-                # Ensure lists are properly formatted
-                def ensure_list(value: Any) -> list[str]:
-                    if isinstance(value, list):
-                        return value
-                    elif isinstance(value, dict):
-                        # Convert dict to list of key-value strings
-                        return [f"{k}: {v}" for k, v in value.items()]
-                    elif value is None:
-                        return []
-                    else:
-                        return [str(value)]
+                    logger.info(f"Successfully extracted traits for {character.name}")
+                    return traits
+                else:
+                    raise ValueError("No parsed output received from OpenAI")
 
-                traits = CharacterTraits(
-                    core=ensure_list(traits_data.get("core", [])),
-                    supportive=ensure_list(traits_data.get("supportive", [])),
-                    volatile=ensure_list(traits_data.get("volatile", [])),
-                    age_band=traits_data.get("age_band", "unknown"),
-                    skin_tone=traits_data.get("skin_tone", "unknown"),
-                    type=traits_data.get("type", "unknown"),
-                    notes=ensure_list(traits_data.get("notes", [])),
-                )
-
-                logger.info(f"Successfully extracted traits for {character.name}")
-                return traits
-
-            except (json.JSONDecodeError, ValueError, KeyError) as e:
+            except Exception as e:
                 logger.warning(
                     f"Attempt {attempt + 1} failed for {character.name}: {str(e)}"
                 )
@@ -176,15 +166,6 @@ IMPORTANT: Return ONLY valid JSON with these exact field names: core, supportive
                     logger.error(
                         f"Failed to extract traits for {character.name} after {self.config['max_retries']} attempts"
                     )
-                    return None
-
-            except Exception as e:
-                logger.error(f"Unexpected error processing {character.name}: {str(e)}")
-                if attempt < self.config["max_retries"] - 1:
-                    delay = self.config["retry_delay"] * (2**attempt)
-                    logger.info(f"Retrying in {delay} seconds...")
-                    time.sleep(delay)
-                else:
                     return None
 
         # This should never be reached, but mypy needs it

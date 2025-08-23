@@ -1,12 +1,30 @@
 import base64
-import json
-from typing import Any
 
 import requests
 from openai import OpenAI
+from pydantic import BaseModel, Field
 
 from config import Config
 from models import Character, CharacterVerification, CritiqueAgentResult, VideoOutput
+
+
+class CharacterVerificationResponse(BaseModel):
+    """Structured output for character verification from OpenAI"""
+
+    is_present: bool = Field(
+        description="Whether the character appears in the video clip"
+    )
+    confidence_score: float = Field(
+        ge=0.0,
+        le=1.0,
+        description="Confidence score between 0.0 and 1.0 for the verification",
+    )
+    reasoning: str = Field(
+        description="Detailed explanation of the verification analysis"
+    )
+    timestamp_analysis: dict[str, str | list[str]] | None = Field(
+        default=None, description="Analysis of when the character appears in the video"
+    )
 
 
 class CritiqueAgent:
@@ -78,148 +96,116 @@ INSTRUCTIONS:
 1. Analyze the character's reference image carefully
 2. Watch the entire video clip from the URL provided
 3. Determine if the character from the reference image appears in the video
-4. Provide your analysis in the following JSON format:
+4. Consider visual similarities, clothing, facial features, and context
+5. If the character appears but looks different (e.g., different clothing, lighting), still mark as present
+6. Provide specific reasoning for your decision
+7. Analyze timestamps and key scenes where the character appears
 
-{{
-    "is_present": true/false,
-    "confidence_score": 0.0-1.0,
-    "reasoning": "Detailed explanation of your analysis",
-    "timestamp_analysis": {{
-        "first_appearance": "MM:SS or description",
-        "total_screen_time": "MM:SS or description",
-        "key_scenes": ["Scene 1 description", "Scene 2 description"]
-    }}
-}}
-
-IMPORTANT:
-- Be thorough in your analysis
-- Consider visual similarities, clothing, facial features, and context
-- If the character appears but looks different (e.g., different clothing, lighting), still mark as present
-- Confidence score should reflect your certainty (1.0 = completely certain, 0.0 = completely uncertain)
-- Provide specific reasoning for your decision
-- Respond ONLY with valid JSON in the exact format specified above
+Your response will be automatically structured to include:
+- Whether the character is present (true/false)
+- A confidence score between 0.0 and 1.0
+- Detailed reasoning for your analysis
+- Timestamp analysis including first appearance, total screen time, and key scenes
 """
         return prompt.strip()
 
     def call_openai_for_verification(
         self, prompt: str, image_base64: str
-    ) -> dict[str, Any]:
+    ) -> CharacterVerificationResponse:
         """
-        Call OpenAI's API to perform character verification using the official client
+        Call OpenAI's API to perform character verification using structured outputs
 
         Args:
             prompt: Text prompt for OpenAI
             image_base64: Base64 encoded reference image
 
         Returns:
-            OpenAI API response parsed as a dictionary
+            Structured verification response from OpenAI
         """
         try:
-            # Use OpenAI's official client for chat completions
-            response = self.client.chat.completions.create(
-                model=Config.LLM_MODEL,
-                messages=[
+            # Check if using GPT-5
+            is_gpt5 = "gpt-5" in Config.LLM_MODEL
+
+            # Prepare API call parameters
+            api_params = {
+                "model": Config.LLM_MODEL,
+                "input": [
                     {
                         "role": "user",
                         "content": [
-                            {"type": "text", "text": prompt},
+                            {"type": "input_text", "text": prompt},
                             {
-                                "type": "image_url",
-                                "image_url": {
-                                    "url": f"data:image/jpeg;base64,{image_base64}"
-                                },
+                                "type": "input_image",
+                                "image_url": f"data:image/jpeg;base64,{image_base64}",
                             },
                         ],
                     }
                 ],
-                max_tokens=Config.LLM_MAX_TOKENS,
-                temperature=Config.LLM_TEMPERATURE,
+                "text_format": CharacterVerificationResponse,
+            }
+
+            # GPT-5 uses different parameters
+            if is_gpt5:
+                api_params["max_completion_tokens"] = Config.GPT5_MAX_COMPLETION_TOKENS
+                # GPT-5 only supports temperature=1 (default)
+            else:
+                api_params["max_tokens"] = Config.LLM_MAX_TOKENS
+                api_params["temperature"] = Config.LLM_TEMPERATURE
+
+            # Use OpenAI's structured outputs API
+            response = self.client.responses.parse(
+                model=api_params["model"],
+                input=api_params["input"],
+                text_format=api_params["text_format"],
+                max_completion_tokens=api_params.get("max_completion_tokens"),
+                max_tokens=api_params.get("max_tokens"),
+                temperature=api_params.get("temperature"),
             )
 
-            # Extract the response content
-            if response.choices and len(response.choices) > 0:
-                content = response.choices[0].message.content
-
-                # Try to parse JSON from the response
-                try:
-                    # Look for JSON content in the response
-                    json_start = content.find("{")
-                    json_end = content.rfind("}") + 1
-
-                    if json_start != -1 and json_end > json_start:
-                        json_content = content[json_start:json_end]
-                        parsed_response = json.loads(json_content)
-
-                        # Validate required fields
-                        if isinstance(
-                            parsed_response, dict
-                        ) and self._validate_verification_response(parsed_response):
-                            return parsed_response
-                        else:
-                            print(
-                                "Warning: Invalid response format from OpenAI, using fallback parsing"
-                            )
-                            return self._parse_unstructured_response(content)
-                    else:
-                        # Fallback: try to extract structured information
-                        return self._parse_unstructured_response(content)
-
-                except json.JSONDecodeError as e:
-                    print(f"JSON parsing error: {e}, using fallback parsing")
-                    return self._parse_unstructured_response(content)
-
-            return {"error": "Failed to get valid response from OpenAI API"}
+            # Extract the parsed output
+            if response.output_parsed:
+                # The output_parsed is already of type CharacterVerificationResponse
+                # but we need to ensure type safety
+                parsed_output = response.output_parsed
+                if isinstance(parsed_output, CharacterVerificationResponse):
+                    # Explicit type assertion to help the type checker
+                    result: CharacterVerificationResponse = parsed_output
+                    return result
+                else:
+                    # If somehow the type is wrong, reconstruct it
+                    # Explicit type annotation to ensure the type checker understands this returns CharacterVerificationResponse
+                    validated_response: CharacterVerificationResponse = (
+                        CharacterVerificationResponse.model_validate(
+                            parsed_output.model_dump()
+                        )
+                    )
+                    return validated_response
+            else:
+                raise ValueError("No parsed output received from OpenAI")
 
         except Exception as e:
             print(f"Error calling OpenAI API: {e}")
-            return {"error": str(e)}
+            # Return default response on error - this ensures we always return CharacterVerificationResponse
+            # This function never returns Any - it always returns CharacterVerificationResponse
+            default_response: CharacterVerificationResponse = (
+                CharacterVerificationResponse(
+                    is_present=False,
+                    confidence_score=0.0,
+                    reasoning=f"Error during verification: {str(e)}",
+                    timestamp_analysis={},
+                )
+            )
+            return default_response
 
-    def _validate_verification_response(self, response: dict[str, Any]) -> bool:
+    def _parse_fallback_response(self, content: str) -> CharacterVerificationResponse:
         """
-        Validate that the OpenAI response contains required fields
-
-        Args:
-            response: Parsed response from OpenAI
-
-        Returns:
-            True if response is valid, False otherwise
-        """
-        required_fields = ["is_present", "confidence_score", "reasoning"]
-
-        for field in required_fields:
-            if field not in response:
-                print(f"Missing required field: {field}")
-                return False
-
-        # Validate data types
-        if not isinstance(response["is_present"], bool):
-            print("is_present must be a boolean")
-            return False
-
-        if not isinstance(response["confidence_score"], int | float):
-            print("confidence_score must be a number")
-            return False
-
-        if not isinstance(response["reasoning"], str):
-            print("reasoning must be a string")
-            return False
-
-        # Validate confidence score range
-        if not (0.0 <= response["confidence_score"] <= 1.0):
-            print("confidence_score must be between 0.0 and 1.0")
-            return False
-
-        return True
-
-    def _parse_unstructured_response(self, content: str) -> dict[str, Any]:
-        """
-        Parse unstructured OpenAI response to extract verification information
+        Fallback parsing for when structured output fails
 
         Args:
             content: Raw text response from OpenAI
 
         Returns:
-            Structured verification data
+            Parsed verification response
         """
         # Default values
         result = {
@@ -275,7 +261,12 @@ IMPORTANT:
                 if isinstance(result["timestamp_analysis"], dict):
                     result["timestamp_analysis"][key] = timestamp_value
 
-        return result
+        return CharacterVerificationResponse(
+            is_present=result["is_present"],
+            confidence_score=result["confidence_score"],
+            reasoning=result["reasoning"],
+            timestamp_analysis=result["timestamp_analysis"],
+        )
 
     def verify_character_in_video(
         self, character: Character, video_clip_url: str
@@ -311,29 +302,15 @@ IMPORTANT:
         # Call OpenAI API for verification
         openai_response = self.call_openai_for_verification(prompt, image_base64)
 
-        # Handle errors
-        if "error" in openai_response:
-            return CharacterVerification(
-                character_name=character.name,
-                character_image=character.image,
-                video_clip_url=video_clip_url,
-                is_present=False,
-                confidence_score=0.0,
-                reasoning=f"OpenAI API error: {openai_response['error']}",
-                timestamp_analysis={},
-            )
-
-        # Extract timestamp analysis
-        timestamp_analysis = openai_response.get("timestamp_analysis", {})
-
+        # Convert to CharacterVerification format
         return CharacterVerification(
             character_name=character.name,
             character_image=character.image,
             video_clip_url=video_clip_url,
-            is_present=openai_response.get("is_present", False),
-            confidence_score=openai_response.get("confidence_score", 0.5),
-            reasoning=openai_response.get("reasoning", "No reasoning provided"),
-            timestamp_analysis=timestamp_analysis,
+            is_present=openai_response.is_present,
+            confidence_score=openai_response.confidence_score,
+            reasoning=openai_response.reasoning,
+            timestamp_analysis=openai_response.timestamp_analysis,
         )
 
     def evaluate_video_output(self, video_output: VideoOutput) -> CritiqueAgentResult:

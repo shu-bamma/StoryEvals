@@ -1,0 +1,8 @@
+---
+alwaysApply: true
+---
+- use uv as package manager
+- everything should be "config.py" driven
+- have PyDantic models wherever possible
+- function definitions should always have a return type
+- wherever you are calling openai for LLM response. Use structured outputs instead of JSON mode (https://platform.openai.com/docs/guides/structured-outputs)

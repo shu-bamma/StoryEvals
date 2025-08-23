@@ -16,6 +16,7 @@ dependencies = [
     "scenedetect>=0.6.6",
     "ultralytics>=8.3.184",
     "numpy>=2.3.2",
+    "Pillow>=10.0.0",
 ]
 
 [project.optional-dependencies]
