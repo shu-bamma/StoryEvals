@@ -89,12 +89,17 @@ class Crop:
     bbox_norm: list[float]
     crop_url: str
     detector: str
-    face_conf: float
+    face_conf: float  # Keep for backward compatibility
     quality: CropQuality | None = None
     # New fields for character identification
     pred_char_id: str | None = None
     confidence: float | None = None
     reason: str | None = None
+
+    @property
+    def detection_confidence(self) -> float:
+        """Alias for face_conf to match desired output format"""
+        return self.face_conf
 
 
 @dataclass

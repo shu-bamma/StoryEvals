@@ -57,6 +57,21 @@ class Config:
     # Parallel Processing
     CHARACTER_ENRICHMENT_MAX_WORKERS: int = 4  # Number of parallel workers
 
+    # Video Shot Processing Configuration
+    VIDEO_SHOT_DETECTION_MODEL: str = "yolov11s.pt"  # YOLO model for detection
+    VIDEO_SHOT_DETECTION_CLASSES: list[str] = ["person"]  # Classes to detect
+    VIDEO_SHOT_DETECTION_CONFIDENCE: float = 0.5  # Detection confidence threshold
+    VIDEO_SHOT_BOUNDARY_THRESHOLD: float = 30.0  # Shot boundary detection threshold
+    VIDEO_SHOT_KEYFRAME_INTERVAL_MS: int = 420  # Keyframe interval in milliseconds
+    VIDEO_SHOT_BBOX_EXPANSION: float = 0.15  # Bbox expansion ratio
+    VIDEO_SHOT_TEMP_VIDEO_DIR: str = "temp/videos"  # Temp directory for videos
+    VIDEO_SHOT_TEMP_CROPS_DIR: str = "temp/crops"  # Temp directory for crops
+    VIDEO_SHOT_CROP_UPLOAD_ENABLED: bool = False  # Enable crop upload
+    VIDEO_SHOT_CROP_BASE_URL: str = "https://cdn.example.com/crops/"  # Base URL for crops
+    VIDEO_SHOT_OUTPUT_PATH: str = "data/logs/2-video_shots_with_crops.json"  # Output path
+    VIDEO_SHOT_NMS_ENABLED: bool = True  # Enable Non-Maximum Suppression
+    VIDEO_SHOT_NMS_IOU_THRESHOLD: float = 0.5  # NMS IoU threshold
+
     # Evaluation Configuration
     EVALUATION_TIMEOUT: int = 60  # seconds
     IMAGE_DOWNLOAD_TIMEOUT: int = 30  # seconds
@@ -179,6 +194,48 @@ class Config:
             cls.CHARACTER_IDENTIFICATION_OUTPUT_PATH,
         )
 
+        # Video shot processing config
+        cls.VIDEO_SHOT_DETECTION_MODEL = os.getenv(
+            "VIDEO_SHOT_DETECTION_MODEL", cls.VIDEO_SHOT_DETECTION_MODEL
+        )
+        # Handle list environment variable for detection classes
+        detection_classes_env = os.getenv("VIDEO_SHOT_DETECTION_CLASSES")
+        if detection_classes_env:
+            cls.VIDEO_SHOT_DETECTION_CLASSES = [cls.strip() for cls in detection_classes_env.split(",")]
+        cls.VIDEO_SHOT_DETECTION_CONFIDENCE = float(
+            os.getenv("VIDEO_SHOT_DETECTION_CONFIDENCE", str(cls.VIDEO_SHOT_DETECTION_CONFIDENCE))
+        )
+        cls.VIDEO_SHOT_BOUNDARY_THRESHOLD = float(
+            os.getenv("VIDEO_SHOT_BOUNDARY_THRESHOLD", str(cls.VIDEO_SHOT_BOUNDARY_THRESHOLD))
+        )
+        cls.VIDEO_SHOT_KEYFRAME_INTERVAL_MS = int(
+            os.getenv("VIDEO_SHOT_KEYFRAME_INTERVAL_MS", str(cls.VIDEO_SHOT_KEYFRAME_INTERVAL_MS))
+        )
+        cls.VIDEO_SHOT_BBOX_EXPANSION = float(
+            os.getenv("VIDEO_SHOT_BBOX_EXPANSION", str(cls.VIDEO_SHOT_BBOX_EXPANSION))
+        )
+        cls.VIDEO_SHOT_TEMP_VIDEO_DIR = os.getenv(
+            "VIDEO_SHOT_TEMP_VIDEO_DIR", cls.VIDEO_SHOT_TEMP_VIDEO_DIR
+        )
+        cls.VIDEO_SHOT_TEMP_CROPS_DIR = os.getenv(
+            "VIDEO_SHOT_TEMP_CROPS_DIR", cls.VIDEO_SHOT_TEMP_CROPS_DIR
+        )
+        cls.VIDEO_SHOT_CROP_UPLOAD_ENABLED = (
+            os.getenv("VIDEO_SHOT_CROP_UPLOAD_ENABLED", str(cls.VIDEO_SHOT_CROP_UPLOAD_ENABLED)).lower() == "true"
+        )
+        cls.VIDEO_SHOT_CROP_BASE_URL = os.getenv(
+            "VIDEO_SHOT_CROP_BASE_URL", cls.VIDEO_SHOT_CROP_BASE_URL
+        )
+        cls.VIDEO_SHOT_OUTPUT_PATH = os.getenv(
+            "VIDEO_SHOT_OUTPUT_PATH", cls.VIDEO_SHOT_OUTPUT_PATH
+        )
+        cls.VIDEO_SHOT_NMS_ENABLED = (
+            os.getenv("VIDEO_SHOT_NMS_ENABLED", str(cls.VIDEO_SHOT_NMS_ENABLED)).lower() == "true"
+        )
+        cls.VIDEO_SHOT_NMS_IOU_THRESHOLD = float(
+            os.getenv("VIDEO_SHOT_NMS_IOU_THRESHOLD", str(cls.VIDEO_SHOT_NMS_IOU_THRESHOLD))
+        )
+
     @classmethod
     def validate_openai_config(cls) -> bool:
         """Validate that OpenAI configuration is complete"""
@@ -270,6 +327,25 @@ class Config:
             "color": cls.CROP_ID_COLOR,
             "outline_color": cls.CROP_ID_OUTLINE_COLOR,
             "outline_width": cls.CROP_ID_OUTLINE_WIDTH,
+        }
+
+    @classmethod
+    def get_video_shot_processing_config(cls) -> dict:
+        """Get video shot processing configuration as dictionary"""
+        return {
+            "detection_model": cls.VIDEO_SHOT_DETECTION_MODEL,
+            "detection_classes": cls.VIDEO_SHOT_DETECTION_CLASSES,
+            "detection_confidence": cls.VIDEO_SHOT_DETECTION_CONFIDENCE,
+            "shot_boundary_threshold": cls.VIDEO_SHOT_BOUNDARY_THRESHOLD,
+            "keyframe_interval_ms": cls.VIDEO_SHOT_KEYFRAME_INTERVAL_MS,
+            "bbox_expansion": cls.VIDEO_SHOT_BBOX_EXPANSION,
+            "temp_video_dir": cls.VIDEO_SHOT_TEMP_VIDEO_DIR,
+            "temp_crops_dir": cls.VIDEO_SHOT_TEMP_CROPS_DIR,
+            "crop_upload_enabled": cls.VIDEO_SHOT_CROP_UPLOAD_ENABLED,
+            "crop_base_url": cls.VIDEO_SHOT_CROP_BASE_URL,
+            "output_path": cls.VIDEO_SHOT_OUTPUT_PATH,
+            "nms_enabled": cls.VIDEO_SHOT_NMS_ENABLED,
+            "nms_iou_threshold": cls.VIDEO_SHOT_NMS_IOU_THRESHOLD,
         }
 
 

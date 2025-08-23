@@ -4,7 +4,7 @@ import time
 from pathlib import Path
 from typing import Any
 
-from image_processor import ImageProcessor
+from utils.image_processor import ImageProcessor
 
 from batch_processor import BatchProcessor
 from character_identifier import CharacterIdentifier
@@ -129,7 +129,7 @@ class CharacterIdentificationPipeline:
                     bbox_norm=crop_data["bbox_norm"],
                     crop_url=crop_data["crop_url"],
                     detector=crop_data["detector"],
-                    face_conf=crop_data["face_conf"],
+                    face_conf=crop_data.get("detection_confidence", crop_data.get("face_conf", 0.0)),
                     quality=quality,
                 )
 
