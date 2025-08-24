@@ -1,0 +1,5417 @@
+[
+  {
+    "project_id": "PROJWeIlJbKBar5VgbU7",
+    "video_url": "https://content.dashtoon.ai/frameo-merged-videos/shot_final_merged_final_video_final_merged_1d464386580ad103.mp4",
+    "character_vault": [
+      {
+        "char_id": "Yamraj",
+        "name": "Yamraj",
+        "ref_image": "https://content.dashtoon.ai/stability-images/1bbf20c4-9bae-4769-85cc-eb2894e01ca5.webp",
+        "description": "Deity, male, unknown years old, mythological South Asian, muscular build, tall, heavy, dark brown skin, long black wavy flowing hair, dark brown almond eyes, thick eyebrows, broad nose, full lips, black full beard (long and thick), wearing gold ornate armor breastplate (engraved, fitted fit, sleeveless sleeves, crew neck), deep red dhoti (loose fit, ankle length), black with gold trim ornate cape (formal), brown sandals (traditional), gold gold crown, necklace, armlets, bracelets, earrings (gold with gemstones), ears, grinning, sash, belt, mythological regal style, divine, imposing aesthetic , high quality , detailed character design , consistent style , professional illustration headshot , head and shoulders view",
+        "embedding": [],
+        "traits": {
+          "core": [
+            "hair: long black wavy flowing hair",
+            "eyes: dark brown almond eyes",
+            "eyebrows: thick eyebrows",
+            "facial_marks: black full beard (long and thick)",
+            "nose: broad nose",
+            "lips: full lips"
+          ],
+          "supportive": [
+            "age_band: unknown",
+            "skin_tone: dark"
+          ],
+          "volatile": [
+            "clothing: ['gold ornate armor breastplate', 'deep red dhoti', 'black with gold trim ornate cape', 'brown sandals', 'gold crown', 'necklace', 'armlets', 'bracelets', 'earrings (gold with gemstones)']",
+            "mood: grinning"
+          ],
+          "age_band": "unknown",
+          "skin_tone": "dark",
+          "type": "mythological",
+          "notes": [
+            "Character is a deity with an unknown age."
+          ]
+        }
+      },
+      {
+        "char_id": "Raj",
+        "name": "Raj",
+        "ref_image": "https://content.dashtoon.ai/stability-images/f5a7c1ca-d142-41f8-9fb6-b90df247ee29.webp",
+        "description": "Male, 28 years old, South Asian, average build, average, average, medium brown skin, short black straight messy hair, brown almond eyes, thick eyebrows, medium nose, full lips, black stubble (light stubble), wearing pale blue button-down shirt (fitted fit, long sleeves, collar neck), dark blue jeans (regular fit, full length), black black sneakers (casual), contemplative, casual style, urban professional aesthetic , high quality , detailed character design , consistent style , professional illustration headshot , head and shoulders view",
+        "embedding": [],
+        "traits": {
+          "core": [
+            "hair: short black straight messy hair",
+            "eyes: brown almond eyes",
+            "eyebrows: thick eyebrows",
+            "facial_marks: black stubble",
+            "unique_features: full lips, medium nose"
+          ],
+          "supportive": [
+            "age: 28 years old"
+          ],
+          "volatile": [
+            "clothing: pale blue button-down shirt (fitted fit, long sleeves, collar neck), dark blue jeans (regular fit, full length), black sneakers (casual)"
+          ],
+          "age_band": "young_adult",
+          "skin_tone": "medium",
+          "type": "human",
+          "notes": [
+            ""
+          ]
+        }
+      }
+    ],
+    "number_of_shots": 10,
+    "shots": [
+      {
+        "shot_id": "shot_0001",
+        "keyframes_ms": [
+          0,
+          420,
+          840,
+          1260,
+          1680,
+          2100,
+          2520,
+          2940,
+          3360,
+          3780,
+          4200
+        ],
+        "crops": {
+          "0": [
+            {
+              "crop_id": "c_shot_0001_t0000_0",
+              "bbox_norm": [
+                0.227958607673645,
+                0.0,
+                0.4299732446670532,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t0000_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.887,
+              "detection_confidence": 0.887,
+              "quality": {
+                "blur": 1158.5,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t0000_1",
+              "bbox_norm": [
+                0.8295364379882812,
+                0.36647525429725647,
+                0.05280284956097603,
+                0.23934148252010345
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t0000_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.675,
+              "detection_confidence": 0.675,
+              "quality": {
+                "blur": 1056.6,
+                "pose": null
+              }
+            }
+          ],
+          "420": [
+            {
+              "crop_id": "c_shot_0001_t0420_0",
+              "bbox_norm": [
+                0.22586352825164796,
+                0.0,
+                0.4323679208755493,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t0420_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.897,
+              "detection_confidence": 0.897,
+              "quality": {
+                "blur": 1115.3,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t0420_1",
+              "bbox_norm": [
+                0.8286355137825012,
+                0.36701563000679016,
+                0.052886199206113815,
+                0.2384357899427414
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t0420_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.641,
+              "detection_confidence": 0.641,
+              "quality": {
+                "blur": 758.2,
+                "pose": null
+              }
+            }
+          ],
+          "840": [
+            {
+              "crop_id": "c_shot_0001_t0840_0",
+              "bbox_norm": [
+                0.23658008575439454,
+                0.028823004828559026,
+                0.4320718765258789,
+                0.971176995171441
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t0840_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.891,
+              "detection_confidence": 0.891,
+              "quality": {
+                "blur": 725.4,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t0840_1",
+              "bbox_norm": [
+                0.8265739679336548,
+                0.3706197440624237,
+                0.0520818717777729,
+                0.23349566757678986
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t0840_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.66,
+              "detection_confidence": 0.66,
+              "quality": {
+                "blur": 742.5,
+                "pose": null
+              }
+            }
+          ],
+          "1260": [
+            {
+              "crop_id": "c_shot_0001_t1260_0",
+              "bbox_norm": [
+                0.1856860876083374,
+                0.0,
+                0.45884726047515867,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t1260_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.901,
+              "detection_confidence": 0.901,
+              "quality": {
+                "blur": 474.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t1260_1",
+              "bbox_norm": [
+                0.5719272494316101,
+                0.46322840452194214,
+                0.03409719467163086,
+                0.16827061772346497
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t1260_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.678,
+              "detection_confidence": 0.678,
+              "quality": {
+                "blur": 55.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t1260_2",
+              "bbox_norm": [
+                0.8218413591384888,
+                0.372652143239975,
+                0.04857997968792915,
+                0.23289091885089874
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t1260_2.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.597,
+              "detection_confidence": 0.597,
+              "quality": {
+                "blur": 616.1,
+                "pose": null
+              }
+            }
+          ],
+          "1680": [
+            {
+              "crop_id": "c_shot_0001_t1680_0",
+              "bbox_norm": [
+                0.1445150852203369,
+                0.0,
+                0.4837488651275635,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t1680_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.923,
+              "detection_confidence": 0.923,
+              "quality": {
+                "blur": 503.3,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t1680_1",
+              "bbox_norm": [
+                0.5721706748008728,
+                0.46436017751693726,
+                0.03262472152709961,
+                0.16401240229606628
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t1680_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.737,
+              "detection_confidence": 0.737,
+              "quality": {
+                "blur": 63.2,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t1680_2",
+              "bbox_norm": [
+                0.8128215074539185,
+                0.37764349579811096,
+                0.047464560717344284,
+                0.22523684799671173
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t1680_2.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.608,
+              "detection_confidence": 0.608,
+              "quality": {
+                "blur": 581.6,
+                "pose": null
+              }
+            }
+          ],
+          "2100": [
+            {
+              "crop_id": "c_shot_0001_t2100_0",
+              "bbox_norm": [
+                0.1471275806427002,
+                0.0,
+                0.4319798469543457,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t2100_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.81,
+              "detection_confidence": 0.81,
+              "quality": {
+                "blur": 565.4,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t2100_1",
+              "bbox_norm": [
+                0.8023453950881958,
+                0.3828098177909851,
+                0.04743785783648491,
+                0.21808208525180817
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t2100_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.693,
+              "detection_confidence": 0.693,
+              "quality": {
+                "blur": 547.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t2100_2",
+              "bbox_norm": [
+                0.5720986127853394,
+                0.4680798053741455,
+                0.02867918089032173,
+                0.15973323583602905
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t2100_2.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.589,
+              "detection_confidence": 0.589,
+              "quality": {
+                "blur": 36.2,
+                "pose": null
+              }
+            }
+          ],
+          "2520": [
+            {
+              "crop_id": "c_shot_0001_t2520_0",
+              "bbox_norm": [
+                0.1598481774330139,
+                0.0,
+                0.4397127032279968,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t2520_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.879,
+              "detection_confidence": 0.879,
+              "quality": {
+                "blur": 623.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t2520_1",
+              "bbox_norm": [
+                0.5710234642028809,
+                0.4702896177768707,
+                0.030088234692811966,
+                0.15594296157360077
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t2520_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.565,
+              "detection_confidence": 0.565,
+              "quality": {
+                "blur": 53.5,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t2520_2",
+              "bbox_norm": [
+                0.7933817505836487,
+                0.3874056935310364,
+                0.046010542660951614,
+                0.21125751733779907
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t2520_2.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.557,
+              "detection_confidence": 0.557,
+              "quality": {
+                "blur": 564.5,
+                "pose": null
+              }
+            }
+          ],
+          "2940": [
+            {
+              "crop_id": "c_shot_0001_t2940_0",
+              "bbox_norm": [
+                0.1638561010360718,
+                0.0,
+                0.4508309602737427,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t2940_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.878,
+              "detection_confidence": 0.878,
+              "quality": {
+                "blur": 558.2,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t2940_1",
+              "bbox_norm": [
+                0.8599413871765137,
+                0.07346438301934136,
+                0.14005861282348633,
+                0.9265356169806587
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t2940_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.72,
+              "detection_confidence": 0.72,
+              "quality": {
+                "blur": 13.2,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t2940_2",
+              "bbox_norm": [
+                0.7834451794624329,
+                0.3905133903026581,
+                0.044440269470214844,
+                0.20959582924842834
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t2940_2.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.591,
+              "detection_confidence": 0.591,
+              "quality": {
+                "blur": 506.0,
+                "pose": null
+              }
+            }
+          ],
+          "3360": [
+            {
+              "crop_id": "c_shot_0001_t3360_0",
+              "bbox_norm": [
+                0.6712634086608886,
+                0.19572173224555123,
+                0.26960039138793945,
+                0.8042782677544488
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t3360_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.898,
+              "detection_confidence": 0.898,
+              "quality": {
+                "blur": 116.5,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t3360_1",
+              "bbox_norm": [
+                0.1658876657485962,
+                0.017431089613172742,
+                0.42227022647857665,
+                0.9825689103868273
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t3360_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.891,
+              "detection_confidence": 0.891,
+              "quality": {
+                "blur": 577.4,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t3360_2",
+              "bbox_norm": [
+                0.5668678283691406,
+                0.471723735332489,
+                0.026272201910614967,
+                0.14284464716911316
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t3360_2.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.563,
+              "detection_confidence": 0.563,
+              "quality": {
+                "blur": 28.4,
+                "pose": null
+              }
+            }
+          ],
+          "3780": [
+            {
+              "crop_id": "c_shot_0001_t3780_0",
+              "bbox_norm": [
+                0.1845092535018921,
+                0.03383209440443251,
+                0.4360277414321899,
+                0.9661679055955675
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t3780_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.913,
+              "detection_confidence": 0.913,
+              "quality": {
+                "blur": 704.7,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t3780_1",
+              "bbox_norm": [
+                0.6616546154022217,
+                0.2458619647555881,
+                0.18170390129089356,
+                0.7541380352444119
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t3780_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.892,
+              "detection_confidence": 0.892,
+              "quality": {
+                "blur": 194.9,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t3780_2",
+              "bbox_norm": [
+                0.8145586013793945,
+                0.2576060824924045,
+                0.18544139862060546,
+                0.7423939175075955
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t3780_2.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.849,
+              "detection_confidence": 0.849,
+              "quality": {
+                "blur": 18.1,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t3780_3",
+              "bbox_norm": [
+                0.5656431913375854,
+                0.4729307293891907,
+                0.027327632531523705,
+                0.14064186811447144
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t3780_3.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.523,
+              "detection_confidence": 0.523,
+              "quality": {
+                "blur": 42.1,
+                "pose": null
+              }
+            }
+          ],
+          "4200": [
+            {
+              "crop_id": "c_shot_0001_t4200_0",
+              "bbox_norm": [
+                0.1870951771736145,
+                0.0,
+                0.41236199140548707,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t4200_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.934,
+              "detection_confidence": 0.934,
+              "quality": {
+                "blur": 606.1,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t4200_1",
+              "bbox_norm": [
+                0.630548095703125,
+                0.28996827867296004,
+                0.14758224487304689,
+                0.71003172132704
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t4200_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.836,
+              "detection_confidence": 0.836,
+              "quality": {
+                "blur": 232.6,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t4200_2",
+              "bbox_norm": [
+                0.7767122745513916,
+                0.2924313439263238,
+                0.13309798240661622,
+                0.7075686560736762
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t4200_2.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.772,
+              "detection_confidence": 0.772,
+              "quality": {
+                "blur": 72.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0001_t4200_3",
+              "bbox_norm": [
+                0.7554861307144165,
+                0.40353867411613464,
+                0.04111938551068306,
+                0.1969047486782074
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0001_t4200_3.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.614,
+              "detection_confidence": 0.614,
+              "quality": {
+                "blur": 638.5,
+                "pose": null
+              }
+            }
+          ]
+        }
+      },
+      {
+        "shot_id": "shot_0002",
+        "keyframes_ms": [
+          4395,
+          4815,
+          5235,
+          5655,
+          6075,
+          6495,
+          6915
+        ],
+        "crops": {
+          "4395": [
+            {
+              "crop_id": "c_shot_0002_t4395_0",
+              "bbox_norm": [
+                0.18757014274597167,
+                0.0,
+                0.4081584453582764,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0002_t4395_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.934,
+              "detection_confidence": 0.934,
+              "quality": {
+                "blur": 616.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0002_t4395_1",
+              "bbox_norm": [
+                0.6222647666931153,
+                0.2862951702541775,
+                0.13371868133544923,
+                0.7137048297458225
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0002_t4395_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.869,
+              "detection_confidence": 0.869,
+              "quality": {
+                "blur": 194.5,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0002_t4395_2",
+              "bbox_norm": [
+                0.7580914497375488,
+                0.2948889414469401,
+                0.12914447784423827,
+                0.7051110585530599
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0002_t4395_2.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.843,
+              "detection_confidence": 0.843,
+              "quality": {
+                "blur": 126.1,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0002_t4395_3",
+              "bbox_norm": [
+                0.7528289556503296,
+                0.40747976303100586,
+                0.037883758544921875,
+                0.17898042500019073
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0002_t4395_3.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.669,
+              "detection_confidence": 0.669,
+              "quality": {
+                "blur": 539.5,
+                "pose": null
+              }
+            }
+          ],
+          "4815": [
+            {
+              "crop_id": "c_shot_0002_t4815_0",
+              "bbox_norm": [
+                0.15944814682006836,
+                0.0,
+                0.5836033821105957,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0002_t4815_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.925,
+              "detection_confidence": 0.925,
+              "quality": {
+                "blur": 1107.3,
+                "pose": null
+              }
+            }
+          ],
+          "5235": [
+            {
+              "crop_id": "c_shot_0002_t5235_0",
+              "bbox_norm": [
+                0.1601799249649048,
+                0.0,
+                0.5824113607406616,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0002_t5235_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.931,
+              "detection_confidence": 0.931,
+              "quality": {
+                "blur": 822.1,
+                "pose": null
+              }
+            }
+          ],
+          "5655": [
+            {
+              "crop_id": "c_shot_0002_t5655_0",
+              "bbox_norm": [
+                0.16255040168762208,
+                0.0,
+                0.5785553932189942,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0002_t5655_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.847,
+              "detection_confidence": 0.847,
+              "quality": {
+                "blur": 972.1,
+                "pose": null
+              }
+            }
+          ],
+          "6075": [
+            {
+              "crop_id": "c_shot_0002_t6075_0",
+              "bbox_norm": [
+                0.16258699893951417,
+                0.0,
+                0.5784804105758667,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0002_t6075_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.858,
+              "detection_confidence": 0.858,
+              "quality": {
+                "blur": 972.5,
+                "pose": null
+              }
+            }
+          ],
+          "6495": [
+            {
+              "crop_id": "c_shot_0002_t6495_0",
+              "bbox_norm": [
+                0.162581467628479,
+                0.0,
+                0.5784837484359742,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0002_t6495_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.892,
+              "detection_confidence": 0.892,
+              "quality": {
+                "blur": 974.0,
+                "pose": null
+              }
+            }
+          ],
+          "6915": [
+            {
+              "crop_id": "c_shot_0002_t6915_0",
+              "bbox_norm": [
+                0.15178475379943848,
+                0.0,
+                0.5981371879577637,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0002_t6915_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.834,
+              "detection_confidence": 0.834,
+              "quality": {
+                "blur": 709.8,
+                "pose": null
+              }
+            }
+          ]
+        }
+      },
+      {
+        "shot_id": "shot_0003",
+        "keyframes_ms": [
+          7050,
+          7470,
+          7890,
+          8310,
+          8730,
+          9150,
+          9570,
+          9990,
+          10410,
+          10830,
+          11250,
+          11670,
+          12090,
+          12510,
+          12930,
+          13350,
+          13770,
+          14190,
+          14610
+        ],
+        "crops": {
+          "7050": [
+            {
+              "crop_id": "c_shot_0003_t7050_0",
+              "bbox_norm": [
+                0.1502394199371338,
+                0.0,
+                0.6013496875762939,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t7050_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.942,
+              "detection_confidence": 0.942,
+              "quality": {
+                "blur": 670.5,
+                "pose": null
+              }
+            }
+          ],
+          "7470": [
+            {
+              "crop_id": "c_shot_0003_t7470_0",
+              "bbox_norm": [
+                0.6085483074188233,
+                0.0,
+                0.3019676685333252,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t7470_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.92,
+              "detection_confidence": 0.92,
+              "quality": {
+                "blur": 2653.7,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0003_t7470_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5111202239990235,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t7470_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.91,
+              "detection_confidence": 0.91,
+              "quality": {
+                "blur": 1864.7,
+                "pose": null
+              }
+            }
+          ],
+          "7890": [
+            {
+              "crop_id": "c_shot_0003_t7890_0",
+              "bbox_norm": [
+                0.6090493679046631,
+                0.0,
+                0.30151982307434083,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t7890_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.921,
+              "detection_confidence": 0.921,
+              "quality": {
+                "blur": 2662.3,
+                "pose": null
+              }
+            }
+          ],
+          "8310": [
+            {
+              "crop_id": "c_shot_0003_t8310_0",
+              "bbox_norm": [
+                0.6088721752166748,
+                0.0,
+                0.30170321464538574,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t8310_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.923,
+              "detection_confidence": 0.923,
+              "quality": {
+                "blur": 2663.9,
+                "pose": null
+              }
+            }
+          ],
+          "8730": [
+            {
+              "crop_id": "c_shot_0003_t8730_0",
+              "bbox_norm": [
+                0.608784532546997,
+                0.0,
+                0.3017246723175049,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t8730_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.923,
+              "detection_confidence": 0.923,
+              "quality": {
+                "blur": 2661.3,
+                "pose": null
+              }
+            }
+          ],
+          "9150": [
+            {
+              "crop_id": "c_shot_0003_t9150_0",
+              "bbox_norm": [
+                0.6088643550872803,
+                0.0,
+                0.3017122745513916,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t9150_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.922,
+              "detection_confidence": 0.922,
+              "quality": {
+                "blur": 2660.1,
+                "pose": null
+              }
+            }
+          ],
+          "9570": [
+            {
+              "crop_id": "c_shot_0003_t9570_0",
+              "bbox_norm": [
+                0.6093111991882324,
+                0.0,
+                0.3011988639831543,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t9570_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.921,
+              "detection_confidence": 0.921,
+              "quality": {
+                "blur": 2654.4,
+                "pose": null
+              }
+            }
+          ],
+          "9990": [
+            {
+              "crop_id": "c_shot_0003_t9990_0",
+              "bbox_norm": [
+                0.6092929363250732,
+                0.0,
+                0.30115628242492676,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t9990_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.921,
+              "detection_confidence": 0.921,
+              "quality": {
+                "blur": 2652.0,
+                "pose": null
+              }
+            }
+          ],
+          "10410": [
+            {
+              "crop_id": "c_shot_0003_t10410_0",
+              "bbox_norm": [
+                0.6052805423736572,
+                0.0,
+                0.3069798946380615,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t10410_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.923,
+              "detection_confidence": 0.923,
+              "quality": {
+                "blur": 1818.8,
+                "pose": null
+              }
+            }
+          ],
+          "10830": [
+            {
+              "crop_id": "c_shot_0003_t10830_0",
+              "bbox_norm": [
+                0.5882579326629639,
+                0.0,
+                0.3377363681793213,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t10830_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.928,
+              "detection_confidence": 0.928,
+              "quality": {
+                "blur": 1558.1,
+                "pose": null
+              }
+            }
+          ],
+          "11250": [
+            {
+              "crop_id": "c_shot_0003_t11250_0",
+              "bbox_norm": [
+                0.5831704616546631,
+                0.0,
+                0.35016446113586425,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t11250_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.925,
+              "detection_confidence": 0.925,
+              "quality": {
+                "blur": 2018.7,
+                "pose": null
+              }
+            }
+          ],
+          "11670": [
+            {
+              "crop_id": "c_shot_0003_t11670_0",
+              "bbox_norm": [
+                0.5830638408660889,
+                0.0,
+                0.3502184391021729,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t11670_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.925,
+              "detection_confidence": 0.925,
+              "quality": {
+                "blur": 2023.6,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0003_t11670_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.516964340209961,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t11670_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.766,
+              "detection_confidence": 0.766,
+              "quality": {
+                "blur": 1745.9,
+                "pose": null
+              }
+            }
+          ],
+          "12090": [
+            {
+              "crop_id": "c_shot_0003_t12090_0",
+              "bbox_norm": [
+                0.5831159591674805,
+                0.0,
+                0.35030393600463866,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t12090_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.925,
+              "detection_confidence": 0.925,
+              "quality": {
+                "blur": 2025.6,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0003_t12090_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5104533195495605,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t12090_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.846,
+              "detection_confidence": 0.846,
+              "quality": {
+                "blur": 2602.5,
+                "pose": null
+              }
+            }
+          ],
+          "12510": [
+            {
+              "crop_id": "c_shot_0003_t12510_0",
+              "bbox_norm": [
+                0.5831501960754395,
+                0.0,
+                0.35028228759765623,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t12510_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.926,
+              "detection_confidence": 0.926,
+              "quality": {
+                "blur": 2011.1,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0003_t12510_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5105963230133057,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t12510_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.838,
+              "detection_confidence": 0.838,
+              "quality": {
+                "blur": 2627.4,
+                "pose": null
+              }
+            }
+          ],
+          "12930": [
+            {
+              "crop_id": "c_shot_0003_t12930_0",
+              "bbox_norm": [
+                0.5822545528411865,
+                0.0,
+                0.3507049083709717,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t12930_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.929,
+              "detection_confidence": 0.929,
+              "quality": {
+                "blur": 1541.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0003_t12930_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5106846332550049,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t12930_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.822,
+              "detection_confidence": 0.822,
+              "quality": {
+                "blur": 2641.7,
+                "pose": null
+              }
+            }
+          ],
+          "13350": [
+            {
+              "crop_id": "c_shot_0003_t13350_0",
+              "bbox_norm": [
+                0.5757150650024414,
+                0.0,
+                0.35512332916259765,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t13350_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.923,
+              "detection_confidence": 0.923,
+              "quality": {
+                "blur": 1425.9,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0003_t13350_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5105594635009766,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t13350_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.81,
+              "detection_confidence": 0.81,
+              "quality": {
+                "blur": 2660.4,
+                "pose": null
+              }
+            }
+          ],
+          "13770": [
+            {
+              "crop_id": "c_shot_0003_t13770_0",
+              "bbox_norm": [
+                0.5730181694030761,
+                0.0,
+                0.3582614898681641,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t13770_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.93,
+              "detection_confidence": 0.93,
+              "quality": {
+                "blur": 1932.8,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0003_t13770_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5105536460876465,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t13770_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.798,
+              "detection_confidence": 0.798,
+              "quality": {
+                "blur": 2667.6,
+                "pose": null
+              }
+            }
+          ],
+          "14190": [
+            {
+              "crop_id": "c_shot_0003_t14190_0",
+              "bbox_norm": [
+                0.5732290267944335,
+                0.0,
+                0.35790605545043946,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t14190_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.928,
+              "detection_confidence": 0.928,
+              "quality": {
+                "blur": 1938.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0003_t14190_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.510754919052124,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t14190_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.804,
+              "detection_confidence": 0.804,
+              "quality": {
+                "blur": 2596.9,
+                "pose": null
+              }
+            }
+          ],
+          "14610": [
+            {
+              "crop_id": "c_shot_0003_t14610_0",
+              "bbox_norm": [
+                0.575181245803833,
+                0.0,
+                0.3555310726165771,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t14610_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.927,
+              "detection_confidence": 0.927,
+              "quality": {
+                "blur": 1942.4,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0003_t14610_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.6202844619750977,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0003_t14610_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.706,
+              "detection_confidence": 0.706,
+              "quality": {
+                "blur": 1432.7,
+                "pose": null
+              }
+            }
+          ]
+        }
+      },
+      {
+        "shot_id": "shot_0004",
+        "keyframes_ms": [
+          15012,
+          15432,
+          15852,
+          16272,
+          16692,
+          17112,
+          17532,
+          17952,
+          18372,
+          18792,
+          19212,
+          19632,
+          20052,
+          20472,
+          20892,
+          21312,
+          21732,
+          22152,
+          22572
+        ],
+        "crops": {
+          "15012": [
+            {
+              "crop_id": "c_shot_0004_t15012_0",
+              "bbox_norm": [
+                0.5875214099884033,
+                0.0,
+                0.3300304889678955,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t15012_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.914,
+              "detection_confidence": 0.914,
+              "quality": {
+                "blur": 1566.4,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t15012_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.6484704494476319,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t15012_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.84,
+              "detection_confidence": 0.84,
+              "quality": {
+                "blur": 1868.2,
+                "pose": null
+              }
+            }
+          ],
+          "15432": [
+            {
+              "crop_id": "c_shot_0004_t15432_0",
+              "bbox_norm": [
+                0.3260322093963623,
+                0.0,
+                0.5681442737579345,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t15432_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.933,
+              "detection_confidence": 0.933,
+              "quality": {
+                "blur": 1136.8,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t15432_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.352465295791626,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t15432_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.928,
+              "detection_confidence": 0.928,
+              "quality": {
+                "blur": 711.6,
+                "pose": null
+              }
+            }
+          ],
+          "15852": [
+            {
+              "crop_id": "c_shot_0004_t15852_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.3750176429748535,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t15852_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.932,
+              "detection_confidence": 0.932,
+              "quality": {
+                "blur": 630.5,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t15852_1",
+              "bbox_norm": [
+                0.3299354076385498,
+                0.0,
+                0.5693059444427491,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t15852_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.793,
+              "detection_confidence": 0.793,
+              "quality": {
+                "blur": 1346.8,
+                "pose": null
+              }
+            }
+          ],
+          "16272": [
+            {
+              "crop_id": "c_shot_0004_t16272_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.36538770198822024,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t16272_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.937,
+              "detection_confidence": 0.937,
+              "quality": {
+                "blur": 666.1,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t16272_1",
+              "bbox_norm": [
+                0.33358044624328614,
+                0.0,
+                0.5710805416107178,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t16272_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.884,
+              "detection_confidence": 0.884,
+              "quality": {
+                "blur": 1152.9,
+                "pose": null
+              }
+            }
+          ],
+          "16692": [
+            {
+              "crop_id": "c_shot_0004_t16692_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.36919054985046384,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t16692_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.939,
+              "detection_confidence": 0.939,
+              "quality": {
+                "blur": 709.3,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t16692_1",
+              "bbox_norm": [
+                0.3583507061004639,
+                0.0,
+                0.5527548313140869,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t16692_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.706,
+              "detection_confidence": 0.706,
+              "quality": {
+                "blur": 1090.8,
+                "pose": null
+              }
+            }
+          ],
+          "17112": [
+            {
+              "crop_id": "c_shot_0004_t17112_0",
+              "bbox_norm": [
+                0.0023521274328231812,
+                0.0,
+                0.37104274332523346,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t17112_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.947,
+              "detection_confidence": 0.947,
+              "quality": {
+                "blur": 638.9,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t17112_1",
+              "bbox_norm": [
+                0.35613141059875486,
+                0.0,
+                0.5765939235687256,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t17112_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.901,
+              "detection_confidence": 0.901,
+              "quality": {
+                "blur": 920.3,
+                "pose": null
+              }
+            }
+          ],
+          "17532": [
+            {
+              "crop_id": "c_shot_0004_t17532_0",
+              "bbox_norm": [
+                0.007094448804855347,
+                0.0,
+                0.3712073385715485,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t17532_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.94,
+              "detection_confidence": 0.94,
+              "quality": {
+                "blur": 717.1,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t17532_1",
+              "bbox_norm": [
+                0.35582504272460935,
+                0.0,
+                0.5547033309936523,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t17532_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.91,
+              "detection_confidence": 0.91,
+              "quality": {
+                "blur": 1311.5,
+                "pose": null
+              }
+            }
+          ],
+          "17952": [
+            {
+              "crop_id": "c_shot_0004_t17952_0",
+              "bbox_norm": [
+                0.0115237295627594,
+                0.0,
+                0.37110206484794617,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t17952_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.924,
+              "detection_confidence": 0.924,
+              "quality": {
+                "blur": 680.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t17952_1",
+              "bbox_norm": [
+                0.3574568510055542,
+                0.0,
+                0.5576715707778931,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t17952_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.922,
+              "detection_confidence": 0.922,
+              "quality": {
+                "blur": 1235.0,
+                "pose": null
+              }
+            }
+          ],
+          "18372": [
+            {
+              "crop_id": "c_shot_0004_t18372_0",
+              "bbox_norm": [
+                0.016030868887901305,
+                0.0,
+                0.37146138250827787,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t18372_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.922,
+              "detection_confidence": 0.922,
+              "quality": {
+                "blur": 649.1,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t18372_1",
+              "bbox_norm": [
+                0.3607391357421875,
+                0.0,
+                0.5572978019714355,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t18372_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.861,
+              "detection_confidence": 0.861,
+              "quality": {
+                "blur": 1191.8,
+                "pose": null
+              }
+            }
+          ],
+          "18792": [
+            {
+              "crop_id": "c_shot_0004_t18792_0",
+              "bbox_norm": [
+                0.019331130385398864,
+                0.0,
+                0.37083329260349274,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t18792_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.918,
+              "detection_confidence": 0.918,
+              "quality": {
+                "blur": 586.9,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t18792_1",
+              "bbox_norm": [
+                0.3653234958648682,
+                0.0,
+                0.5549342632293701,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t18792_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.742,
+              "detection_confidence": 0.742,
+              "quality": {
+                "blur": 1213.6,
+                "pose": null
+              }
+            }
+          ],
+          "19212": [
+            {
+              "crop_id": "c_shot_0004_t19212_0",
+              "bbox_norm": [
+                0.36838698387145996,
+                0.0,
+                0.5585222721099854,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t19212_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.901,
+              "detection_confidence": 0.901,
+              "quality": {
+                "blur": 1199.1,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t19212_1",
+              "bbox_norm": [
+                0.0,
+                0.006551265716552734,
+                0.5656240463256836,
+                0.9934487342834473
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t19212_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.899,
+              "detection_confidence": 0.899,
+              "quality": {
+                "blur": 584.4,
+                "pose": null
+              }
+            }
+          ],
+          "19632": [
+            {
+              "crop_id": "c_shot_0004_t19632_0",
+              "bbox_norm": [
+                0.36555495262146,
+                0.0,
+                0.5657756328582764,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t19632_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.858,
+              "detection_confidence": 0.858,
+              "quality": {
+                "blur": 1230.8,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t19632_1",
+              "bbox_norm": [
+                0.0,
+                0.011706956227620443,
+                0.5119277954101562,
+                0.9882930437723796
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t19632_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.786,
+              "detection_confidence": 0.786,
+              "quality": {
+                "blur": 642.0,
+                "pose": null
+              }
+            }
+          ],
+          "20052": [
+            {
+              "crop_id": "c_shot_0004_t20052_0",
+              "bbox_norm": [
+                0.3707274436950684,
+                0.0,
+                0.5624717712402344,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t20052_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.904,
+              "detection_confidence": 0.904,
+              "quality": {
+                "blur": 1209.4,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t20052_1",
+              "bbox_norm": [
+                0.0,
+                0.016898557874891494,
+                0.5866845130920411,
+                0.9831014421251085
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t20052_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.893,
+              "detection_confidence": 0.893,
+              "quality": {
+                "blur": 675.2,
+                "pose": null
+              }
+            }
+          ],
+          "20472": [
+            {
+              "crop_id": "c_shot_0004_t20472_0",
+              "bbox_norm": [
+                0.033910694718360904,
+                0.002021503448486328,
+                0.370274218916893,
+                0.9979784965515137
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t20472_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.93,
+              "detection_confidence": 0.93,
+              "quality": {
+                "blur": 723.8,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t20472_1",
+              "bbox_norm": [
+                0.37301599979400635,
+                0.0,
+                0.5576215505599975,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t20472_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.919,
+              "detection_confidence": 0.919,
+              "quality": {
+                "blur": 1285.0,
+                "pose": null
+              }
+            }
+          ],
+          "20892": [
+            {
+              "crop_id": "c_shot_0004_t20892_0",
+              "bbox_norm": [
+                0.03475482165813446,
+                0.0038058174981011285,
+                0.37020290195941924,
+                0.9961941825018988
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t20892_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.93,
+              "detection_confidence": 0.93,
+              "quality": {
+                "blur": 698.3,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t20892_1",
+              "bbox_norm": [
+                0.3750786066055298,
+                0.0,
+                0.5571091413497925,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t20892_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.894,
+              "detection_confidence": 0.894,
+              "quality": {
+                "blur": 1304.6,
+                "pose": null
+              }
+            }
+          ],
+          "21312": [
+            {
+              "crop_id": "c_shot_0004_t21312_0",
+              "bbox_norm": [
+                0.03609778583049774,
+                0.0044133504231770836,
+                0.3693435460329056,
+                0.995586649576823
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t21312_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.928,
+              "detection_confidence": 0.928,
+              "quality": {
+                "blur": 712.5,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t21312_1",
+              "bbox_norm": [
+                0.3454787492752075,
+                0.0,
+                0.6089218854904175,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t21312_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.827,
+              "detection_confidence": 0.827,
+              "quality": {
+                "blur": 819.8,
+                "pose": null
+              }
+            }
+          ],
+          "21732": [
+            {
+              "crop_id": "c_shot_0004_t21732_0",
+              "bbox_norm": [
+                0.03654867112636566,
+                0.004047340816921658,
+                0.3687988191843033,
+                0.9959526591830783
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t21732_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.921,
+              "detection_confidence": 0.921,
+              "quality": {
+                "blur": 800.5,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t21732_1",
+              "bbox_norm": [
+                0.27430541515350343,
+                0.0,
+                0.6922622919082642,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t21732_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.806,
+              "detection_confidence": 0.806,
+              "quality": {
+                "blur": 1407.1,
+                "pose": null
+              }
+            }
+          ],
+          "22152": [
+            {
+              "crop_id": "c_shot_0004_t22152_0",
+              "bbox_norm": [
+                0.03391815423965454,
+                0.008595434824625652,
+                0.3753472208976746,
+                0.9914045651753743
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t22152_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.93,
+              "detection_confidence": 0.93,
+              "quality": {
+                "blur": 714.1,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t22152_1",
+              "bbox_norm": [
+                0.26995062828063965,
+                0.0,
+                0.6965125560760498,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t22152_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.826,
+              "detection_confidence": 0.826,
+              "quality": {
+                "blur": 1403.3,
+                "pose": null
+              }
+            }
+          ],
+          "22572": [
+            {
+              "crop_id": "c_shot_0004_t22572_0",
+              "bbox_norm": [
+                0.029913115501403808,
+                0.008488443162706163,
+                0.38512656688690183,
+                0.9915115568372939
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t22572_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.936,
+              "detection_confidence": 0.936,
+              "quality": {
+                "blur": 757.9,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0004_t22572_1",
+              "bbox_norm": [
+                0.33167438507080077,
+                0.0,
+                0.6270318984985351,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0004_t22572_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.799,
+              "detection_confidence": 0.799,
+              "quality": {
+                "blur": 966.0,
+                "pose": null
+              }
+            }
+          ]
+        }
+      },
+      {
+        "shot_id": "shot_0005",
+        "keyframes_ms": [
+          22974,
+          23394,
+          23814,
+          24234,
+          24654,
+          25074,
+          25494,
+          25914,
+          26334,
+          26754,
+          27174,
+          27594,
+          28014,
+          28434,
+          28854,
+          29274,
+          29694,
+          30114,
+          30534
+        ],
+        "crops": {
+          "22974": [
+            {
+              "crop_id": "c_shot_0005_t22974_0",
+              "bbox_norm": [
+                0.029627814888954163,
+                0.007907379998101129,
+                0.38550332486629485,
+                0.9920926200018989
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t22974_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.932,
+              "detection_confidence": 0.932,
+              "quality": {
+                "blur": 752.9,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t22974_1",
+              "bbox_norm": [
+                0.39257211685180665,
+                0.0,
+                0.5676474571228027,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t22974_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.59,
+              "detection_confidence": 0.59,
+              "quality": {
+                "blur": 840.5,
+                "pose": null
+              }
+            }
+          ],
+          "23394": [
+            {
+              "crop_id": "c_shot_0005_t23394_0",
+              "bbox_norm": [
+                0.012189370393753052,
+                0.0,
+                0.3200323760509491,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t23394_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.933,
+              "detection_confidence": 0.933,
+              "quality": {
+                "blur": 1236.2,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t23394_1",
+              "bbox_norm": [
+                0.32871849536895753,
+                0.0,
+                0.5367403745651245,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t23394_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.911,
+              "detection_confidence": 0.911,
+              "quality": {
+                "blur": 990.7,
+                "pose": null
+              }
+            }
+          ],
+          "23814": [
+            {
+              "crop_id": "c_shot_0005_t23814_0",
+              "bbox_norm": [
+                0.01237090528011322,
+                0.0,
+                0.319469490647316,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t23814_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.931,
+              "detection_confidence": 0.931,
+              "quality": {
+                "blur": 1222.1,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t23814_1",
+              "bbox_norm": [
+                0.3286327600479126,
+                0.0,
+                0.5393568754196167,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t23814_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.843,
+              "detection_confidence": 0.843,
+              "quality": {
+                "blur": 1463.9,
+                "pose": null
+              }
+            }
+          ],
+          "24234": [
+            {
+              "crop_id": "c_shot_0005_t24234_0",
+              "bbox_norm": [
+                0.012326490879058839,
+                0.0,
+                0.3197940707206726,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t24234_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.938,
+              "detection_confidence": 0.938,
+              "quality": {
+                "blur": 859.4,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t24234_1",
+              "bbox_norm": [
+                0.3309288263320923,
+                0.0,
+                0.5362995862960815,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t24234_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.847,
+              "detection_confidence": 0.847,
+              "quality": {
+                "blur": 1925.9,
+                "pose": null
+              }
+            }
+          ],
+          "24654": [
+            {
+              "crop_id": "c_shot_0005_t24654_0",
+              "bbox_norm": [
+                0.012691709399223327,
+                0.0,
+                0.3190420657396317,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t24654_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.931,
+              "detection_confidence": 0.931,
+              "quality": {
+                "blur": 1117.6,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t24654_1",
+              "bbox_norm": [
+                0.33254046440124513,
+                0.0,
+                0.5354053974151611,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t24654_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.844,
+              "detection_confidence": 0.844,
+              "quality": {
+                "blur": 1924.4,
+                "pose": null
+              }
+            }
+          ],
+          "25074": [
+            {
+              "crop_id": "c_shot_0005_t25074_0",
+              "bbox_norm": [
+                0.012609541416168213,
+                0.0,
+                0.31906675100326537,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t25074_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.93,
+              "detection_confidence": 0.93,
+              "quality": {
+                "blur": 1132.8,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t25074_1",
+              "bbox_norm": [
+                0.3278707981109619,
+                0.0,
+                0.5451736927032471,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t25074_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.842,
+              "detection_confidence": 0.842,
+              "quality": {
+                "blur": 1540.9,
+                "pose": null
+              }
+            }
+          ],
+          "25494": [
+            {
+              "crop_id": "c_shot_0005_t25494_0",
+              "bbox_norm": [
+                0.012622877955436707,
+                0.0,
+                0.3187569171190262,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t25494_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.933,
+              "detection_confidence": 0.933,
+              "quality": {
+                "blur": 1151.2,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t25494_1",
+              "bbox_norm": [
+                0.32369318008422854,
+                0.0,
+                0.5651471138000488,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t25494_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.895,
+              "detection_confidence": 0.895,
+              "quality": {
+                "blur": 1211.3,
+                "pose": null
+              }
+            }
+          ],
+          "25914": [
+            {
+              "crop_id": "c_shot_0005_t25914_0",
+              "bbox_norm": [
+                0.012369170784950256,
+                0.0,
+                0.32026866376399993,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t25914_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.932,
+              "detection_confidence": 0.932,
+              "quality": {
+                "blur": 1130.1,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t25914_1",
+              "bbox_norm": [
+                0.31961703300476074,
+                0.0,
+                0.5616333484649658,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t25914_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.93,
+              "detection_confidence": 0.93,
+              "quality": {
+                "blur": 885.8,
+                "pose": null
+              }
+            }
+          ],
+          "26334": [
+            {
+              "crop_id": "c_shot_0005_t26334_0",
+              "bbox_norm": [
+                0.33814635276794436,
+                0.0,
+                0.5199659824371338,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t26334_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.941,
+              "detection_confidence": 0.941,
+              "quality": {
+                "blur": 1164.4,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t26334_1",
+              "bbox_norm": [
+                0.012534993886947631,
+                0.0,
+                0.31969812512397766,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t26334_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.931,
+              "detection_confidence": 0.931,
+              "quality": {
+                "blur": 1109.2,
+                "pose": null
+              }
+            }
+          ],
+          "26754": [
+            {
+              "crop_id": "c_shot_0005_t26754_0",
+              "bbox_norm": [
+                0.0,
+                0.0075919363233778216,
+                0.4736900806427002,
+                0.9924080636766222
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t26754_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.939,
+              "detection_confidence": 0.939,
+              "quality": {
+                "blur": 795.2,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t26754_1",
+              "bbox_norm": [
+                0.3412174224853516,
+                0.0,
+                0.5136658668518066,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t26754_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.926,
+              "detection_confidence": 0.926,
+              "quality": {
+                "blur": 1553.9,
+                "pose": null
+              }
+            }
+          ],
+          "27174": [
+            {
+              "crop_id": "c_shot_0005_t27174_0",
+              "bbox_norm": [
+                0.34063053131103516,
+                0.0,
+                0.5140912055969238,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t27174_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.939,
+              "detection_confidence": 0.939,
+              "quality": {
+                "blur": 1639.9,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t27174_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.4581099033355713,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t27174_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.937,
+              "detection_confidence": 0.937,
+              "quality": {
+                "blur": 1041.7,
+                "pose": null
+              }
+            }
+          ],
+          "27594": [
+            {
+              "crop_id": "c_shot_0005_t27594_0",
+              "bbox_norm": [
+                0.0,
+                0.0058360417683919275,
+                0.390124249458313,
+                0.9941639582316081
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t27594_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.937,
+              "detection_confidence": 0.937,
+              "quality": {
+                "blur": 628.9,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t27594_1",
+              "bbox_norm": [
+                0.34051496982574464,
+                0.0,
+                0.5142209768295288,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t27594_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.928,
+              "detection_confidence": 0.928,
+              "quality": {
+                "blur": 1557.6,
+                "pose": null
+              }
+            }
+          ],
+          "28014": [
+            {
+              "crop_id": "c_shot_0005_t28014_0",
+              "bbox_norm": [
+                0.0,
+                0.003827349344889323,
+                0.38309154510498045,
+                0.9961726506551106
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t28014_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.936,
+              "detection_confidence": 0.936,
+              "quality": {
+                "blur": 710.3,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t28014_1",
+              "bbox_norm": [
+                0.3403408288955688,
+                0.0,
+                0.5143674612045288,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t28014_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.926,
+              "detection_confidence": 0.926,
+              "quality": {
+                "blur": 1565.2,
+                "pose": null
+              }
+            }
+          ],
+          "28434": [
+            {
+              "crop_id": "c_shot_0005_t28434_0",
+              "bbox_norm": [
+                0.3406060695648193,
+                0.0,
+                0.5139587879180908,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t28434_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.934,
+              "detection_confidence": 0.934,
+              "quality": {
+                "blur": 1571.8,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t28434_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.36513233184814453,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t28434_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.929,
+              "detection_confidence": 0.929,
+              "quality": {
+                "blur": 926.6,
+                "pose": null
+              }
+            }
+          ],
+          "28854": [
+            {
+              "crop_id": "c_shot_0005_t28854_0",
+              "bbox_norm": [
+                0.3401746034622192,
+                0.0,
+                0.514638113975525,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t28854_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.935,
+              "detection_confidence": 0.935,
+              "quality": {
+                "blur": 1571.5,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t28854_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.365571928024292,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t28854_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.926,
+              "detection_confidence": 0.926,
+              "quality": {
+                "blur": 994.5,
+                "pose": null
+              }
+            }
+          ],
+          "29274": [
+            {
+              "crop_id": "c_shot_0005_t29274_0",
+              "bbox_norm": [
+                0.0,
+                0.0018905957539876303,
+                0.37140774726867676,
+                0.9981094042460124
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t29274_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.935,
+              "detection_confidence": 0.935,
+              "quality": {
+                "blur": 846.7,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t29274_1",
+              "bbox_norm": [
+                0.34106490612030027,
+                0.0,
+                0.5143099069595337,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t29274_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.878,
+              "detection_confidence": 0.878,
+              "quality": {
+                "blur": 1546.4,
+                "pose": null
+              }
+            }
+          ],
+          "29694": [
+            {
+              "crop_id": "c_shot_0005_t29694_0",
+              "bbox_norm": [
+                0.3405544996261597,
+                0.0,
+                0.5146533250808716,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t29694_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.938,
+              "detection_confidence": 0.938,
+              "quality": {
+                "blur": 1580.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t29694_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.371547794342041,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t29694_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.921,
+              "detection_confidence": 0.921,
+              "quality": {
+                "blur": 965.2,
+                "pose": null
+              }
+            }
+          ],
+          "30114": [
+            {
+              "crop_id": "c_shot_0005_t30114_0",
+              "bbox_norm": [
+                0.0,
+                0.010296111636691623,
+                0.3791972160339355,
+                0.9897038883633084
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t30114_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.929,
+              "detection_confidence": 0.929,
+              "quality": {
+                "blur": 757.3,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t30114_1",
+              "bbox_norm": [
+                0.3402595520019531,
+                0.0,
+                0.5154949188232422,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t30114_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.929,
+              "detection_confidence": 0.929,
+              "quality": {
+                "blur": 1578.2,
+                "pose": null
+              }
+            }
+          ],
+          "30534": [
+            {
+              "crop_id": "c_shot_0005_t30534_0",
+              "bbox_norm": [
+                0.3376854419708252,
+                0.0,
+                0.5178674221038818,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t30534_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.94,
+              "detection_confidence": 0.94,
+              "quality": {
+                "blur": 1569.2,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0005_t30534_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.3480510711669922,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0005_t30534_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.935,
+              "detection_confidence": 0.935,
+              "quality": {
+                "blur": 682.8,
+                "pose": null
+              }
+            }
+          ]
+        }
+      },
+      {
+        "shot_id": "shot_0006",
+        "keyframes_ms": [
+          30937,
+          31357,
+          31777,
+          32197,
+          32617,
+          33037,
+          33457,
+          33877,
+          34297,
+          34717,
+          35137,
+          35557,
+          35977,
+          36397,
+          36817,
+          37237,
+          37657,
+          38077,
+          38497
+        ],
+        "crops": {
+          "30937": [
+            {
+              "crop_id": "c_shot_0006_t30937_0",
+              "bbox_norm": [
+                0.32193813323974607,
+                0.0,
+                0.5582499504089355,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t30937_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.939,
+              "detection_confidence": 0.939,
+              "quality": {
+                "blur": 733.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0006_t30937_1",
+              "bbox_norm": [
+                0.008364805579185485,
+                0.05436339908175998,
+                0.3289607912302017,
+                0.94563660091824
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t30937_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.931,
+              "detection_confidence": 0.931,
+              "quality": {
+                "blur": 954.5,
+                "pose": null
+              }
+            }
+          ],
+          "31357": [
+            {
+              "crop_id": "c_shot_0006_t31357_0",
+              "bbox_norm": [
+                0.5428431987762451,
+                0.0,
+                0.41745638847351074,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t31357_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.916,
+              "detection_confidence": 0.916,
+              "quality": {
+                "blur": 1848.5,
+                "pose": null
+              }
+            }
+          ],
+          "31777": [
+            {
+              "crop_id": "c_shot_0006_t31777_0",
+              "bbox_norm": [
+                0.542911148071289,
+                0.0,
+                0.4174144744873047,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t31777_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.92,
+              "detection_confidence": 0.92,
+              "quality": {
+                "blur": 1855.6,
+                "pose": null
+              }
+            }
+          ],
+          "32197": [
+            {
+              "crop_id": "c_shot_0006_t32197_0",
+              "bbox_norm": [
+                0.5421492099761963,
+                0.0,
+                0.4172355175018311,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t32197_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.925,
+              "detection_confidence": 0.925,
+              "quality": {
+                "blur": 1609.2,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0006_t32197_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.564275598526001,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t32197_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.631,
+              "detection_confidence": 0.631,
+              "quality": {
+                "blur": 2267.2,
+                "pose": null
+              }
+            }
+          ],
+          "32617": [
+            {
+              "crop_id": "c_shot_0006_t32617_0",
+              "bbox_norm": [
+                0.541999626159668,
+                0.0,
+                0.41749143600463867,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t32617_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.923,
+              "detection_confidence": 0.923,
+              "quality": {
+                "blur": 1698.3,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0006_t32617_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5637695789337158,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t32617_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.669,
+              "detection_confidence": 0.669,
+              "quality": {
+                "blur": 2331.9,
+                "pose": null
+              }
+            }
+          ],
+          "33037": [
+            {
+              "crop_id": "c_shot_0006_t33037_0",
+              "bbox_norm": [
+                0.5421989440917969,
+                0.0,
+                0.4170815467834473,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t33037_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.921,
+              "detection_confidence": 0.921,
+              "quality": {
+                "blur": 1705.4,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0006_t33037_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5636215209960938,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t33037_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.619,
+              "detection_confidence": 0.619,
+              "quality": {
+                "blur": 2338.4,
+                "pose": null
+              }
+            }
+          ],
+          "33457": [
+            {
+              "crop_id": "c_shot_0006_t33457_0",
+              "bbox_norm": [
+                0.5421858787536621,
+                0.0,
+                0.41704111099243163,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t33457_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.923,
+              "detection_confidence": 0.923,
+              "quality": {
+                "blur": 1698.9,
+                "pose": null
+              }
+            }
+          ],
+          "33877": [
+            {
+              "crop_id": "c_shot_0006_t33877_0",
+              "bbox_norm": [
+                0.5421089649200439,
+                0.0,
+                0.4172034740447998,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t33877_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.928,
+              "detection_confidence": 0.928,
+              "quality": {
+                "blur": 1695.3,
+                "pose": null
+              }
+            }
+          ],
+          "34297": [
+            {
+              "crop_id": "c_shot_0006_t34297_0",
+              "bbox_norm": [
+                0.5422269344329834,
+                0.0,
+                0.4170547962188721,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t34297_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.926,
+              "detection_confidence": 0.926,
+              "quality": {
+                "blur": 1699.4,
+                "pose": null
+              }
+            }
+          ],
+          "34717": [
+            {
+              "crop_id": "c_shot_0006_t34717_0",
+              "bbox_norm": [
+                0.542011022567749,
+                0.0,
+                0.41730027198791503,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t34717_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.924,
+              "detection_confidence": 0.924,
+              "quality": {
+                "blur": 1589.8,
+                "pose": null
+              }
+            }
+          ],
+          "35137": [
+            {
+              "crop_id": "c_shot_0006_t35137_0",
+              "bbox_norm": [
+                0.5406874656677246,
+                0.0,
+                0.4217670440673828,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t35137_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.918,
+              "detection_confidence": 0.918,
+              "quality": {
+                "blur": 1580.6,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0006_t35137_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5726102828979492,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t35137_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.699,
+              "detection_confidence": 0.699,
+              "quality": {
+                "blur": 1210.3,
+                "pose": null
+              }
+            }
+          ],
+          "35557": [
+            {
+              "crop_id": "c_shot_0006_t35557_0",
+              "bbox_norm": [
+                0.5401992797851562,
+                0.0,
+                0.4227471351623535,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t35557_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.923,
+              "detection_confidence": 0.923,
+              "quality": {
+                "blur": 1567.4,
+                "pose": null
+              }
+            }
+          ],
+          "35977": [
+            {
+              "crop_id": "c_shot_0006_t35977_0",
+              "bbox_norm": [
+                0.5294565200805664,
+                0.0,
+                0.46167640686035155,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t35977_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.933,
+              "detection_confidence": 0.933,
+              "quality": {
+                "blur": 1047.8,
+                "pose": null
+              }
+            }
+          ],
+          "36397": [
+            {
+              "crop_id": "c_shot_0006_t36397_0",
+              "bbox_norm": [
+                0.5220932483673095,
+                0.0,
+                0.4665069103240967,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t36397_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.926,
+              "detection_confidence": 0.926,
+              "quality": {
+                "blur": 1031.5,
+                "pose": null
+              }
+            }
+          ],
+          "36817": [
+            {
+              "crop_id": "c_shot_0006_t36817_0",
+              "bbox_norm": [
+                0.5108988761901856,
+                0.0,
+                0.4559623718261719,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t36817_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.911,
+              "detection_confidence": 0.911,
+              "quality": {
+                "blur": 1334.2,
+                "pose": null
+              }
+            }
+          ],
+          "37237": [
+            {
+              "crop_id": "c_shot_0006_t37237_0",
+              "bbox_norm": [
+                0.511060380935669,
+                0.0,
+                0.4554619312286377,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t37237_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.911,
+              "detection_confidence": 0.911,
+              "quality": {
+                "blur": 1448.6,
+                "pose": null
+              }
+            }
+          ],
+          "37657": [
+            {
+              "crop_id": "c_shot_0006_t37657_0",
+              "bbox_norm": [
+                0.5111983776092529,
+                0.0,
+                0.45532498359680174,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t37657_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.906,
+              "detection_confidence": 0.906,
+              "quality": {
+                "blur": 1456.4,
+                "pose": null
+              }
+            }
+          ],
+          "38077": [
+            {
+              "crop_id": "c_shot_0006_t38077_0",
+              "bbox_norm": [
+                0.5112730026245117,
+                0.0,
+                0.4552204132080078,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t38077_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.907,
+              "detection_confidence": 0.907,
+              "quality": {
+                "blur": 1462.4,
+                "pose": null
+              }
+            }
+          ],
+          "38497": [
+            {
+              "crop_id": "c_shot_0006_t38497_0",
+              "bbox_norm": [
+                0.5168894290924072,
+                0.0,
+                0.44869771003723147,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0006_t38497_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.899,
+              "detection_confidence": 0.899,
+              "quality": {
+                "blur": 1279.3,
+                "pose": null
+              }
+            }
+          ]
+        }
+      },
+      {
+        "shot_id": "shot_0007",
+        "keyframes_ms": [
+          38899,
+          39319,
+          39739,
+          40159,
+          40579,
+          40999,
+          41419,
+          41839,
+          42259,
+          42679,
+          43099,
+          43519,
+          43939,
+          44359,
+          44779,
+          45199,
+          45619,
+          46039,
+          46459
+        ],
+        "crops": {
+          "38899": [
+            {
+              "crop_id": "c_shot_0007_t38899_0",
+              "bbox_norm": [
+                0.5314589500427246,
+                0.0,
+                0.4309398651123047,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t38899_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.918,
+              "detection_confidence": 0.918,
+              "quality": {
+                "blur": 1320.8,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0007_t38899_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5712832450866699,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t38899_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.635,
+              "detection_confidence": 0.635,
+              "quality": {
+                "blur": 1308.2,
+                "pose": null
+              }
+            }
+          ],
+          "39319": [
+            {
+              "crop_id": "c_shot_0007_t39319_0",
+              "bbox_norm": [
+                0.5580978393554688,
+                0.0,
+                0.4098386764526367,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t39319_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.923,
+              "detection_confidence": 0.923,
+              "quality": {
+                "blur": 1887.0,
+                "pose": null
+              }
+            }
+          ],
+          "39739": [
+            {
+              "crop_id": "c_shot_0007_t39739_0",
+              "bbox_norm": [
+                0.5578804969787597,
+                0.0,
+                0.410089111328125,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t39739_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.924,
+              "detection_confidence": 0.924,
+              "quality": {
+                "blur": 1893.8,
+                "pose": null
+              }
+            }
+          ],
+          "40159": [
+            {
+              "crop_id": "c_shot_0007_t40159_0",
+              "bbox_norm": [
+                0.5578564643859864,
+                0.0,
+                0.4100444793701172,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t40159_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.925,
+              "detection_confidence": 0.925,
+              "quality": {
+                "blur": 1905.3,
+                "pose": null
+              }
+            }
+          ],
+          "40579": [
+            {
+              "crop_id": "c_shot_0007_t40579_0",
+              "bbox_norm": [
+                0.5577502727508545,
+                0.0,
+                0.4101315975189209,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t40579_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.924,
+              "detection_confidence": 0.924,
+              "quality": {
+                "blur": 1904.1,
+                "pose": null
+              }
+            }
+          ],
+          "40999": [
+            {
+              "crop_id": "c_shot_0007_t40999_0",
+              "bbox_norm": [
+                0.5577646732330322,
+                0.0,
+                0.41016488075256347,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t40999_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.923,
+              "detection_confidence": 0.923,
+              "quality": {
+                "blur": 1789.9,
+                "pose": null
+              }
+            }
+          ],
+          "41419": [
+            {
+              "crop_id": "c_shot_0007_t41419_0",
+              "bbox_norm": [
+                0.5412769794464112,
+                0.0,
+                0.4351529598236084,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t41419_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.925,
+              "detection_confidence": 0.925,
+              "quality": {
+                "blur": 1366.1,
+                "pose": null
+              }
+            }
+          ],
+          "41839": [
+            {
+              "crop_id": "c_shot_0007_t41839_0",
+              "bbox_norm": [
+                0.5535136699676514,
+                0.0,
+                0.4173614025115967,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t41839_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.924,
+              "detection_confidence": 0.924,
+              "quality": {
+                "blur": 1230.8,
+                "pose": null
+              }
+            }
+          ],
+          "42259": [
+            {
+              "crop_id": "c_shot_0007_t42259_0",
+              "bbox_norm": [
+                0.5585258960723877,
+                0.0,
+                0.41030287742614746,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t42259_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.922,
+              "detection_confidence": 0.922,
+              "quality": {
+                "blur": 1584.8,
+                "pose": null
+              }
+            }
+          ],
+          "42679": [
+            {
+              "crop_id": "c_shot_0007_t42679_0",
+              "bbox_norm": [
+                0.5583675384521485,
+                0.0,
+                0.4104337692260742,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t42679_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.922,
+              "detection_confidence": 0.922,
+              "quality": {
+                "blur": 1643.7,
+                "pose": null
+              }
+            }
+          ],
+          "43099": [
+            {
+              "crop_id": "c_shot_0007_t43099_0",
+              "bbox_norm": [
+                0.5582667350769043,
+                0.0,
+                0.410711669921875,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t43099_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.919,
+              "detection_confidence": 0.919,
+              "quality": {
+                "blur": 1655.2,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0007_t43099_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5909839153289795,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t43099_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.573,
+              "detection_confidence": 0.573,
+              "quality": {
+                "blur": 1639.3,
+                "pose": null
+              }
+            }
+          ],
+          "43519": [
+            {
+              "crop_id": "c_shot_0007_t43519_0",
+              "bbox_norm": [
+                0.5585155010223388,
+                0.0,
+                0.41037783622741697,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t43519_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.918,
+              "detection_confidence": 0.918,
+              "quality": {
+                "blur": 1658.4,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0007_t43519_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5607838153839111,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t43519_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.664,
+              "detection_confidence": 0.664,
+              "quality": {
+                "blur": 1685.5,
+                "pose": null
+              }
+            }
+          ],
+          "43939": [
+            {
+              "crop_id": "c_shot_0007_t43939_0",
+              "bbox_norm": [
+                0.5582376480102539,
+                0.0,
+                0.4106411933898926,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t43939_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.92,
+              "detection_confidence": 0.92,
+              "quality": {
+                "blur": 1659.2,
+                "pose": null
+              }
+            }
+          ],
+          "44359": [
+            {
+              "crop_id": "c_shot_0007_t44359_0",
+              "bbox_norm": [
+                0.5580044269561768,
+                0.0,
+                0.4110283374786377,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t44359_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.924,
+              "detection_confidence": 0.924,
+              "quality": {
+                "blur": 1625.4,
+                "pose": null
+              }
+            }
+          ],
+          "44779": [
+            {
+              "crop_id": "c_shot_0007_t44779_0",
+              "bbox_norm": [
+                0.4391776084899902,
+                0.0,
+                0.5448942184448242,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t44779_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.915,
+              "detection_confidence": 0.915,
+              "quality": {
+                "blur": 1050.7,
+                "pose": null
+              }
+            }
+          ],
+          "45199": [
+            {
+              "crop_id": "c_shot_0007_t45199_0",
+              "bbox_norm": [
+                0.45610866546630857,
+                0.0,
+                0.5208589553833007,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t45199_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.807,
+              "detection_confidence": 0.807,
+              "quality": {
+                "blur": 1459.2,
+                "pose": null
+              }
+            }
+          ],
+          "45619": [
+            {
+              "crop_id": "c_shot_0007_t45619_0",
+              "bbox_norm": [
+                0.4322070121765137,
+                0.0,
+                0.5631741523742676,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t45619_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.927,
+              "detection_confidence": 0.927,
+              "quality": {
+                "blur": 1152.5,
+                "pose": null
+              }
+            }
+          ],
+          "46039": [
+            {
+              "crop_id": "c_shot_0007_t46039_0",
+              "bbox_norm": [
+                0.5239205360412598,
+                0.0,
+                0.46509475708007814,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t46039_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.93,
+              "detection_confidence": 0.93,
+              "quality": {
+                "blur": 1410.4,
+                "pose": null
+              }
+            }
+          ],
+          "46459": [
+            {
+              "crop_id": "c_shot_0007_t46459_0",
+              "bbox_norm": [
+                0.52421875,
+                0.0,
+                0.4648012161254883,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t46459_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.928,
+              "detection_confidence": 0.928,
+              "quality": {
+                "blur": 1438.2,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0007_t46459_1",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5606845378875732,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0007_t46459_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.566,
+              "detection_confidence": 0.566,
+              "quality": {
+                "blur": 1839.4,
+                "pose": null
+              }
+            }
+          ]
+        }
+      },
+      {
+        "shot_id": "shot_0008",
+        "keyframes_ms": [
+          46862,
+          47282,
+          47702,
+          48122,
+          48542,
+          48962,
+          49382,
+          49802,
+          50222,
+          50642,
+          51062,
+          51482,
+          51902,
+          52322,
+          52742,
+          53162,
+          53582,
+          54002,
+          54422
+        ],
+        "crops": {
+          "46862": [
+            {
+              "crop_id": "c_shot_0008_t46862_0",
+              "bbox_norm": [
+                0.5432108879089356,
+                0.0,
+                0.42519388198852537,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t46862_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.922,
+              "detection_confidence": 0.922,
+              "quality": {
+                "blur": 1136.8,
+                "pose": null
+              }
+            }
+          ],
+          "47282": [
+            {
+              "crop_id": "c_shot_0008_t47282_0",
+              "bbox_norm": [
+                0.025928995013236998,
+                0.0,
+                0.3498961001634598,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t47282_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.924,
+              "detection_confidence": 0.924,
+              "quality": {
+                "blur": 1465.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t47282_1",
+              "bbox_norm": [
+                0.3302354574203491,
+                0.0,
+                0.5449894189834594,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t47282_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.786,
+              "detection_confidence": 0.786,
+              "quality": {
+                "blur": 1708.2,
+                "pose": null
+              }
+            }
+          ],
+          "47702": [
+            {
+              "crop_id": "c_shot_0008_t47702_0",
+              "bbox_norm": [
+                0.025884777307510376,
+                0.005298105875651041,
+                0.3508037269115448,
+                0.994701894124349
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t47702_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.927,
+              "detection_confidence": 0.927,
+              "quality": {
+                "blur": 1388.2,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t47702_1",
+              "bbox_norm": [
+                0.3259763240814209,
+                0.0,
+                0.5669478893280029,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t47702_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.838,
+              "detection_confidence": 0.838,
+              "quality": {
+                "blur": 1268.4,
+                "pose": null
+              }
+            }
+          ],
+          "48122": [
+            {
+              "crop_id": "c_shot_0008_t48122_0",
+              "bbox_norm": [
+                0.026173928380012514,
+                0.0,
+                0.350238510966301,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t48122_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.924,
+              "detection_confidence": 0.924,
+              "quality": {
+                "blur": 1442.7,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t48122_1",
+              "bbox_norm": [
+                0.3243460416793823,
+                0.0,
+                0.5549736261367798,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t48122_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.799,
+              "detection_confidence": 0.799,
+              "quality": {
+                "blur": 1377.1,
+                "pose": null
+              }
+            }
+          ],
+          "48542": [
+            {
+              "crop_id": "c_shot_0008_t48542_0",
+              "bbox_norm": [
+                0.026094862818717958,
+                0.0,
+                0.3503820687532425,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t48542_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.925,
+              "detection_confidence": 0.925,
+              "quality": {
+                "blur": 1483.2,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t48542_1",
+              "bbox_norm": [
+                0.3246369123458862,
+                0.0,
+                0.5547374010086059,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t48542_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.83,
+              "detection_confidence": 0.83,
+              "quality": {
+                "blur": 1594.7,
+                "pose": null
+              }
+            }
+          ],
+          "48962": [
+            {
+              "crop_id": "c_shot_0008_t48962_0",
+              "bbox_norm": [
+                0.026123127341270445,
+                0.0,
+                0.3503523260354996,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t48962_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.926,
+              "detection_confidence": 0.926,
+              "quality": {
+                "blur": 1484.4,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t48962_1",
+              "bbox_norm": [
+                0.32587196826934817,
+                0.0,
+                0.5622195959091186,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t48962_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.871,
+              "detection_confidence": 0.871,
+              "quality": {
+                "blur": 1047.1,
+                "pose": null
+              }
+            }
+          ],
+          "49382": [
+            {
+              "crop_id": "c_shot_0008_t49382_0",
+              "bbox_norm": [
+                0.026056715846061708,
+                0.0,
+                0.3504390984773636,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t49382_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.925,
+              "detection_confidence": 0.925,
+              "quality": {
+                "blur": 1476.4,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t49382_1",
+              "bbox_norm": [
+                0.32695298194885253,
+                0.0,
+                0.5621331691741943,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t49382_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.823,
+              "detection_confidence": 0.823,
+              "quality": {
+                "blur": 1227.1,
+                "pose": null
+              }
+            }
+          ],
+          "49802": [
+            {
+              "crop_id": "c_shot_0008_t49802_0",
+              "bbox_norm": [
+                0.02018505334854126,
+                0.01314438713921441,
+                0.40966981649398804,
+                0.9868556128607856
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t49802_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.901,
+              "detection_confidence": 0.901,
+              "quality": {
+                "blur": 1090.9,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t49802_1",
+              "bbox_norm": [
+                0.2458118438720703,
+                0.0,
+                0.6282089233398438,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t49802_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.646,
+              "detection_confidence": 0.646,
+              "quality": {
+                "blur": 1593.8,
+                "pose": null
+              }
+            }
+          ],
+          "50222": [
+            {
+              "crop_id": "c_shot_0008_t50222_0",
+              "bbox_norm": [
+                0.021701687574386598,
+                0.0,
+                0.41355441212654115,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t50222_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.896,
+              "detection_confidence": 0.896,
+              "quality": {
+                "blur": 1409.8,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t50222_1",
+              "bbox_norm": [
+                0.32675981521606445,
+                0.0,
+                0.5657003402709961,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t50222_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.813,
+              "detection_confidence": 0.813,
+              "quality": {
+                "blur": 1660.9,
+                "pose": null
+              }
+            }
+          ],
+          "50642": [
+            {
+              "crop_id": "c_shot_0008_t50642_0",
+              "bbox_norm": [
+                0.02170870900154114,
+                0.0,
+                0.410181587934494,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t50642_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.942,
+              "detection_confidence": 0.942,
+              "quality": {
+                "blur": 1219.6,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t50642_1",
+              "bbox_norm": [
+                0.32663569450378416,
+                0.0,
+                0.5650269031524658,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t50642_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.822,
+              "detection_confidence": 0.822,
+              "quality": {
+                "blur": 1559.6,
+                "pose": null
+              }
+            }
+          ],
+          "51062": [
+            {
+              "crop_id": "c_shot_0008_t51062_0",
+              "bbox_norm": [
+                0.028698036074638368,
+                0.002023654513888889,
+                0.353066685795784,
+                0.9979763454861111
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t51062_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.931,
+              "detection_confidence": 0.931,
+              "quality": {
+                "blur": 1147.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t51062_1",
+              "bbox_norm": [
+                0.3264819860458374,
+                0.0,
+                0.5654194116592407,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t51062_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.811,
+              "detection_confidence": 0.811,
+              "quality": {
+                "blur": 1557.7,
+                "pose": null
+              }
+            }
+          ],
+          "51482": [
+            {
+              "crop_id": "c_shot_0008_t51482_0",
+              "bbox_norm": [
+                0.029535293579101562,
+                0.0,
+                0.35146136283874513,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t51482_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.931,
+              "detection_confidence": 0.931,
+              "quality": {
+                "blur": 1271.3,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t51482_1",
+              "bbox_norm": [
+                0.3264850854873657,
+                0.0,
+                0.5652799367904663,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t51482_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.813,
+              "detection_confidence": 0.813,
+              "quality": {
+                "blur": 1558.7,
+                "pose": null
+              }
+            }
+          ],
+          "51902": [
+            {
+              "crop_id": "c_shot_0008_t51902_0",
+              "bbox_norm": [
+                0.028605732321739196,
+                0.01163996590508355,
+                0.3523519665002823,
+                0.9883600340949165
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t51902_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.932,
+              "detection_confidence": 0.932,
+              "quality": {
+                "blur": 1018.3,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t51902_1",
+              "bbox_norm": [
+                0.3301816940307617,
+                0.0,
+                0.5457082748413086,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t51902_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.781,
+              "detection_confidence": 0.781,
+              "quality": {
+                "blur": 1077.2,
+                "pose": null
+              }
+            }
+          ],
+          "52322": [
+            {
+              "crop_id": "c_shot_0008_t52322_0",
+              "bbox_norm": [
+                0.026023462414741516,
+                0.0,
+                0.3519438236951828,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t52322_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.928,
+              "detection_confidence": 0.928,
+              "quality": {
+                "blur": 1202.1,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t52322_1",
+              "bbox_norm": [
+                0.32955496311187743,
+                0.0,
+                0.5495985746383667,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t52322_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.802,
+              "detection_confidence": 0.802,
+              "quality": {
+                "blur": 1293.7,
+                "pose": null
+              }
+            }
+          ],
+          "52742": [
+            {
+              "crop_id": "c_shot_0008_t52742_0",
+              "bbox_norm": [
+                0.026148477196693422,
+                0.0,
+                0.3514451116323471,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t52742_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.931,
+              "detection_confidence": 0.931,
+              "quality": {
+                "blur": 1322.8,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t52742_1",
+              "bbox_norm": [
+                0.327756404876709,
+                0.0,
+                0.5622906684875488,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t52742_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.821,
+              "detection_confidence": 0.821,
+              "quality": {
+                "blur": 1513.9,
+                "pose": null
+              }
+            }
+          ],
+          "53162": [
+            {
+              "crop_id": "c_shot_0008_t53162_0",
+              "bbox_norm": [
+                0.0261445552110672,
+                0.0,
+                0.35155887305736544,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t53162_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.931,
+              "detection_confidence": 0.931,
+              "quality": {
+                "blur": 1330.1,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t53162_1",
+              "bbox_norm": [
+                0.32975144386291505,
+                0.0,
+                0.5368746280670166,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t53162_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.799,
+              "detection_confidence": 0.799,
+              "quality": {
+                "blur": 710.8,
+                "pose": null
+              }
+            }
+          ],
+          "53582": [
+            {
+              "crop_id": "c_shot_0008_t53582_0",
+              "bbox_norm": [
+                0.02591327726840973,
+                0.0,
+                0.3518449395895004,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t53582_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.929,
+              "detection_confidence": 0.929,
+              "quality": {
+                "blur": 1325.7,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t53582_1",
+              "bbox_norm": [
+                0.3391899824142456,
+                0.0,
+                0.525548768043518,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t53582_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.879,
+              "detection_confidence": 0.879,
+              "quality": {
+                "blur": 515.5,
+                "pose": null
+              }
+            }
+          ],
+          "54002": [
+            {
+              "crop_id": "c_shot_0008_t54002_0",
+              "bbox_norm": [
+                0.37214293479919436,
+                0.0,
+                0.5593480587005615,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t54002_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.949,
+              "detection_confidence": 0.949,
+              "quality": {
+                "blur": 743.3,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t54002_1",
+              "bbox_norm": [
+                0.015332099795341492,
+                0.00743467542860243,
+                0.37630381882190705,
+                0.9925653245713976
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t54002_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.931,
+              "detection_confidence": 0.931,
+              "quality": {
+                "blur": 938.8,
+                "pose": null
+              }
+            }
+          ],
+          "54422": [
+            {
+              "crop_id": "c_shot_0008_t54422_0",
+              "bbox_norm": [
+                0.4257210731506348,
+                0.0,
+                0.5742789268493652,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t54422_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.948,
+              "detection_confidence": 0.948,
+              "quality": {
+                "blur": 341.3,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0008_t54422_1",
+              "bbox_norm": [
+                0.009800657629966736,
+                0.022353469000922308,
+                0.33840562403202057,
+                0.9776465309990777
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0008_t54422_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.932,
+              "detection_confidence": 0.932,
+              "quality": {
+                "blur": 484.1,
+                "pose": null
+              }
+            }
+          ]
+        }
+      },
+      {
+        "shot_id": "shot_0009",
+        "keyframes_ms": [
+          54824,
+          55244,
+          55664,
+          56084,
+          56504,
+          56924,
+          57344,
+          57764,
+          58184,
+          58604,
+          59024,
+          59444,
+          59864,
+          60284,
+          60704,
+          61124,
+          61544,
+          61964,
+          62384
+        ],
+        "crops": {
+          "54824": [
+            {
+              "crop_id": "c_shot_0009_t54824_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.22200403213500977,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t54824_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.902,
+              "detection_confidence": 0.902,
+              "quality": {
+                "blur": 513.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t54824_1",
+              "bbox_norm": [
+                0.6090629577636719,
+                0.0,
+                0.39093704223632814,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t54824_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.871,
+              "detection_confidence": 0.871,
+              "quality": {
+                "blur": 337.8,
+                "pose": null
+              }
+            }
+          ],
+          "55244": [
+            {
+              "crop_id": "c_shot_0009_t55244_0",
+              "bbox_norm": [
+                0.025928995013236998,
+                0.0,
+                0.3498961001634598,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t55244_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.924,
+              "detection_confidence": 0.924,
+              "quality": {
+                "blur": 1465.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t55244_1",
+              "bbox_norm": [
+                0.3302354574203491,
+                0.0,
+                0.5449894189834594,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t55244_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.786,
+              "detection_confidence": 0.786,
+              "quality": {
+                "blur": 1708.2,
+                "pose": null
+              }
+            }
+          ],
+          "55664": [
+            {
+              "crop_id": "c_shot_0009_t55664_0",
+              "bbox_norm": [
+                0.025884777307510376,
+                0.005298105875651041,
+                0.3508037269115448,
+                0.994701894124349
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t55664_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.927,
+              "detection_confidence": 0.927,
+              "quality": {
+                "blur": 1388.2,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t55664_1",
+              "bbox_norm": [
+                0.3259763240814209,
+                0.0,
+                0.5669478893280029,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t55664_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.838,
+              "detection_confidence": 0.838,
+              "quality": {
+                "blur": 1268.4,
+                "pose": null
+              }
+            }
+          ],
+          "56084": [
+            {
+              "crop_id": "c_shot_0009_t56084_0",
+              "bbox_norm": [
+                0.026173928380012514,
+                0.0,
+                0.350238510966301,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t56084_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.924,
+              "detection_confidence": 0.924,
+              "quality": {
+                "blur": 1442.7,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t56084_1",
+              "bbox_norm": [
+                0.3243460416793823,
+                0.0,
+                0.5549736261367798,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t56084_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.799,
+              "detection_confidence": 0.799,
+              "quality": {
+                "blur": 1377.1,
+                "pose": null
+              }
+            }
+          ],
+          "56504": [
+            {
+              "crop_id": "c_shot_0009_t56504_0",
+              "bbox_norm": [
+                0.026094862818717958,
+                0.0,
+                0.3503820687532425,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t56504_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.925,
+              "detection_confidence": 0.925,
+              "quality": {
+                "blur": 1483.2,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t56504_1",
+              "bbox_norm": [
+                0.3246369123458862,
+                0.0,
+                0.5547374010086059,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t56504_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.83,
+              "detection_confidence": 0.83,
+              "quality": {
+                "blur": 1594.7,
+                "pose": null
+              }
+            }
+          ],
+          "56924": [
+            {
+              "crop_id": "c_shot_0009_t56924_0",
+              "bbox_norm": [
+                0.026123127341270445,
+                0.0,
+                0.3503523260354996,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t56924_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.926,
+              "detection_confidence": 0.926,
+              "quality": {
+                "blur": 1484.4,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t56924_1",
+              "bbox_norm": [
+                0.32587196826934817,
+                0.0,
+                0.5622195959091186,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t56924_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.871,
+              "detection_confidence": 0.871,
+              "quality": {
+                "blur": 1047.1,
+                "pose": null
+              }
+            }
+          ],
+          "57344": [
+            {
+              "crop_id": "c_shot_0009_t57344_0",
+              "bbox_norm": [
+                0.026056715846061708,
+                0.0,
+                0.3504390984773636,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t57344_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.925,
+              "detection_confidence": 0.925,
+              "quality": {
+                "blur": 1476.4,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t57344_1",
+              "bbox_norm": [
+                0.32695298194885253,
+                0.0,
+                0.5621331691741943,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t57344_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.823,
+              "detection_confidence": 0.823,
+              "quality": {
+                "blur": 1227.1,
+                "pose": null
+              }
+            }
+          ],
+          "57764": [
+            {
+              "crop_id": "c_shot_0009_t57764_0",
+              "bbox_norm": [
+                0.02018505334854126,
+                0.01314438713921441,
+                0.40966981649398804,
+                0.9868556128607856
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t57764_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.901,
+              "detection_confidence": 0.901,
+              "quality": {
+                "blur": 1090.9,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t57764_1",
+              "bbox_norm": [
+                0.2458118438720703,
+                0.0,
+                0.6282089233398438,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t57764_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.646,
+              "detection_confidence": 0.646,
+              "quality": {
+                "blur": 1593.8,
+                "pose": null
+              }
+            }
+          ],
+          "58184": [
+            {
+              "crop_id": "c_shot_0009_t58184_0",
+              "bbox_norm": [
+                0.021701687574386598,
+                0.0,
+                0.41355441212654115,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t58184_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.896,
+              "detection_confidence": 0.896,
+              "quality": {
+                "blur": 1409.8,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t58184_1",
+              "bbox_norm": [
+                0.32675981521606445,
+                0.0,
+                0.5657003402709961,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t58184_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.813,
+              "detection_confidence": 0.813,
+              "quality": {
+                "blur": 1660.9,
+                "pose": null
+              }
+            }
+          ],
+          "58604": [
+            {
+              "crop_id": "c_shot_0009_t58604_0",
+              "bbox_norm": [
+                0.02170870900154114,
+                0.0,
+                0.410181587934494,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t58604_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.942,
+              "detection_confidence": 0.942,
+              "quality": {
+                "blur": 1219.6,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t58604_1",
+              "bbox_norm": [
+                0.32663569450378416,
+                0.0,
+                0.5650269031524658,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t58604_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.822,
+              "detection_confidence": 0.822,
+              "quality": {
+                "blur": 1559.6,
+                "pose": null
+              }
+            }
+          ],
+          "59024": [
+            {
+              "crop_id": "c_shot_0009_t59024_0",
+              "bbox_norm": [
+                0.028698036074638368,
+                0.002023654513888889,
+                0.353066685795784,
+                0.9979763454861111
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t59024_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.931,
+              "detection_confidence": 0.931,
+              "quality": {
+                "blur": 1147.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t59024_1",
+              "bbox_norm": [
+                0.3264819860458374,
+                0.0,
+                0.5654194116592407,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t59024_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.811,
+              "detection_confidence": 0.811,
+              "quality": {
+                "blur": 1557.7,
+                "pose": null
+              }
+            }
+          ],
+          "59444": [
+            {
+              "crop_id": "c_shot_0009_t59444_0",
+              "bbox_norm": [
+                0.029535293579101562,
+                0.0,
+                0.35146136283874513,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t59444_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.931,
+              "detection_confidence": 0.931,
+              "quality": {
+                "blur": 1271.3,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t59444_1",
+              "bbox_norm": [
+                0.3264850854873657,
+                0.0,
+                0.5652799367904663,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t59444_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.813,
+              "detection_confidence": 0.813,
+              "quality": {
+                "blur": 1558.7,
+                "pose": null
+              }
+            }
+          ],
+          "59864": [
+            {
+              "crop_id": "c_shot_0009_t59864_0",
+              "bbox_norm": [
+                0.028605732321739196,
+                0.01163996590508355,
+                0.3523519665002823,
+                0.9883600340949165
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t59864_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.932,
+              "detection_confidence": 0.932,
+              "quality": {
+                "blur": 1018.3,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t59864_1",
+              "bbox_norm": [
+                0.3301816940307617,
+                0.0,
+                0.5457082748413086,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t59864_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.781,
+              "detection_confidence": 0.781,
+              "quality": {
+                "blur": 1077.2,
+                "pose": null
+              }
+            }
+          ],
+          "60284": [
+            {
+              "crop_id": "c_shot_0009_t60284_0",
+              "bbox_norm": [
+                0.026023462414741516,
+                0.0,
+                0.3519438236951828,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t60284_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.928,
+              "detection_confidence": 0.928,
+              "quality": {
+                "blur": 1202.1,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t60284_1",
+              "bbox_norm": [
+                0.32955496311187743,
+                0.0,
+                0.5495985746383667,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t60284_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.802,
+              "detection_confidence": 0.802,
+              "quality": {
+                "blur": 1293.7,
+                "pose": null
+              }
+            }
+          ],
+          "60704": [
+            {
+              "crop_id": "c_shot_0009_t60704_0",
+              "bbox_norm": [
+                0.026148477196693422,
+                0.0,
+                0.3514451116323471,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t60704_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.931,
+              "detection_confidence": 0.931,
+              "quality": {
+                "blur": 1322.8,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t60704_1",
+              "bbox_norm": [
+                0.327756404876709,
+                0.0,
+                0.5622906684875488,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t60704_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.821,
+              "detection_confidence": 0.821,
+              "quality": {
+                "blur": 1513.9,
+                "pose": null
+              }
+            }
+          ],
+          "61124": [
+            {
+              "crop_id": "c_shot_0009_t61124_0",
+              "bbox_norm": [
+                0.0261445552110672,
+                0.0,
+                0.35155887305736544,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t61124_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.931,
+              "detection_confidence": 0.931,
+              "quality": {
+                "blur": 1330.1,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t61124_1",
+              "bbox_norm": [
+                0.32975144386291505,
+                0.0,
+                0.5368746280670166,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t61124_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.799,
+              "detection_confidence": 0.799,
+              "quality": {
+                "blur": 710.8,
+                "pose": null
+              }
+            }
+          ],
+          "61544": [
+            {
+              "crop_id": "c_shot_0009_t61544_0",
+              "bbox_norm": [
+                0.02591327726840973,
+                0.0,
+                0.3518449395895004,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t61544_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.929,
+              "detection_confidence": 0.929,
+              "quality": {
+                "blur": 1325.7,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t61544_1",
+              "bbox_norm": [
+                0.3391899824142456,
+                0.0,
+                0.525548768043518,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t61544_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.879,
+              "detection_confidence": 0.879,
+              "quality": {
+                "blur": 515.5,
+                "pose": null
+              }
+            }
+          ],
+          "61964": [
+            {
+              "crop_id": "c_shot_0009_t61964_0",
+              "bbox_norm": [
+                0.37214293479919436,
+                0.0,
+                0.5593480587005615,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t61964_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.949,
+              "detection_confidence": 0.949,
+              "quality": {
+                "blur": 743.3,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t61964_1",
+              "bbox_norm": [
+                0.015332099795341492,
+                0.00743467542860243,
+                0.37630381882190705,
+                0.9925653245713976
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t61964_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.931,
+              "detection_confidence": 0.931,
+              "quality": {
+                "blur": 938.8,
+                "pose": null
+              }
+            }
+          ],
+          "62384": [
+            {
+              "crop_id": "c_shot_0009_t62384_0",
+              "bbox_norm": [
+                0.4257210731506348,
+                0.0,
+                0.5742789268493652,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t62384_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.948,
+              "detection_confidence": 0.948,
+              "quality": {
+                "blur": 341.3,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0009_t62384_1",
+              "bbox_norm": [
+                0.009800657629966736,
+                0.022353469000922308,
+                0.33840562403202057,
+                0.9776465309990777
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0009_t62384_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.932,
+              "detection_confidence": 0.932,
+              "quality": {
+                "blur": 484.1,
+                "pose": null
+              }
+            }
+          ]
+        }
+      },
+      {
+        "shot_id": "shot_0010",
+        "keyframes_ms": [
+          62787,
+          63207,
+          63627,
+          64047,
+          64467,
+          64887,
+          65307,
+          65727,
+          66147,
+          66567
+        ],
+        "crops": {
+          "62787": [
+            {
+              "crop_id": "c_shot_0010_t62787_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.22200403213500977,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0010_t62787_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.902,
+              "detection_confidence": 0.902,
+              "quality": {
+                "blur": 513.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0010_t62787_1",
+              "bbox_norm": [
+                0.6090629577636719,
+                0.0,
+                0.39093704223632814,
+                1.0
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0010_t62787_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.871,
+              "detection_confidence": 0.871,
+              "quality": {
+                "blur": 337.8,
+                "pose": null
+              }
+            }
+          ],
+          "63207": [
+            {
+              "crop_id": "c_shot_0010_t63207_0",
+              "bbox_norm": [
+                0.7648788452148437,
+                0.18551758660210504,
+                0.23512115478515624,
+                0.814482413397895
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0010_t63207_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.903,
+              "detection_confidence": 0.903,
+              "quality": {
+                "blur": 14.6,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0010_t63207_1",
+              "bbox_norm": [
+                0.627177095413208,
+                0.179271486070421,
+                0.197752046585083,
+                0.820728513929579
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0010_t63207_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.793,
+              "detection_confidence": 0.793,
+              "quality": {
+                "blur": 582.1,
+                "pose": null
+              }
+            }
+          ],
+          "63627": [
+            {
+              "crop_id": "c_shot_0010_t63627_0",
+              "bbox_norm": [
+                0.7614567279815674,
+                0.20468485090467664,
+                0.17245268821716309,
+                0.7953151490953233
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0010_t63627_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.897,
+              "detection_confidence": 0.897,
+              "quality": {
+                "blur": 13.9,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0010_t63627_1",
+              "bbox_norm": [
+                0.6088514924049377,
+                0.25903773307800293,
+                0.171607106924057,
+                0.5671692490577698
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0010_t63627_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.644,
+              "detection_confidence": 0.644,
+              "quality": {
+                "blur": 740.7,
+                "pose": null
+              }
+            }
+          ],
+          "64047": [
+            {
+              "crop_id": "c_shot_0010_t64047_0",
+              "bbox_norm": [
+                0.7148891925811768,
+                0.2516837649875217,
+                0.15296492576599122,
+                0.7483162350124783
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0010_t64047_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.836,
+              "detection_confidence": 0.836,
+              "quality": {
+                "blur": 170.0,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0010_t64047_1",
+              "bbox_norm": [
+                0.5928808450698853,
+                0.3334469497203827,
+                0.12484721839427948,
+                0.280545711517334
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0010_t64047_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.811,
+              "detection_confidence": 0.811,
+              "quality": {
+                "blur": 1020.2,
+                "pose": null
+              }
+            }
+          ],
+          "64467": [
+            {
+              "crop_id": "c_shot_0010_t64467_0",
+              "bbox_norm": [
+                0.6801644325256347,
+                0.2866353988647461,
+                0.13878555297851564,
+                0.7133646011352539
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0010_t64467_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.819,
+              "detection_confidence": 0.819,
+              "quality": {
+                "blur": 420.4,
+                "pose": null
+              }
+            },
+            {
+              "crop_id": "c_shot_0010_t64467_1",
+              "bbox_norm": [
+                0.5821226835250854,
+                0.34729698300361633,
+                0.0959661453962326,
+                0.2369682490825653
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0010_t64467_1.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.676,
+              "detection_confidence": 0.676,
+              "quality": {
+                "blur": 907.7,
+                "pose": null
+              }
+            }
+          ],
+          "64887": [
+            {
+              "crop_id": "c_shot_0010_t64887_0",
+              "bbox_norm": [
+                0.6575209498405457,
+                0.3503909707069397,
+                0.11590919643640518,
+                0.4230667054653168
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0010_t64887_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.703,
+              "detection_confidence": 0.703,
+              "quality": {
+                "blur": 879.6,
+                "pose": null
+              }
+            }
+          ],
+          "65307": [
+            {
+              "crop_id": "c_shot_0010_t65307_0",
+              "bbox_norm": [
+                0.6357563734054565,
+                0.37301647663116455,
+                0.10370703041553497,
+                0.2804918885231018
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0010_t65307_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.729,
+              "detection_confidence": 0.729,
+              "quality": {
+                "blur": 1031.3,
+                "pose": null
+              }
+            }
+          ],
+          "65727": [
+            {
+              "crop_id": "c_shot_0010_t65727_0",
+              "bbox_norm": [
+                0.6248883008956909,
+                0.40223291516304016,
+                0.08753518760204315,
+                0.20491985976696014
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0010_t65727_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.795,
+              "detection_confidence": 0.795,
+              "quality": {
+                "blur": 1241.4,
+                "pose": null
+              }
+            }
+          ],
+          "66147": [
+            {
+              "crop_id": "c_shot_0010_t66147_0",
+              "bbox_norm": [
+                0.6124460101127625,
+                0.41690683364868164,
+                0.07261619716882706,
+                0.16521690785884857
+              ],
+              "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJWeIlJbKBar5VgbU7/c_shot_0010_t66147_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.587,
+              "detection_confidence": 0.587,
+              "quality": {
+                "blur": 1178.6,
+                "pose": null
+              }
+            }
+          ],
+          "66567": []
+        }
+      }
+    ],
+    "job_id": "job_2025_08_22_809"
+  }
+]

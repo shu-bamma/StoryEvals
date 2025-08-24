@@ -41,7 +41,22 @@ class ImageProcessor:
                 logger.warning("Using default font - custom font not available")
 
     def _download_image(self, url: str, timeout: int = 30) -> Image.Image | None:
-        """Download image from URL with retry logic"""
+        """Download image from URL or load from local file with retry logic"""
+        
+        # Handle local file URLs
+        if url.startswith('file://'):
+            try:
+                local_path = url.replace('file://', '')
+                if os.path.exists(local_path):
+                    return Image.open(local_path)
+                else:
+                    logger.error(f"Local file not found: {local_path}")
+                    return None
+            except Exception as e:
+                logger.error(f"Failed to load local image {url}: {e}")
+                return None
+        
+        # Handle remote URLs (existing logic)
         for attempt in range(3):
             try:
                 response = requests.get(url, timeout=timeout)

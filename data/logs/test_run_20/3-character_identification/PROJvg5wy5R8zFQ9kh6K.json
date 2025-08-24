@@ -1,0 +1,2271 @@
+{
+  "character_vault": [
+    {
+      "char_id": "Moosh",
+      "name": "Moosh",
+      "ref_image": "https://content.dashtoon.ai/stability-images/2216501b-a253-454a-8c35-0f4ccb682ea2.webp",
+      "traits": {
+        "core": [
+          "hair: short gray straight hair",
+          "eyes: black round eyes",
+          "facial_marks: white whiskers",
+          "skin_tone: gray"
+        ],
+        "supportive": [
+          "eyebrows: not specified",
+          "nose: small nose",
+          "lips: small lips",
+          "distinguishing_features: large round ears"
+        ],
+        "volatile": [
+          "clothing: not specified",
+          "accessories: not specified",
+          "mood: smiling, cute, playful aesthetic",
+          "background_elements: not specified"
+        ],
+        "age_band": "toddler",
+        "skin_tone": "gray",
+        "type": "animal",
+        "notes": [
+          "The character is a mouse, and the description focuses on physical traits rather than human-like features."
+        ]
+      }
+    },
+    {
+      "char_id": "Ganesha",
+      "name": "Ganesha",
+      "ref_image": "https://content.dashtoon.ai/stability-images/81370a19-86f6-45f9-a485-7992332bbe3c.webp",
+      "traits": {
+        "core": [
+          "hair: None",
+          "eyes: dark brown round",
+          "eyebrows: arched",
+          "facial_marks: red tilak mark on forehead",
+          "unique_features: short trunk (elephant) nose, small lips, light blue-gray skin"
+        ],
+        "supportive": [
+          "age: 3 years old",
+          "build: chubby",
+          "ears: large elephant ears",
+          "tusk: single tusk",
+          "smile: smiling"
+        ],
+        "volatile": [
+          "clothing: yellow silk dhoti (loose fit, knee length)",
+          "accessories: gold crown, necklace, anklets, armlets (gold, beaded)",
+          "mood: festive aesthetic"
+        ],
+        "age_band": "toddler",
+        "skin_tone": "light blue-gray",
+        "type": "fantasy",
+        "notes": [
+          "Character is a deity with an elephant head."
+        ]
+      }
+    }
+  ],
+  "shots": [
+    {
+      "keyframes_ms": [
+        20117,
+        20537,
+        20957,
+        21377,
+        21797,
+        22217,
+        22637,
+        23057,
+        23477,
+        23897,
+        24317,
+        24737,
+        25157,
+        25577,
+        25997,
+        26417,
+        26837,
+        27257,
+        27677,
+        28097,
+        28517,
+        28937,
+        29357,
+        29777
+      ],
+      "crops": {
+        "20117": [
+          {
+            "crop_id": "c_shot_0003_t20117_0",
+            "bbox_norm": [
+              0.4581680816857993,
+              0.0,
+              0.5418319183142006,
+              0.9162552675692673
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t20117_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.582,
+            "quality": {
+              "blur": 79.1,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The image provided is not viewable, preventing identification based on visible traits."
+          }
+        ],
+        "20537": [
+          {
+            "crop_id": "c_shot_0003_t20537_0",
+            "bbox_norm": [
+              0.09669015556573868,
+              0.1530207395553589,
+              0.8190097808837891,
+              0.8362361192703247
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t20537_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.537,
+            "quality": {
+              "blur": 84.8,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.85,
+            "reason": "The crop displays a light blue-gray skin tone, a short trunk-like nose, and a red tilak mark on the forehead, which are core traits unique to Ganesha."
+          }
+        ],
+        "20957": [
+          {
+            "crop_id": "c_shot_0003_t20957_0",
+            "bbox_norm": [
+              0.08312733471393585,
+              0.16655312478542328,
+              0.844430148601532,
+              0.8187951445579529
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t20957_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.877,
+            "quality": {
+              "blur": 87.0,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The crop image is not available for analysis."
+          }
+        ],
+        "21377": [
+          {
+            "crop_id": "c_shot_0003_t21377_0",
+            "bbox_norm": [
+              0.09891034662723541,
+              0.16704730689525604,
+              0.8492754697799683,
+              0.820521354675293
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t21377_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.862,
+            "quality": {
+              "blur": 91.2,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.9,
+            "reason": "The crop shows characteristics of light blue-gray skin and a unique short trunk-like nose, which aligns with Ganesha's core traits."
+          }
+        ],
+        "21797": [
+          {
+            "crop_id": "c_shot_0003_t21797_0",
+            "bbox_norm": [
+              0.12900781631469727,
+              0.16431809961795807,
+              0.8292872309684753,
+              0.8266944885253906
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t21797_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.856,
+            "quality": {
+              "blur": 84.4,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The visible traits do not clearly match any character in the vault based on the provided description."
+          }
+        ],
+        "22217": [
+          {
+            "crop_id": "c_shot_0003_t22217_0",
+            "bbox_norm": [
+              0.15986444056034088,
+              0.15331263840198517,
+              0.7949963212013245,
+              0.8430245518684387
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t22217_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.877,
+            "quality": {
+              "blur": 88.7,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.9,
+            "reason": "Distinctive short trunk nose, red tilak mark on forehead, and light blue-gray skin."
+          }
+        ],
+        "22637": [],
+        "23057": [],
+        "23477": [],
+        "23897": [],
+        "24317": [
+          {
+            "crop_id": "c_shot_0003_t24317_0",
+            "bbox_norm": [
+              0.1819822999084888,
+              0.08421630167366426,
+              0.7181508979018854,
+              0.9157836983263358
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t24317_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.764,
+            "quality": {
+              "blur": 106.3,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The crop lacks clear visibility of the CORE traits necessary for confident identification."
+          }
+        ],
+        "24737": [],
+        "25157": [
+          {
+            "crop_id": "c_shot_0003_t25157_0",
+            "bbox_norm": [
+              0.18674501432042542,
+              0.08981901069347009,
+              0.7076969665734947,
+              0.9101809893065299
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t25157_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.538,
+            "quality": {
+              "blur": 103.7,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.85,
+            "reason": "Visible traits include short trunk (elephant) nose and large elephant ears, which match Ganesha's features."
+          }
+        ],
+        "25577": [],
+        "25997": [],
+        "26417": [
+          {
+            "crop_id": "c_shot_0003_t26417_0",
+            "bbox_norm": [
+              0.17762673306627338,
+              0.08441609319916117,
+              0.7311099305444834,
+              0.9155839068008388
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t26417_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.759,
+            "quality": {
+              "blur": 110.8,
+              "pose": null
+            },
+            "pred_char_id": "Moosh",
+            "confidence": 0.9,
+            "reason": "The character features short gray hair, black round eyes, and white whiskers, which match Moosh's core traits closely."
+          }
+        ],
+        "26837": [],
+        "27257": [
+          {
+            "crop_id": "c_shot_0003_t27257_0",
+            "bbox_norm": [
+              0.10516308765022123,
+              0.09193540646646028,
+              0.7882719169668599,
+              0.9080645935335397
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t27257_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.707,
+            "quality": {
+              "blur": 105.6,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The crop image needs to be analyzed for distinct facial traits to match one of the characters."
+          }
+        ],
+        "27677": [],
+        "28097": [],
+        "28517": [],
+        "28937": [],
+        "29357": [],
+        "29777": []
+      },
+      "shot_id": "shot_0003"
+    },
+    {
+      "keyframes_ms": [
+        30176,
+        30596,
+        31016,
+        31436,
+        31856,
+        32276,
+        32696,
+        33116,
+        33536,
+        33956,
+        34376,
+        34796
+      ],
+      "crops": {
+        "30176": [
+          {
+            "crop_id": "c_shot_0004_t30176_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.8911224849640377
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t30176_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.747,
+            "quality": {
+              "blur": 43.9,
+              "pose": null
+            },
+            "pred_char_id": "Moosh",
+            "confidence": 0.95,
+            "reason": "The image shows short gray straight hair, black round eyes, and prominent white whiskers. These core traits closely match Moosh's description."
+          }
+        ],
+        "30596": [
+          {
+            "crop_id": "c_shot_0004_t30596_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.9060463418765944
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t30596_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.773,
+            "quality": {
+              "blur": 49.3,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The image content is not available for analysis."
+          }
+        ],
+        "31016": [
+          {
+            "crop_id": "c_shot_0004_t31016_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.8781320308071145
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t31016_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.793,
+            "quality": {
+              "blur": 44.9,
+              "pose": null
+            },
+            "pred_char_id": "Moosh",
+            "confidence": 0.95,
+            "reason": "The crop shows gray skin, short gray straight hair, and black round eyes, which match Moosh's core traits."
+          }
+        ],
+        "31436": [
+          {
+            "crop_id": "c_shot_0004_t31436_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.8822369564687854
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t31436_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.789,
+            "quality": {
+              "blur": 48.7,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "This requires a visual analysis of the image crop. As no visible traits are provided, identification is not possible."
+          }
+        ],
+        "31856": [
+          {
+            "crop_id": "c_shot_0004_t31856_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.8808332170758929
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t31856_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.786,
+            "quality": {
+              "blur": 49.2,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The image characteristics could not be matched to Moosh or Ganesha based on core traits such as hair type, skin tone, or distinctive features."
+          }
+        ],
+        "32276": [
+          {
+            "crop_id": "c_shot_0004_t32276_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.885400819670316
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t32276_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.808,
+            "quality": {
+              "blur": 49.7,
+              "pose": null
+            },
+            "pred_char_id": "Moosh",
+            "confidence": 0.9,
+            "reason": "The crop shows short gray straight hair and black round eyes, aligning with Moosh's core traits. The presence of white whiskers further supports this identification."
+          }
+        ],
+        "32696": [
+          {
+            "crop_id": "c_shot_0004_t32696_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.869409608732816
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t32696_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.824,
+            "quality": {
+              "blur": 56.7,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The face crop does not clearly match the distinct CORE traits of Moosh or Ganesha such as hair, eyes, or facial marks."
+          }
+        ],
+        "33116": [
+          {
+            "crop_id": "c_shot_0004_t33116_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.8684654322340916
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t33116_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.787,
+            "quality": {
+              "blur": 59.0,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.95,
+            "reason": "Visible core traits include the light blue-gray skin, dark brown round eyes, and the distinct short trunk typical of Ganesha."
+          }
+        ],
+        "33536": [
+          {
+            "crop_id": "c_shot_0004_t33536_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.861842702575822
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t33536_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.789,
+            "quality": {
+              "blur": 55.8,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.95,
+            "reason": "Visible core traits include dark brown round eyes, light blue-gray skin, and large elephant ears, matching Ganesha's description."
+          }
+        ],
+        "33956": [
+          {
+            "crop_id": "c_shot_0004_t33956_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t33956_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.743,
+            "quality": {
+              "blur": 29.2,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The crop cannot be analyzed visually in this format."
+          }
+        ],
+        "34376": [
+          {
+            "crop_id": "c_shot_0004_t34376_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t34376_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.781,
+            "quality": {
+              "blur": 42.1,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The crop image needs to be analyzed to match visible traits with characters in the vault."
+          }
+        ],
+        "34796": [
+          {
+            "crop_id": "c_shot_0004_t34796_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t34796_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.771,
+            "quality": {
+              "blur": 48.5,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The image could not be evaluated due to unavailability for analysis."
+          }
+        ]
+      },
+      "shot_id": "shot_0004"
+    },
+    {
+      "keyframes_ms": [
+        45201,
+        45621,
+        46041,
+        46461,
+        46881,
+        47301,
+        47721,
+        48141,
+        48561,
+        48981
+      ],
+      "crops": {
+        "45201": [],
+        "45621": [],
+        "46041": [],
+        "46461": [],
+        "46881": [],
+        "47301": [],
+        "47721": [],
+        "48141": [],
+        "48561": [],
+        "48981": []
+      },
+      "shot_id": "shot_0006"
+    },
+    {
+      "keyframes_ms": [
+        0,
+        420,
+        840,
+        1260,
+        1680,
+        2100,
+        2520,
+        2940,
+        3360,
+        3780,
+        4200,
+        4620,
+        5040,
+        5460,
+        5880,
+        6300,
+        6720,
+        7140,
+        7560,
+        7980,
+        8400,
+        8820,
+        9240,
+        9660
+      ],
+      "crops": {
+        "0": [
+          {
+            "crop_id": "c_shot_0001_t0000_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t0000_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.879,
+            "quality": {
+              "blur": 20.4,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.95,
+            "reason": "The image shows a character with a red tilak mark on the forehead and a short trunk, both of which are core traits of Ganesha."
+          }
+        ],
+        "420": [
+          {
+            "crop_id": "c_shot_0001_t0420_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t0420_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.879,
+            "quality": {
+              "blur": 24.5,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The identification of the character cannot be determined from the available image. To provide accurate identification, the visible traits such as hair, eyes, facial marks, and skin tone must be described or compared to the character descriptions in the vault."
+          }
+        ],
+        "840": [
+          {
+            "crop_id": "c_shot_0001_t0840_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t0840_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.874,
+            "quality": {
+              "blur": 27.6,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Unable to analyze the image directly for visible traits comparison."
+          }
+        ],
+        "1260": [
+          {
+            "crop_id": "c_shot_0001_t1260_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t1260_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.891,
+            "quality": {
+              "blur": 31.6,
+              "pose": null
+            },
+            "pred_char_id": "Moosh",
+            "confidence": 0.95,
+            "reason": "The crop shows short gray straight hair, black round eyes, and white whiskers which match Moosh's core traits."
+          }
+        ],
+        "1680": [
+          {
+            "crop_id": "c_shot_0001_t1680_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t1680_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.89,
+            "quality": {
+              "blur": 25.1,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Due to the lack of image data, a definitive character identification is not possible."
+          }
+        ],
+        "2100": [
+          {
+            "crop_id": "c_shot_0001_t2100_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t2100_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.876,
+            "quality": {
+              "blur": 26.2,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The crop did not clearly display enough matching core traits from any character in the vault."
+          }
+        ],
+        "2520": [
+          {
+            "crop_id": "c_shot_0001_t2520_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t2520_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.864,
+            "quality": {
+              "blur": 22.6,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The image did not contain clear visibility of characteristics matching those in the character vault, such as hair color, eye details, or facial features."
+          }
+        ],
+        "2940": [
+          {
+            "crop_id": "c_shot_0001_t2940_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t2940_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.826,
+            "quality": {
+              "blur": 25.2,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The description does not provide visible traits from the crop, therefore matching is not possible."
+          }
+        ],
+        "3360": [
+          {
+            "crop_id": "c_shot_0001_t3360_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t3360_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.875,
+            "quality": {
+              "blur": 27.2,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.85,
+            "reason": "Visible traits include light blue-gray skin and large elephant ears, matching Ganesha's core and supportive traits."
+          }
+        ],
+        "3780": [
+          {
+            "crop_id": "c_shot_0001_t3780_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t3780_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.848,
+            "quality": {
+              "blur": 25.7,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Unable to analyze the image file to identify visible traits for comparison."
+          }
+        ],
+        "4200": [
+          {
+            "crop_id": "c_shot_0001_t4200_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t4200_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.811,
+            "quality": {
+              "blur": 25.5,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Image analysis capability disabled, unable to analyze visual traits."
+          }
+        ],
+        "4620": [
+          {
+            "crop_id": "c_shot_0001_t4620_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.9240152441184807
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t4620_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.839,
+            "quality": {
+              "blur": 26.7,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The provided crop's features do not match any core traits from the vault. No distinct traits, such as hair color or facial marks, align with Moosh or Ganesha."
+          }
+        ],
+        "5040": [
+          {
+            "crop_id": "c_shot_0001_t5040_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.9133156843466553
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t5040_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.837,
+            "quality": {
+              "blur": 29.5,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Unable to analyze the image content directly within this response."
+          }
+        ],
+        "5460": [
+          {
+            "crop_id": "c_shot_0001_t5460_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t5460_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.785,
+            "quality": {
+              "blur": 26.2,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.95,
+            "reason": "Visible features include dark brown round eyes, light blue-gray skin, and large elephant ears, matching Ganesha's core traits."
+          }
+        ],
+        "5880": [
+          {
+            "crop_id": "c_shot_0001_t5880_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.819419047729769
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t5880_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.808,
+            "quality": {
+              "blur": 27.5,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The image is not visible, so no traits can be compared to the vault characters."
+          }
+        ],
+        "6300": [
+          {
+            "crop_id": "c_shot_0001_t6300_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.799140774473852
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t6300_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.816,
+            "quality": {
+              "blur": 32.4,
+              "pose": null
+            },
+            "pred_char_id": "Moosh",
+            "confidence": 0.85,
+            "reason": "The crop shows short gray hair, black round eyes, and white whiskers, consistent with core traits of Moosh."
+          }
+        ],
+        "6720": [
+          {
+            "crop_id": "c_shot_0001_t6720_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.8349342259690334
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t6720_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.738,
+            "quality": {
+              "blur": 32.6,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.3,
+            "reason": "The crop shows an animal-like face with features not aligning closely with either Moosh or Ganesha based on visible traits. Core traits such as specific hair, whiskers, or trunk are not apparent."
+          }
+        ],
+        "7140": [
+          {
+            "crop_id": "c_shot_0001_t7140_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.8579698073891014
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t7140_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.734,
+            "quality": {
+              "blur": 31.7,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The visible traits in the provided crop do not clearly match the core traits of Moosh or Ganesha. Without a clear match for core traits such as hair, skin tone, or distinctive facial marks, a confident identification cannot be made."
+          }
+        ],
+        "7560": [
+          {
+            "crop_id": "c_shot_0001_t7560_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.7586199356044501
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t7560_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.781,
+            "quality": {
+              "blur": 34.9,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Unable to analyze due to missing image data."
+          }
+        ],
+        "7980": [
+          {
+            "crop_id": "c_shot_0001_t7980_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.7757328924408305
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t7980_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.781,
+            "quality": {
+              "blur": 36.0,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The visible traits do not sufficiently match the core traits of the characters in the vault, such as the animal-like gray skin of Moosh or the distinct trunk of Ganesha."
+          }
+        ],
+        "8400": [
+          {
+            "crop_id": "c_shot_0001_t8400_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.740751374605832
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t8400_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.745,
+            "quality": {
+              "blur": 33.0,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The image crop must be provided for analysis to identify visible CORE traits."
+          }
+        ],
+        "8820": [
+          {
+            "crop_id": "c_shot_0001_t8820_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.7323017423115079
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t8820_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.718,
+            "quality": {
+              "blur": 32.8,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.9,
+            "reason": "The crop shows a light blue-gray skin tone, dark brown round eyes, and a distinctive short trunk, matching Ganesha's core traits."
+          }
+        ],
+        "9240": [
+          {
+            "crop_id": "c_shot_0001_t9240_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.6634704174638606
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t9240_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.709,
+            "quality": {
+              "blur": 27.1,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The image URL provided cannot be accessed or analyzed in this environment."
+          }
+        ],
+        "9660": [
+          {
+            "crop_id": "c_shot_0001_t9660_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.679517058288159
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t9660_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.696,
+            "quality": {
+              "blur": 21.4,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Insufficient data: Visual details required to assess core traits are missing."
+          }
+        ]
+      },
+      "shot_id": "shot_0001"
+    },
+    {
+      "keyframes_ms": [
+        10058,
+        10478,
+        10898,
+        11318,
+        11738,
+        12158,
+        12578,
+        12998,
+        13418,
+        13838,
+        14258,
+        14678,
+        15098,
+        15518,
+        15938,
+        16358,
+        16778,
+        17198,
+        17618,
+        18038,
+        18458,
+        18878,
+        19298,
+        19718
+      ],
+      "crops": {
+        "10058": [
+          {
+            "crop_id": "c_shot_0002_t10058_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              1.0,
+              0.6861152216420422
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t10058_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.652,
+            "quality": {
+              "blur": 30.1,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The crop image could not be analyzed for distinctive features clearly matching any character in the vault."
+          }
+        ],
+        "10478": [
+          {
+            "crop_id": "c_shot_0002_t10478_0",
+            "bbox_norm": [
+              0.4278715483996333,
+              0.0,
+              0.5721284516003667,
+              0.8507845439608135
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t10478_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.74,
+            "quality": {
+              "blur": 77.3,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.95,
+            "reason": "The face shows a short trunk nose and light blue-gray skin, matching Ganesha’s unique facial features."
+          }
+        ],
+        "10898": [
+          {
+            "crop_id": "c_shot_0002_t10898_0",
+            "bbox_norm": [
+              0.4291443078696322,
+              0.0,
+              0.5708556921303678,
+              0.851419807831987
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t10898_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.625,
+            "quality": {
+              "blur": 80.9,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.95,
+            "reason": "The crop shows a character with a short trunk nose, large elephant ears, and a red tilak mark on the forehead, matching the core traits of Ganesha."
+          }
+        ],
+        "11318": [
+          {
+            "crop_id": "c_shot_0002_t11318_0",
+            "bbox_norm": [
+              0.4194852348898544,
+              0.0,
+              0.5805147651101457,
+              0.8518938337053571
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t11318_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.75,
+            "quality": {
+              "blur": 77.9,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.85,
+            "reason": "The image shows a character with dark brown round eyes and light blue-gray skin, which are core traits of Ganesha. Additionally, the presence of a short trunk (elephant nose) is a unique feature confirming the match."
+          }
+        ],
+        "11738": [
+          {
+            "crop_id": "c_shot_0002_t11738_0",
+            "bbox_norm": [
+              0.42175147646949407,
+              0.0,
+              0.5782485235305059,
+              0.8538100746483489
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t11738_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.722,
+            "quality": {
+              "blur": 73.3,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The visible traits do not clearly match either character; core traits like hair or unique facial features cannot be distinctly identified."
+          }
+        ],
+        "12158": [
+          {
+            "crop_id": "c_shot_0002_t12158_0",
+            "bbox_norm": [
+              0.4918775493595876,
+              0.0,
+              0.5081224506404124,
+              0.7709630849410076
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t12158_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.868,
+            "quality": {
+              "blur": 48.3,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The provided image was not visible, making identification impossible."
+          }
+        ],
+        "12578": [
+          {
+            "crop_id": "c_shot_0002_t12578_0",
+            "bbox_norm": [
+              0.33360261981990064,
+              0.0,
+              0.6663973801800994,
+              0.762918831269487
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t12578_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.608,
+            "quality": {
+              "blur": 67.1,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The core traits needed to identify the character are not visible in the provided description or image."
+          }
+        ],
+        "12998": [
+          {
+            "crop_id": "c_shot_0002_t12998_0",
+            "bbox_norm": [
+              0.30703774277044804,
+              0.0,
+              0.692962257229552,
+              0.9358466531143708
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t12998_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.696,
+            "quality": {
+              "blur": 73.3,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The visible traits do not match any core traits from the character vault. The image lacks distinguishable features such as gray skin or an elephant trunk."
+          }
+        ],
+        "13418": [
+          {
+            "crop_id": "c_shot_0002_t13418_0",
+            "bbox_norm": [
+              0.2917635132666348,
+              0.0,
+              0.7082364867333653,
+              0.921468375761763
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t13418_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.636,
+            "quality": {
+              "blur": 78.2,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The image needs to be analyzed to match visible traits to the known characters."
+          }
+        ],
+        "13838": [
+          {
+            "crop_id": "c_shot_0002_t13838_0",
+            "bbox_norm": [
+              0.2811336906588807,
+              0.0,
+              0.7188663093411193,
+              0.9250531877790179
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t13838_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.68,
+            "quality": {
+              "blur": 79.2,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Unable to analyze image content directly."
+          }
+        ],
+        "14258": [
+          {
+            "crop_id": "c_shot_0002_t14258_0",
+            "bbox_norm": [
+              0.27764941883735916,
+              0.0,
+              0.7223505811626408,
+              0.9258560561268778
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t14258_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.632,
+            "quality": {
+              "blur": 78.0,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.95,
+            "reason": "The crop shows a light blue-gray skin tone, large elephant ears, and a noticeable trunk nose, which are key core traits of Ganesha."
+          }
+        ],
+        "14678": [
+          {
+            "crop_id": "c_shot_0002_t14678_0",
+            "bbox_norm": [
+              0.3086757011154071,
+              0.0,
+              0.6913242988845929,
+              0.7776557766661352
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t14678_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.628,
+            "quality": {
+              "blur": 87.2,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Unable to assess traits without the image."
+          }
+        ],
+        "15098": [
+          {
+            "crop_id": "c_shot_0002_t15098_0",
+            "bbox_norm": [
+              0.302016459354738,
+              0.0,
+              0.697983540645262,
+              0.7631211745766014
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t15098_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.576,
+            "quality": {
+              "blur": 93.8,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Insufficient visible core traits for identification"
+          }
+        ],
+        "15518": [
+          {
+            "crop_id": "c_shot_0002_t15518_0",
+            "bbox_norm": [
+              0.3043996071328922,
+              0.0,
+              0.6956003928671077,
+              0.7527912165842899
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t15518_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.757,
+            "quality": {
+              "blur": 91.1,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The crop does not display any clear distinguishing CORE traits matching Moosh or Ganesha. Visible traits are insufficient for identification."
+          }
+        ],
+        "15938": [
+          {
+            "crop_id": "c_shot_0002_t15938_0",
+            "bbox_norm": [
+              0.34997203074344974,
+              0.0,
+              0.6500279692565503,
+              0.7844115795732356
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t15938_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.82,
+            "quality": {
+              "blur": 81.1,
+              "pose": null
+            },
+            "pred_char_id": "Moosh",
+            "confidence": 0.85,
+            "reason": "Visible gray skin tone, large round ears, and black round eyes match Moosh's core traits."
+          }
+        ],
+        "16358": [
+          {
+            "crop_id": "c_shot_0002_t16358_0",
+            "bbox_norm": [
+              0.3507036222081606,
+              0.0,
+              0.6492963777918394,
+              0.7770914436738237
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t16358_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.764,
+            "quality": {
+              "blur": 99.1,
+              "pose": null
+            },
+            "pred_char_id": "Moosh",
+            "confidence": 0.95,
+            "reason": "The image shows short gray straight hair, black round eyes, and prominent white whiskers, all core traits of Moosh."
+          }
+        ],
+        "16778": [
+          {
+            "crop_id": "c_shot_0002_t16778_0",
+            "bbox_norm": [
+              0.3676153170008238,
+              0.0,
+              0.6323846829991763,
+              0.7667377497874149
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t16778_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.803,
+            "quality": {
+              "blur": 105.5,
+              "pose": null
+            },
+            "pred_char_id": "Moosh",
+            "confidence": 0.9,
+            "reason": "The image shows short gray straight hair, black round eyes, and white whiskers, all of which match Moosh's core traits."
+          }
+        ],
+        "17198": [
+          {
+            "crop_id": "c_shot_0002_t17198_0",
+            "bbox_norm": [
+              0.3580004374186198,
+              0.0,
+              0.6419995625813802,
+              0.7806901650634211
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t17198_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.801,
+            "quality": {
+              "blur": 85.8,
+              "pose": null
+            },
+            "pred_char_id": "Moosh",
+            "confidence": 0.85,
+            "reason": "The crop shows short gray straight hair, black round eyes, and white whiskers, which are core traits of Moosh."
+          }
+        ],
+        "17618": [
+          {
+            "crop_id": "c_shot_0002_t17618_0",
+            "bbox_norm": [
+              0.42043304443359375,
+              0.0,
+              0.5795669555664062,
+              0.8534380508388251
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t17618_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.729,
+            "quality": {
+              "blur": 76.0,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "No visible traits are provided for analysis."
+          }
+        ],
+        "18038": [
+          {
+            "crop_id": "c_shot_0002_t18038_0",
+            "bbox_norm": [
+              0.4293594619854778,
+              0.0,
+              0.5706405380145222,
+              0.8670171966898739
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t18038_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.749,
+            "quality": {
+              "blur": 88.0,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The provided traits do not have enough information to confidently match any character."
+          }
+        ],
+        "18458": [
+          {
+            "crop_id": "c_shot_0002_t18458_0",
+            "bbox_norm": [
+              0.38526184704838967,
+              0.0,
+              0.6147381529516104,
+              0.8702849303784014
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t18458_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.703,
+            "quality": {
+              "blur": 84.1,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.95,
+            "reason": "Visible distinctive traits include a short trunk nose, large elephant ears, and red tilak mark that closely match Ganesha's core traits."
+          }
+        ],
+        "18878": [
+          {
+            "crop_id": "c_shot_0002_t18878_0",
+            "bbox_norm": [
+              0.431119594444223,
+              0.0,
+              0.568880405555777,
+              0.8707461540931477
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t18878_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.704,
+            "quality": {
+              "blur": 80.2,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The provided crop does not visibly match any core traits from Moosh or Ganesha."
+          }
+        ],
+        "19298": [
+          {
+            "crop_id": "c_shot_0002_t19298_0",
+            "bbox_norm": [
+              0.4774969191778274,
+              0.0,
+              0.5225030808221727,
+              0.8611233596628756
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t19298_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.697,
+            "quality": {
+              "blur": 58.3,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.9,
+            "reason": "The crop shows a light blue-gray skin tone, a distinctive short trunk nose, and a red tilak mark on the forehead, which match the core traits of Ganesha."
+          }
+        ],
+        "19718": [
+          {
+            "crop_id": "c_shot_0002_t19718_0",
+            "bbox_norm": [
+              0.43731232727465985,
+              0.0,
+              0.5626876727253401,
+              0.9251419724790958
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t19718_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.737,
+            "quality": {
+              "blur": 69.7,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The visible traits do not match the core traits of either Moosh or Ganesha clearly."
+          }
+        ]
+      },
+      "shot_id": "shot_0002"
+    },
+    {
+      "keyframes_ms": [
+        35142,
+        35562,
+        35982,
+        36402,
+        36822,
+        37242,
+        37662,
+        38082,
+        38502,
+        38922,
+        39342,
+        39762,
+        40182,
+        40602,
+        41022,
+        41442,
+        41862,
+        42282,
+        42702,
+        43122,
+        43542,
+        43962,
+        44382,
+        44802
+      ],
+      "crops": {
+        "35142": [
+          {
+            "crop_id": "c_shot_0005_t35142_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5394452672426392,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t35142_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.795,
+            "quality": {
+              "blur": 27.3,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.95,
+            "reason": "The crop shows a character with large elephant ears and a short trunk (elephant) nose, matching Ganesha's unique and core traits."
+          }
+        ],
+        "35562": [
+          {
+            "crop_id": "c_shot_0005_t35562_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5476847019325308,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t35562_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.807,
+            "quality": {
+              "blur": 36.2,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Unable to analyze image; traits not visible."
+          }
+        ],
+        "35982": [
+          {
+            "crop_id": "c_shot_0005_t35982_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5496068422486182,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t35982_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.776,
+            "quality": {
+              "blur": 39.0,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The visible traits do not match any character's core traits in the vault."
+          }
+        ],
+        "36402": [
+          {
+            "crop_id": "c_shot_0005_t36402_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5567459833054316,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t36402_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.791,
+            "quality": {
+              "blur": 44.6,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.2,
+            "reason": "The visible traits do not clearly match any core traits of Moosh or Ganesha. The image lacks sufficient distinctive features, such as gray hair or a trunk, to match the characters."
+          }
+        ],
+        "36822": [
+          {
+            "crop_id": "c_shot_0005_t36822_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5587293663803412,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t36822_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.778,
+            "quality": {
+              "blur": 46.7,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The visible traits did not match any core traits from the known characters."
+          }
+        ],
+        "37242": [
+          {
+            "crop_id": "c_shot_0005_t37242_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.563098414414594,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t37242_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.779,
+            "quality": {
+              "blur": 45.9,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The visible traits in the image cannot be distinctly matched to the core traits of any characters in the vault."
+          }
+        ],
+        "37662": [
+          {
+            "crop_id": "c_shot_0005_t37662_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5935352870396206,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t37662_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.793,
+            "quality": {
+              "blur": 40.3,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The provided image does not display visible traits that match either of the characters in the vault, such as hair color, facial marks, or skin tone."
+          }
+        ],
+        "38082": [
+          {
+            "crop_id": "c_shot_0005_t38082_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5773998442150298,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t38082_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.804,
+            "quality": {
+              "blur": 41.0,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.2,
+            "reason": "The image lacks distinguishable features matching the core traits of the characters in the vault such as visible round eyes, specific facial marks, or unique features like a trunk or whiskers."
+          }
+        ],
+        "38502": [
+          {
+            "crop_id": "c_shot_0005_t38502_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5621942533116763,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t38502_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.803,
+            "quality": {
+              "blur": 43.0,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.9,
+            "reason": "The crop shows dark brown round eyes and a light blue-gray skin tone, matching Ganesha's core traits of eye color and skin type."
+          }
+        ],
+        "38922": [
+          {
+            "crop_id": "c_shot_0005_t38922_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5620457655718537,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t38922_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.778,
+            "quality": {
+              "blur": 41.1,
+              "pose": null
+            },
+            "pred_char_id": "Moosh",
+            "confidence": 0.9,
+            "reason": "Visible gray skin and large round ears match Moosh's core traits."
+          }
+        ],
+        "39342": [
+          {
+            "crop_id": "c_shot_0005_t39342_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.566452389671689,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t39342_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.757,
+            "quality": {
+              "blur": 50.5,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.9,
+            "reason": "Visible core traits include the unique short trunk nose, large elephant ears, and light blue-gray skin."
+          }
+        ],
+        "39762": [
+          {
+            "crop_id": "c_shot_0005_t39762_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5610874720982143,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t39762_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.757,
+            "quality": {
+              "blur": 53.2,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.95,
+            "reason": "The crop features a light blue-gray skin tone and a distinctive red tilak mark on the forehead, matching Ganesha's core traits."
+          }
+        ],
+        "40182": [
+          {
+            "crop_id": "c_shot_0005_t40182_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5820128771723533,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t40182_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.784,
+            "quality": {
+              "blur": 46.3,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The image traits couldn't be matched with any in the character vault."
+          }
+        ],
+        "40602": [
+          {
+            "crop_id": "c_shot_0005_t40602_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5815614972795758,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t40602_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.809,
+            "quality": {
+              "blur": 49.9,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Insufficient visible traits to positively identify the character against the vault options."
+          }
+        ],
+        "41022": [
+          {
+            "crop_id": "c_shot_0005_t41022_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5822629344706632,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t41022_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.777,
+            "quality": {
+              "blur": 51.1,
+              "pose": null
+            },
+            "pred_char_id": "Moosh",
+            "confidence": 0.9,
+            "reason": "Visible short gray straight hair, black round eyes, and gray skin tone match core traits of Moosh."
+          }
+        ],
+        "41442": [
+          {
+            "crop_id": "c_shot_0005_t41442_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5797686414653752,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t41442_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.783,
+            "quality": {
+              "blur": 56.0,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The visible traits in the crop do not match the core traits of any character in the vault, such as hair color, eye shape, or facial marks."
+          }
+        ],
+        "41862": [
+          {
+            "crop_id": "c_shot_0005_t41862_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5726314207323554,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t41862_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.812,
+            "quality": {
+              "blur": 50.7,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The crop image was not analyzed; there is no visible data to evaluate core traits."
+          }
+        ],
+        "42282": [
+          {
+            "crop_id": "c_shot_0005_t42282_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5704612991436809,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t42282_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.801,
+            "quality": {
+              "blur": 51.0,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The identification cannot be performed as the image is inaccessible. Ensure the file path is correct."
+          }
+        ],
+        "42702": [
+          {
+            "crop_id": "c_shot_0005_t42702_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5643447045566273,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t42702_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.824,
+            "quality": {
+              "blur": 49.2,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The visible core traits do not sufficiently match any character in the vault."
+          }
+        ],
+        "43122": [
+          {
+            "crop_id": "c_shot_0005_t43122_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5554469102093963,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t43122_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.805,
+            "quality": {
+              "blur": 51.1,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "The image file could not be analyzed."
+          }
+        ],
+        "43542": [
+          {
+            "crop_id": "c_shot_0005_t43542_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5461130466590933,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t43542_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.804,
+            "quality": {
+              "blur": 54.0,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "No visible traits match the characters in the vault due to lack of image data."
+          }
+        ],
+        "43962": [
+          {
+            "crop_id": "c_shot_0005_t43962_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5444576237477413,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t43962_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.787,
+            "quality": {
+              "blur": 55.8,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.95,
+            "reason": "The crop displays a short trunk nose and large elephant ears, both of which are distinctive core traits of Ganesha."
+          }
+        ],
+        "44382": [
+          {
+            "crop_id": "c_shot_0005_t44382_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5430050804501488,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t44382_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.814,
+            "quality": {
+              "blur": 54.4,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Unable to analyze visible traits to match a character due to the lack of image data."
+          }
+        ],
+        "44802": [
+          {
+            "crop_id": "c_shot_0005_t44802_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5467260451543898,
+              1.0
+            ],
+            "crop_url": "file:///Users/hehe/Desktop/startup/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t44802_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.831,
+            "quality": {
+              "blur": 55.6,
+              "pose": null
+            },
+            "pred_char_id": "Ganesha",
+            "confidence": 0.9,
+            "reason": "Visible traits include dark brown round eyes, large elephant ears, and a light blue-gray skin tone."
+          }
+        ]
+      },
+      "shot_id": "shot_0005"
+    }
+  ],
+  "project_id": "PROJvg5wy5R8zFQ9kh6K",
+  "job_id": "job_2025_08_22_282",
+  "video_url": "https://content.dashtoon.ai/frameo-merged-videos/shot_final_merged_final_video_final_merged_b5de2af54f28a8d4.mp4",
+  "identification_metadata": {
+    "total_characters": 2,
+    "total_shots": 6,
+    "total_crops": 94,
+    "model_used": "gpt-4o",
+    "batch_size": 1,
+    "max_parallel_shots": 4,
+    "critique_agent_enabled": true,
+    "critique_agent_verification": true,
+    "timestamp": 1756048249.492556
+  },
+  "critique_agent_result": {
+    "project_id": "",
+    "overall_accuracy": 0.0,
+    "evaluation_notes": "Overall Character Presence Accuracy: 0.00%\n\nMoosh: ✗ NOT PRESENT (Confidence: 0.0%)\n  Reasoning: Error during verification: Error code: 400 - {'error': {'message': \"Invalid value: 'input_text'. Supported values are: 'text', 'image_url', 'input_audio', 'refusal', 'audio', and 'file'.\", 'type': 'invalid_request_error', 'param': 'messages[0].content[0].type', 'code': 'invalid_value'}}\n\nGanesha: ✗ NOT PRESENT (Confidence: 0.0%)\n  Reasoning: Error during verification: Error code: 400 - {'error': {'message': \"Invalid value: 'input_text'. Supported values are: 'text', 'image_url', 'input_audio', 'refusal', 'audio', and 'file'.\", 'type': 'invalid_request_error', 'param': 'messages[0].content[0].type', 'code': 'invalid_value'}}",
+    "character_verifications": [
+      {
+        "character_name": "Moosh",
+        "character_image": "https://content.dashtoon.ai/stability-images/2216501b-a253-454a-8c35-0f4ccb682ea2.webp",
+        "video_clip_url": "https://content.dashtoon.ai/frameo-merged-videos/shot_final_merged_final_video_final_merged_b5de2af54f28a8d4.mp4",
+        "is_present": false,
+        "confidence_score": 0.0,
+        "reasoning": "Error during verification: Error code: 400 - {'error': {'message': \"Invalid value: 'input_text'. Supported values are: 'text', 'image_url', 'input_audio', 'refusal', 'audio', and 'file'.\", 'type': 'invalid_request_error', 'param': 'messages[0].content[0].type', 'code': 'invalid_value'}}",
+        "timestamp_analysis": {}
+      },
+      {
+        "character_name": "Ganesha",
+        "character_image": "https://content.dashtoon.ai/stability-images/81370a19-86f6-45f9-a485-7992332bbe3c.webp",
+        "video_clip_url": "https://content.dashtoon.ai/frameo-merged-videos/shot_final_merged_final_video_final_merged_b5de2af54f28a8d4.mp4",
+        "is_present": false,
+        "confidence_score": 0.0,
+        "reasoning": "Error during verification: Error code: 400 - {'error': {'message': \"Invalid value: 'input_text'. Supported values are: 'text', 'image_url', 'input_audio', 'refusal', 'audio', and 'file'.\", 'type': 'invalid_request_error', 'param': 'messages[0].content[0].type', 'code': 'invalid_value'}}",
+        "timestamp_analysis": {}
+      }
+    ],
+    "llm_metadata": {
+      "verification_count": 2,
+      "llm_provider": "OpenAI",
+      "model": "gpt-5"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "run_name": "test_run_20",
+  "timestamp": "2025-08-24T20:59:05.751446",
+  "total_projects": 7,
+  "steps": {
+    "video_shot_processing": {
+      "total": 7,
+      "successful": 7,
+      "failed": 0,
+      "errors": [],
+      "duration_s": 233.07
+    },
+    "character_identification": {
+      "total": 7,
+      "successful": 7,
+      "failed": 0,
+      "errors": [],
+      "duration_s": 1177.94
+    }
+  },
+  "total_duration_s": 1411.01,
+  "final_success_rate": 1.0
+}
