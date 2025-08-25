@@ -8,7 +8,6 @@ dependencies = [
     "pandas>=2.0.0",
     "requests>=2.31.0",
     "python-dotenv>=1.0.0",
-    "openai>=1.0.0",
     "matplotlib>=3.10.5",
     "ruff>=0.12.9",
     "streamlit>=1.28.0",
@@ -17,6 +16,7 @@ dependencies = [
     "ultralytics>=8.3.184",
     "numpy>=2.3.2",
     "Pillow>=10.0.0",
+    "portkey-ai>=1.14.3",
 ]
 
 [project.optional-dependencies]
@@ -69,6 +69,9 @@ warn_unused_ignores = true
 warn_no_return = true
 warn_unreachable = true
 strict_equality = true
+exclude = [
+    "video_shot_processor.py"
+]
 
 
 

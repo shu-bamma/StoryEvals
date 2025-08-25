@@ -3,7 +3,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any
 
-from openai import OpenAI
+from portkey_ai import Portkey
 
 from config import Config
 from models import (
@@ -24,7 +24,10 @@ class CharacterEnricher:
 
     def __init__(self) -> None:
         self.config = Config.get_character_enrichment_config()
-        self.client = OpenAI(api_key=self.config["api_key"])
+        self.client = Portkey(
+            api_key=self.config["api_key"],
+            virtual_key=self.config["virtual_key"],
+        )
 
         # Structured output schema for character traits
         self.traits_schema = {
@@ -102,7 +105,7 @@ class CharacterEnricher:
     def _extract_character_traits(self, character: Character) -> CharacterTraits | None:
         """Extract traits from a single character description using VLM with structured outputs"""
 
-        prompt = f"""Extract FACE-CENTRIC traits only from this character description. Focus on hair, eyes, eyebrows, skin tone, facial marks, age band, and other distinguishing features.
+        prompt = f"""Extract FACE-CENTRIC traits from this character's description and image. Analyze both the text description and visual appearance to identify distinguishing features.
 
 Character: {character.name}
 Description: {character.description}
@@ -114,19 +117,27 @@ Guidelines:
 - age_band: Choose the most appropriate age category from: infant, toddler, child, teen, young_adult, adult, middle_aged, elderly
 - skin_tone: Primary skin or fur color from: fair, light, medium, tan, dark, olive, brown, black, gray, blue, green, other
 - type: Whether human, animal, mix, fantasy, or other
-- notes: Any unclear or conflicting information in the description
+- notes: Any unclear or conflicting information in the description or image
 
 Your response will be automatically structured to include these traits organized by category."""
 
         for attempt in range(self.config["max_retries"]):
             try:
-                # Use OpenAI's structured outputs API
+                # Use OpenAI's structured outputs API with multimodal input
+                content = [{"type": "input_text", "text": prompt}]
+
+                # Add image if available
+                if character.image:
+                    content.append(
+                        {"type": "input_image", "image_url": f"{character.image}"}
+                    )
+
                 response = self.client.responses.parse(
                     model=self.config["model"],
                     input=[
                         {
                             "role": "user",
-                            "content": [{"type": "input_text", "text": prompt}],
+                            "content": content,
                         }
                     ],
                     text_format=CharacterTraitsStructured,

@@ -1,0 +1,219 @@
+{
+  "character_vault": [
+    {
+      "char_id": "Rock",
+      "name": "Rock",
+      "ref_image": "https://content.dashtoon.ai/stability-images/2e94e44c-2c70-4cb9-826a-c1ee642d2859.webp",
+      "traits": {
+        "core": [
+          "short dark-blonde wavy, slightly tousled hair",
+          "green round eyes",
+          "thick arched eyebrows",
+          "broad nose",
+          "full lips",
+          "dark-blonde light stubble"
+        ],
+        "supportive": [],
+        "volatile": [
+          "grinning expression",
+          "white astronaut helmet around head",
+          "spacesuit collar visible near neck",
+          "head-and-shoulders framing",
+          "dramatic, professional headshot style"
+        ],
+        "age_band": "adult",
+        "skin_tone": "tan",
+        "type": "human",
+        "notes": [
+          "Exact age 42; classified as adult (borderline with middle_aged).",
+          "Ethnicity not listed; using skin tone only.",
+          "Non-face-centric body/clothing details omitted except helmet/collar as face-adjacent."
+        ]
+      }
+    },
+    {
+      "char_id": "John",
+      "name": "John",
+      "ref_image": "https://content.dashtoon.ai/stability-images/344baa6e-66c6-4c77-aae7-17b860dd4107.webp",
+      "traits": {
+        "core": [
+          "short brown straight neatly trimmed hair",
+          "blue almond-shaped eyes",
+          "fair skin",
+          "clean-shaven"
+        ],
+        "supportive": [
+          "medium-thickness straight eyebrows",
+          "straight nose",
+          "medium lips"
+        ],
+        "volatile": [
+          "wry, smirking expression",
+          "wearing white NASA spacesuit and helmet",
+          "NASA mission patches and utility belt",
+          "professional, technical aesthetic",
+          "head-and-shoulders headshot framing"
+        ],
+        "age_band": "adult",
+        "skin_tone": "fair",
+        "type": "human",
+        "notes": [
+          "Repeated 'average' attributes are unspecified/ambiguous",
+          "Helmet may obscure hair and eyebrows in some depictions",
+          "Duplicate 'white white' descriptors appear to be emphasis/typos"
+        ]
+      }
+    }
+  ],
+  "shots": [
+    {
+      "keyframes_ms": [
+        0,
+        420,
+        840,
+        1260,
+        1680,
+        2100,
+        2520,
+        2940,
+        3360,
+        3780,
+        4200,
+        4620,
+        5040,
+        5460,
+        5880,
+        6300,
+        6720,
+        7140,
+        7560
+      ],
+      "crops": {
+        "0": [
+          {
+            "crop_id": "c_shot_0001_t0000_0",
+            "bbox_norm": [
+              0.32902472019195556,
+              0.0,
+              0.6709752798080444,
+              1.0
+            ],
+            "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJTEBfiW5oYKv7FsFj/c_shot_0001_t0000_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.701,
+            "quality": {
+              "blur": 8395.5,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Image not accessible from provided local file URL; cannot verify core traits."
+          }
+        ],
+        "420": [],
+        "840": [],
+        "1260": [],
+        "1680": [],
+        "2100": [],
+        "2520": [
+          {
+            "crop_id": "c_shot_0001_t2520_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.5057190895080567,
+              1.0
+            ],
+            "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJTEBfiW5oYKv7FsFj/c_shot_0001_t2520_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.55,
+            "quality": {
+              "blur": 8433.4,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Image not accessible from provided local file URL; cannot verify core traits."
+          }
+        ],
+        "2940": [],
+        "3360": [],
+        "3780": [],
+        "4200": [
+          {
+            "crop_id": "c_shot_0001_t4200_0",
+            "bbox_norm": [
+              0.0,
+              0.0,
+              0.6667713642120361,
+              1.0
+            ],
+            "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJTEBfiW5oYKv7FsFj/c_shot_0001_t4200_0.jpg",
+            "detector": "yolov8n.pt",
+            "face_conf": 0.645,
+            "quality": {
+              "blur": 6667.2,
+              "pose": null
+            },
+            "pred_char_id": "Unknown",
+            "confidence": 0.0,
+            "reason": "Image not accessible from provided local file URL; cannot verify core traits."
+          }
+        ],
+        "4620": [],
+        "5040": [],
+        "5460": [],
+        "5880": [],
+        "6300": [],
+        "6720": [],
+        "7140": [],
+        "7560": []
+      },
+      "shot_id": "shot_0001"
+    }
+  ],
+  "project_id": "PROJTEBfiW5oYKv7FsFj",
+  "job_id": "job_2025_08_22_244",
+  "video_url": "https://content.dashtoon.ai/frameo-merged-videos/shot_final_merged_final_video_final_merged_0aca3155316038cb.mp4",
+  "identification_metadata": {
+    "total_characters": 2,
+    "total_shots": 1,
+    "total_crops": 3,
+    "model_used": "gpt-5",
+    "batch_size": 6,
+    "max_parallel_shots": 4,
+    "critique_agent_enabled": true,
+    "critique_agent_verification": true,
+    "timestamp": 1756107448.499582
+  },
+  "critique_agent_result": {
+    "project_id": "",
+    "overall_accuracy": 0.0,
+    "evaluation_notes": "Overall Character Presence Accuracy: 0.00%\n\nRock: ✗ NOT PRESENT (Confidence: 0.0%)\n  Reasoning: Error during verification: Responses.parse() got an unexpected keyword argument 'max_completion_tokens'\n\nJohn: ✗ NOT PRESENT (Confidence: 0.0%)\n  Reasoning: Error during verification: Responses.parse() got an unexpected keyword argument 'max_completion_tokens'",
+    "character_verifications": [
+      {
+        "character_name": "Rock",
+        "character_image": "https://content.dashtoon.ai/stability-images/2e94e44c-2c70-4cb9-826a-c1ee642d2859.webp",
+        "video_clip_url": "https://content.dashtoon.ai/frameo-merged-videos/shot_final_merged_final_video_final_merged_0aca3155316038cb.mp4",
+        "is_present": false,
+        "confidence_score": 0.0,
+        "reasoning": "Error during verification: Responses.parse() got an unexpected keyword argument 'max_completion_tokens'",
+        "timestamp_analysis": {}
+      },
+      {
+        "character_name": "John",
+        "character_image": "https://content.dashtoon.ai/stability-images/344baa6e-66c6-4c77-aae7-17b860dd4107.webp",
+        "video_clip_url": "https://content.dashtoon.ai/frameo-merged-videos/shot_final_merged_final_video_final_merged_0aca3155316038cb.mp4",
+        "is_present": false,
+        "confidence_score": 0.0,
+        "reasoning": "Error during verification: Responses.parse() got an unexpected keyword argument 'max_completion_tokens'",
+        "timestamp_analysis": {}
+      }
+    ],
+    "llm_metadata": {
+      "verification_count": 2,
+      "llm_provider": "OpenAI",
+      "model": "gpt-5"
+    }
+  }
+}

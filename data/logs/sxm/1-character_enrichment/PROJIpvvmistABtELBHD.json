@@ -1,0 +1,131 @@
+{
+  "character_vault": [
+    {
+      "char_id": "Tommy",
+      "name": "Tommy",
+      "ref_image": "https://content.dashtoon.ai/stability-images/e39adbc5-b7e6-4397-8168-82ef8fc946c3.webp",
+      "description": "Male, 8 years old, Caucasian, slim build, average, light, fair skin, short light brown straight messy hair, blue round eyes, thin eyebrows, small nose, small lips, clean_shaven, wearing light blue t-shirt (fitted fit, short sleeves, crew neck), dark blue jeans (loose fit, full length), white sneakers (casual), excited, casual style, youthful aesthetic , high quality , detailed character design , consistent style , professional illustration headshot , head and shoulders view",
+      "embedding": [],
+      "traits": {
+        "core": [
+          "short light brown straight messy hair",
+          "blue round eyes",
+          "thin eyebrows"
+        ],
+        "supportive": [
+          "small nose",
+          "small lips",
+          "clean-shaven face"
+        ],
+        "volatile": [
+          "excited expression",
+          "head-and-shoulders view",
+          "wearing light blue t-shirt",
+          "wearing dark blue jeans",
+          "wearing white sneakers",
+          "casual style"
+        ],
+        "age_band": "child",
+        "skin_tone": "fair",
+        "type": "human",
+        "notes": [
+          "Skin described as both light and fair; mapped to fair.",
+          "\"Caucasian\" provided as ethnicity; used skin tone instead."
+        ]
+      }
+    },
+    {
+      "char_id": "Red Balloon",
+      "name": "Red Balloon",
+      "ref_image": "https://content.dashtoon.ai/stability-images/ba3b2327-eff7-4f80-ae82-9f9bfcce847f.webp",
+      "description": "Other, round build, average, light, red skin, vibrant red latex with solid, string, playful aesthetic , high quality , detailed character design , consistent style , professional illustration headshot , head and shoulders view",
+      "embedding": [],
+      "traits": {
+        "core": [
+          "vibrant red latex surface",
+          "round, balloon-like face",
+          "hairless",
+          "no visible eyebrows"
+        ],
+        "supportive": [
+          "smooth, glossy/reflective finish",
+          "solid, uniform color"
+        ],
+        "volatile": [
+          "string attached below the face/base",
+          "playful aesthetic/mood",
+          "headshot (head-and-shoulders) framing"
+        ],
+        "age_band": "adult",
+        "skin_tone": "other",
+        "type": "other",
+        "notes": [
+          "Non-human/inanimate character (balloon); age band not truly applicable",
+          "Eyes and other facial features not specified",
+          "“Red skin” refers to latex material color, not biological skin",
+          "Descriptor “light” is ambiguous (could refer to weight or lighting)"
+        ]
+      }
+    }
+  ],
+  "job_id": "job_2025_08_22_690",
+  "video_url": "https://content.dashtoon.ai/frameo-merged-videos/shot_final_merged_final_video_final_merged_ad1a2e2615695dba.mp4",
+  "project_id": "PROJIpvvmistABtELBHD",
+  "clips": [
+    {
+      "clip_index": 0,
+      "start": 3500,
+      "end": 6069,
+      "url": "https://content.dashtoon.ai/saved-videos/afab7db0-a855-450e-ad55-ad700e566779.mp4",
+      "image_prompt": "GeneralDescription: \"Tracking shot of the balloon and eagle, capturing their brief companionship through the clouds.\"\nLocationDescription: |\nTracking shot of the balloon and eagle, capturing their brief companionship through the clouds. \nThe balloon ascends over majestic mountains, where an eagle soars alongside it.\nCharacters:\n\nCameraAngle: \"medium shot\"\nDIALOGUE: Over mountains where eagles fly, it shares a moment of flight with nature's grace. by NARRATOR (V.O.)\n\nIn the style of a meticulously handcrafted stop-motion aesthetic created with suede/woollen materials, with soft, directional lighting, storybook surrealism in a miniature, whimsical and emotional world.",
+      "enhanced_prompt": "```json\n{\n  \"shot\": {\n    \"composition\": \"Medium shot framed on a colorful hot air balloon and a majestic eagle gliding beside it.\",\n    \"subjects\": \"Balloon and eagle, both crafted from woolen textures, contrasting against the soft, pillowy clouds.\",\n    \"camera_motion\": \"Smooth tracking as it follows the ascent of the balloon, maintaining focus on the eagle's graceful flight.\",\n    \"scene\": {\n      \"location\": \"Above the snow-capped peaks of majestic, suede-textured mountains, enveloped in softly rolling, woolen clouds.\",\n      \"time_of_day\": \"Gentle afternoon glow filtering through the clouds, lending a warm, diffused light.\",\n      \"environment\": \"Quiet serenity, broken only by the occasional rustling of the breeze and the soft flapping of fabric wings.\"\n    }\n  },\n  \"subjects\": [\n    {\n      \"name\": \"Balloon\",\n      \"description\": \"A whimsical, plush hot air balloon crafted from red and cream woolen stripes.\",\n      \"action\": \"Silently ascending, buoyed by an unseen breeze, sharing the sky with the eagle.\",\n      \"emotion\": \"Exudes a carefree and exploratory spirit.\"\n    },\n    {\n      \"name\": \"Eagle\",\n      \"description\": \"Majestic with intricately detailed wing patterns, navigating with ease through the woolen clouds.\",\n      \"action\": \"Glides smoothly and confidently, keeping pace with the balloon.\",\n      \"emotion\": \"Carries an air of natural grace and silent companionship.\"\n    }\n  ],\n  \"audio\": {\n    \"music\": \"Soft, whimsical notes from a wooden flute gently underscore the visual, enhancing the surreal ambiance.\",\n    \"ambient\": \"Gentle whooshing of the wind and soft flapping of feathery wings accompany the scene.\",\n    \"sfx\": \"\"\n  },\n  \"style_guidelines\": \"Handcrafted stop-motion aesthetic with a tactile feel, emphasizing storybook surrealism in a miniature, emotional world.\",\n  \"temporal_flow\": \"The camera begins with the balloon in view, gently panning to reveal the eagle joining its flight. The narrator’s voiceover begins: 'Over mountains where eagles fly, it shares a moment of flight with nature's grace.' The eagle swoops closer, gracefully matching the balloon's climb. Their brief companionship plays out against the serene backdrop until they disappear into the soft embrace of the clouds, leaving only the sound of the flute and the whispers of the wind.\"\n}\n```",
+      "reference_image": "https://content.dashtoon.ai/stability-images/762b5636-943b-4166-9975-3ac69b0de349.webp",
+      "characters": [
+        {
+          "Name": "Red Balloon",
+          "Image": "https://content.dashtoon.ai/stability-images/ba3b2327-eff7-4f80-ae82-9f9bfcce847f.webp",
+          "Description": "Other, round build, average, light, red skin, vibrant red latex with solid, string, playful aesthetic , high quality , detailed character design , consistent style , professional illustration headshot , head and shoulders view"
+        }
+      ]
+    },
+    {
+      "clip_index": 1,
+      "start": 1906,
+      "end": 4563,
+      "url": "https://content.dashtoon.ai/saved-videos/81c95f77-db96-4865-833f-77fa55a4f9c6.mp4",
+      "image_prompt": "GeneralDescription: \"Wide shot of the balloon mirrored in the ocean, with waves gently lapping below.\"\nLocationDescription: |\nWide shot of the balloon mirrored in the ocean, with waves gently lapping below. \nThe red balloon hovers above the vast ocean, its reflection shimmering on the water's surface.\nCharacters:\n\nCameraAngle: \"medium shot\"\nDIALOGUE: Across endless oceans, it travels over waves that whisper tales of the deep. by NARRATOR (V.O.)\n\nIn the style of a meticulously handcrafted stop-motion aesthetic created with suede/woollen materials, with soft, directional lighting, storybook surrealism in a miniature, whimsical and emotional world.",
+      "enhanced_prompt": "{\n  \"shot\": {\n    \"composition\": \"Wide shot focusing on the red balloon mirrored perfectly in the tranquil ocean below.\",\n    \"subjects\": \"The red balloon hovering above the ocean, with its reflection shimmering on the water.\",\n    \"camera_motion\": \"The camera remains steady, framing the balloon and its reflection symmetrically.\",\n    \"scene\": {\n      \"location\": \"A vast, open ocean setting with gentle waves softly lapping against the surface.\",\n      \"time_of_day\": \"Golden hour, with warm light enhancing the serene atmosphere.\",\n      \"environment\": \"The sound of gentle waves accompanies a quiet, peaceful ambiance.\"\n    }\n  },\n  \"subjects\": [\n    {\n      \"name\": \"The Red Balloon\",\n      \"description\": \"A vibrant red balloon floating calmly, its image shimmering softly on the ocean surface.\",\n      \"wardrobe\": \"\",\n      \"props\": \"\",\n      \"action\": \"The balloon hovers motionless, capturing the viewer’s gaze with its simplicity.\",\n      \"emotion\": \"The scene evokes a sense of whimsy and tranquility.\",\n      \"dialogue\": \"Across endless oceans, it travels over waves that whisper tales of the deep.\",\n      \"dialogue_intonation\": \"Narrator speaks with a gentle, dreamy tone, enhancing the scene's surrealism.\"\n    }\n  ],\n  \"audio\": {\n    \"music\": \"\",\n    \"ambient\": \"The ambient sound of waves gently lapping at the water's surface.\",\n    \"sfx\": \"\"\n  },\n  \"style_guidelines\": \"The scene should embody a stop-motion aesthetic with a suede/woolen material texture and soft, directional lighting, evoking storybook surrealism in a miniature, whimsical world.\",\n  \"temporal_flow\": \"Opening with a wide shot, the balloon remains still in the sky, allowing the narrator's voice to focus the audience's attention on its journey. The reflection and oceanic setting create a tranquil mood, evoking a sense of adventure and peace as the narrator's words gently fade with the ambient sounds.\"\n}",
+      "reference_image": "https://content.dashtoon.ai/stability-images/9cd70b75-e40d-48e7-8c57-c20e61ec8972.webp",
+      "characters": [
+        {
+          "Name": "Red Balloon",
+          "Image": "https://content.dashtoon.ai/stability-images/ba3b2327-eff7-4f80-ae82-9f9bfcce847f.webp",
+          "Description": "Other, round build, average, light, red skin, vibrant red latex with solid, string, playful aesthetic , high quality , detailed character design , consistent style , professional illustration headshot , head and shoulders view"
+        }
+      ]
+    },
+    {
+      "clip_index": 2,
+      "start": 3513,
+      "end": 7340,
+      "url": "https://content.dashtoon.ai/saved-videos/c441bcdb-e65b-4977-9bff-50eacf71e9ac.mp4",
+      "image_prompt": "            GeneralDescription: \"Close-up of Tommy's face, excitement sparkling in his eyes, as he releases the balloon.\"\n            LocationDescription: |\n            Close-up of Tommy's face, excitement sparkling in his eyes, as he releases the balloon. \n            A young boy named Tommy stands by the window in his bedroom, holding a vibrant red balloon, preparing to release it.\n            Characters:\n            \n            CameraAngle: \"medium shot\"\n            DIALOGUE: Ready for an adventure, my friend? by TOMMY\nDIALOGUE: In a world full of possibilities, a simple red balloon begins its journey... by NARRATOR (V.O.)\n\nIn the style of a meticulously handcrafted stop-motion aesthetic created with suede/woollen materials, with soft, directional lighting, storybook surrealism in a miniature, whimsical and emotional world.",
+      "enhanced_prompt": "{\n  \"shot\": {\n    \"composition\": \"Medium close-up of Tommy, his face animated with excitement, framed by the window's soft light.\",\n    \"subjects\": \"Tommy holding a vibrant red balloon, focus on his expressive face.\",\n    \"camera_motion\": \"Locks in place, capturing every nuance of Tommy's expression.\",\n    \"scene\": {\n      \"location\": \"Tommy's cozy bedroom, warmly lit by sunlight filtering through the window.\",\n      \"time_of_day\": \"Late afternoon with golden rays infusing the room.\",\n      \"environment\": \"Quiet and serene, the soft sound of distant birdsong outside.\"\n    }\n  },\n  \"subjects\": [\n    {\n      \"name\": \"Tommy\",\n      \"description\": \"A young boy with curly hair, his eyes wide with wonder and anticipation.\",\n      \"wardrobe\": \"Simple woolen sweater that enhances the handcrafted, whimsical aesthetic.\",\n      \"props\": \"Holding a red balloon by its string, ready to let go.\",\n      \"action\": \"He is positioned by the window, releasing the balloon with a subtle gesture.\",\n      \"emotion\": \"His face shows pure joy and excitement, a spark in his eyes.\",\n      \"dialogue\": \"\\\"Ready for an adventure, my friend?\\\"\",\n      \"dialogue_intonation\": \"Delivered with warmth and eagerness, almost a whisper to the balloon.\"\n    }\n  ],\n  \"audio\": {\n    \"music\": \"A soft, whimsical tune gently underscores the scene, enhancing its emotional depth.\",\n    \"ambient\": \"Faint rustle of leaves, a tender breeze outside.\",\n    \"sfx\": \"A soft whoosh as the balloon begins its ascent.\"\n  },\n  \"style_guidelines\": \"Meticulously handcrafted stop-motion using suede and wool materials, capturing a storybook-like surrealism.\",\n  \"temporal_flow\": \"The scene opens with Tommy's face illuminated by the golden light, holding the balloon. As he whispers, 'Ready for an adventure, my friend?', the camera focuses on the balloon's ascent through the window's frame. The narrator's voice softly introduces, 'In a world full of possibilities, a simple red balloon begins its journey...' as the music crescendos slightly, fading to the sounds of the peaceful outdoor setting.\"\n}",
+      "reference_image": "https://content.dashtoon.ai/stability-images/6a90631d-31db-423b-bc4c-e7b127109e0e.webp",
+      "characters": [
+        {
+          "Name": "Tommy",
+          "Image": "https://content.dashtoon.ai/stability-images/e39adbc5-b7e6-4397-8168-82ef8fc946c3.webp",
+          "Description": "Male, 8 years old, Caucasian, slim build, average, light, fair skin, short light brown straight messy hair, blue round eyes, thin eyebrows, small nose, small lips, clean_shaven, wearing light blue t-shirt (fitted fit, short sleeves, crew neck), dark blue jeans (loose fit, full length), white sneakers (casual), excited, casual style, youthful aesthetic , high quality , detailed character design , consistent style , professional illustration headshot , head and shoulders view"
+        }
+      ]
+    }
+  ],
+  "enrichment_metadata": {
+    "total_characters": 2,
+    "successful_enrichments": 2,
+    "failed_enrichments": 0,
+    "model_used": "gpt-5",
+    "timestamp": 1756106297.272963
+  }
+}

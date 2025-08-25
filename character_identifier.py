@@ -1,8 +1,7 @@
 import logging
 import time
 
-import openai
-from openai import OpenAI
+from portkey_ai import Portkey
 
 from config import Config
 from models import (
@@ -19,7 +18,10 @@ class CharacterIdentifier:
 
     def __init__(self) -> None:
         self.config = Config.get_character_identification_config()
-        self.client = OpenAI(api_key=self.config["api_key"])
+        self.client = Portkey(
+            api_key=self.config["api_key"],
+            virtual_key=self.config["virtual_key"],
+        )
         self.max_retries = self.config["max_retries"]
         self.retry_timeout = self.config["retry_timeout"]
         self.exponential_backoff_base = self.config["exponential_backoff_base"]
@@ -89,7 +91,7 @@ Analyze each crop carefully and provide accurate identifications with clear reas
         Returns:
             CharacterIdentificationBatchResponse: The parsed response from the LLM
         Raises:
-            openai.APIError: If there's an OpenAI API error
+            Exception: If there's a Portkey API error
             ValueError: If no parsed output is received
             RuntimeError: If an unexpected error occurs
         """
@@ -127,12 +129,8 @@ Analyze each crop carefully and provide accurate identifications with clear reas
             else:
                 raise ValueError("No parsed output received from OpenAI")
 
-        except openai.APIError as e:
-            logger.error(f"OpenAI API error: {e}")
-            # Re-raise to maintain the function's contract - this function never returns Any
-            raise
         except Exception as e:
-            logger.error(f"Unexpected error in LLM call: {e}")
+            logger.error(f"Portkey API error: {e}")
             # Re-raise to maintain the function's contract - this function never returns Any
             raise
 
@@ -174,7 +172,7 @@ Analyze each crop carefully and provide accurate identifications with clear reas
                 )
                 return results
 
-            except (ValueError, openai.APIError) as e:
+            except (ValueError, Exception) as e:
                 elapsed_time = time.time() - start_time
 
                 if attempt == self.max_retries or elapsed_time >= self.retry_timeout:

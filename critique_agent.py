@@ -1,7 +1,7 @@
 import base64
 
 import requests
-from openai import OpenAI
+from portkey_ai import Portkey
 from pydantic import BaseModel, Field
 
 from config import Config
@@ -32,22 +32,20 @@ class CritiqueAgent:
     Agent that uses OpenAI's GPT models to verify if characters in images appear in video clips
     """
 
-    def __init__(self, openai_api_key: str | None = None):
-        """
-        Initialize the critique agent with OpenAI API
+    def __init__(self) -> None:
+        """Initialize the critique agent with configuration from Config"""
+        self.config = Config.get_critique_agent_config()
 
-        Args:
-            openai_api_key: OpenAI API key (defaults to environment variable)
-        """
-        self.openai_api_key = openai_api_key or Config.LLM_API_KEY
-
-        if not self.openai_api_key:
+        if not self.config["api_key"]:
             raise ValueError(
-                "OpenAI API key is required. Set LLM_API_KEY environment variable or pass it to constructor."
+                "OpenAI API key is required. Set LLM_API_KEY environment variable."
             )
 
-        # Initialize OpenAI client
-        self.client = OpenAI(api_key=self.openai_api_key)
+        # Initialize Portkey client
+        self.client = Portkey(
+            api_key=self.config["api_key"],
+            virtual_key=self.config["virtual_key"],
+        )
 
     def encode_image_to_base64(self, image_url: str) -> str:
         """
@@ -122,80 +120,100 @@ Your response will be automatically structured to include:
         Returns:
             Structured verification response from OpenAI
         """
-        try:
-            # Check if using GPT-5
-            is_gpt5 = "gpt-5" in Config.LLM_MODEL
+        for attempt in range(self.config["max_retries"]):
+            try:
+                # Check if using GPT-5
+                is_gpt5 = "gpt-5" in self.config["model"]
 
-            # Prepare API call parameters
-            api_params = {
-                "model": Config.LLM_MODEL,
-                "input": [
-                    {
-                        "role": "user",
-                        "content": [
-                            {"type": "input_text", "text": prompt},
-                            {
-                                "type": "input_image",
-                                "image_url": f"data:image/jpeg;base64,{image_base64}",
-                            },
-                        ],
-                    }
-                ],
-                "text_format": CharacterVerificationResponse,
-            }
+                # Prepare API call parameters
+                api_params = {
+                    "model": self.config["model"],
+                    "input": [
+                        {
+                            "role": "user",
+                            "content": [
+                                {"type": "input_text", "text": prompt},
+                                {
+                                    "type": "input_image",
+                                    "image_url": f"data:image/jpeg;base64,{image_base64}",
+                                },
+                            ],
+                        }
+                    ],
+                    "text_format": CharacterVerificationResponse,
+                }
 
-            # GPT-5 uses different parameters
-            if is_gpt5:
-                api_params["max_completion_tokens"] = Config.GPT5_MAX_COMPLETION_TOKENS
-                # GPT-5 only supports temperature=1 (default)
-            else:
-                api_params["max_tokens"] = Config.LLM_MAX_TOKENS
-                api_params["temperature"] = Config.LLM_TEMPERATURE
-
-            # Use OpenAI's structured outputs API
-            response = self.client.responses.parse(
-                model=api_params["model"],
-                input=api_params["input"],
-                text_format=api_params["text_format"],
-                max_completion_tokens=api_params.get("max_completion_tokens"),
-                max_tokens=api_params.get("max_tokens"),
-                temperature=api_params.get("temperature"),
-            )
-
-            # Extract the parsed output
-            if response.output_parsed:
-                # The output_parsed is already of type CharacterVerificationResponse
-                # but we need to ensure type safety
-                parsed_output = response.output_parsed
-                if isinstance(parsed_output, CharacterVerificationResponse):
-                    # Explicit type assertion to help the type checker
-                    result: CharacterVerificationResponse = parsed_output
-                    return result
+                # GPT-5 uses different parameters
+                if is_gpt5:
+                    api_params["max_completion_tokens"] = self.config.get(
+                        "max_completion_tokens"
+                    )
+                    # GPT-5 only supports temperature=1 (default)
                 else:
-                    # If somehow the type is wrong, reconstruct it
-                    # Explicit type annotation to ensure the type checker understands this returns CharacterVerificationResponse
-                    validated_response: CharacterVerificationResponse = (
-                        CharacterVerificationResponse.model_validate(
-                            parsed_output.model_dump()
+                    api_params["max_tokens"] = self.config.get("max_tokens")
+                    api_params["temperature"] = self.config.get("temperature")
+
+                # Use OpenAI's structured outputs API
+                response = self.client.responses.parse(
+                    model=api_params["model"],
+                    input=api_params["input"],
+                    text_format=api_params["text_format"],
+                    max_completion_tokens=api_params.get("max_completion_tokens"),
+                    max_tokens=api_params.get("max_tokens"),
+                    temperature=api_params.get("temperature"),
+                )
+
+                # Extract the parsed output
+                if response.output_parsed:
+                    # The output_parsed is already of type CharacterVerificationResponse
+                    # but we need to ensure type safety
+                    parsed_output = response.output_parsed
+                    if isinstance(parsed_output, CharacterVerificationResponse):
+                        # Explicit type assertion to help the type checker
+                        result: CharacterVerificationResponse = parsed_output
+                        return result
+                    else:
+                        # If somehow the type is wrong, reconstruct it
+                        # Explicit type annotation to ensure the type checker understands this returns CharacterVerificationResponse
+                        validated_response: CharacterVerificationResponse = (
+                            CharacterVerificationResponse.model_validate(
+                                parsed_output.model_dump()
+                            )
+                        )
+                        return validated_response
+                else:
+                    raise ValueError("No parsed output received from OpenAI")
+
+            except Exception as e:
+                print(f"Attempt {attempt + 1} failed: {e}")
+                if attempt < self.config["max_retries"] - 1:
+                    delay = self.config["retry_delay"] * (
+                        2**attempt
+                    )  # Exponential backoff
+                    print(f"Retrying in {delay} seconds...")
+                    import time
+
+                    time.sleep(delay)
+                else:
+                    print(f"Failed after {self.config['max_retries']} attempts")
+                    # Return default response on error
+                    default_response: CharacterVerificationResponse = (
+                        CharacterVerificationResponse(
+                            is_present=False,
+                            confidence_score=0.0,
+                            reasoning=f"Error during verification: {str(e)}",
+                            timestamp_analysis={},
                         )
                     )
-                    return validated_response
-            else:
-                raise ValueError("No parsed output received from OpenAI")
+                    return default_response
 
-        except Exception as e:
-            print(f"Error calling OpenAI API: {e}")
-            # Return default response on error - this ensures we always return CharacterVerificationResponse
-            # This function never returns Any - it always returns CharacterVerificationResponse
-            default_response: CharacterVerificationResponse = (
-                CharacterVerificationResponse(
-                    is_present=False,
-                    confidence_score=0.0,
-                    reasoning=f"Error during verification: {str(e)}",
-                    timestamp_analysis={},
-                )
-            )
-            return default_response
+        # This should never be reached, but mypy needs it
+        return CharacterVerificationResponse(
+            is_present=False,
+            confidence_score=0.0,
+            reasoning="Unexpected error in verification",
+            timestamp_analysis={},
+        )
 
     def _parse_fallback_response(self, content: str) -> CharacterVerificationResponse:
         """
@@ -360,7 +378,7 @@ Your response will be automatically structured to include:
             llm_metadata={
                 "verification_count": len(character_verifications),
                 "llm_provider": "OpenAI",
-                "model": Config.LLM_MODEL,
+                "model": self.config["model"],
             },
         )
 

@@ -11,8 +11,8 @@ import time
 from pathlib import Path
 from typing import Any
 
-from video_shot_processor import VideoShotProcessor
 from config import Config
+from video_shot_processor import VideoShotProcessor
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -28,15 +28,8 @@ class VideoShotProcessingPipeline:
 
     def _validate_input_data(self, data: list[dict[str, Any]]) -> bool:
         """Validate input data structure"""
-        if not isinstance(data, list):
-            logger.error("Input data must be a list of projects")
-            return False
 
         for i, project in enumerate(data):
-            if not isinstance(project, dict):
-                logger.error(f"Project {i} must be a dictionary")
-                return False
-
             required_fields = ["character_vault", "video_url", "project_id"]
             for field in required_fields:
                 if field not in project:
@@ -56,13 +49,17 @@ class VideoShotProcessingPipeline:
                 required_char_fields = ["char_id", "name", "ref_image", "traits"]
                 for field in required_char_fields:
                     if field not in char:
-                        logger.error(f"Project {i}, Character {j} missing required field: {field}")
+                        logger.error(
+                            f"Project {i}, Character {j} missing required field: {field}"
+                        )
                         return False
 
         logger.info("Input data validation passed")
         return True
 
-    def _process_single_project(self, project: dict[str, Any], create_debug_video: bool = False) -> dict[str, Any]:
+    def _process_single_project(
+        self, project: dict[str, Any], create_debug_video: bool = False
+    ) -> dict[str, Any]:
         """Process a single project's video"""
         project_id = project["project_id"]
         video_url = project["video_url"]
@@ -72,11 +69,13 @@ class VideoShotProcessingPipeline:
 
         try:
             # Process the video using VideoShotProcessor
-            result = self.processor.process_video(video_url, project_id, character_vault, create_debug_video)
-            
+            result = self.processor.process_video(
+                video_url, project_id, character_vault, create_debug_video
+            )
+
             # Add additional metadata from input
             result["job_id"] = project.get("job_id")
-            
+
             logger.info(f"Successfully processed project {project_id}")
             return result
 
@@ -89,10 +88,12 @@ class VideoShotProcessingPipeline:
                 "character_vault": character_vault,
                 "error": str(e),
                 "number_of_shots": 0,
-                "shots": []
+                "shots": [],
             }
 
-    def process(self, input_data: list[dict[str, Any]], create_debug_video: bool = False) -> list[dict[str, Any]]:
+    def process(
+        self, input_data: list[dict[str, Any]], create_debug_video: bool = False
+    ) -> list[dict[str, Any]]:
         """Main processing pipeline"""
         start_time = time.time()
         logger.info("Starting video shot processing pipeline")
@@ -110,7 +111,9 @@ class VideoShotProcessingPipeline:
 
             total_time = time.time() - start_time
             successful_projects = len([r for r in results if "error" not in r])
-            logger.info(f"Pipeline completed: {successful_projects}/{len(results)} projects successful in {total_time:.1f}s")
+            logger.info(
+                f"Pipeline completed: {successful_projects}/{len(results)} projects successful in {total_time:.1f}s"
+            )
 
             return results
 
@@ -118,7 +121,9 @@ class VideoShotProcessingPipeline:
             logger.error(f"Pipeline failed: {e}")
             raise
 
-    def save_results(self, results: list[dict[str, Any]], output_path: str | None = None) -> str:
+    def save_results(
+        self, results: list[dict[str, Any]], output_path: str | None = None
+    ) -> str:
         """Save results to JSON file"""
         if output_path is None:
             output_path = self.config["output_path"]
@@ -132,19 +137,19 @@ class VideoShotProcessingPipeline:
         for result in results:
             if "shots" in result and result["shots"]:
                 # Use VideoShotProcessor's save_results method for each project
-                temp_result = self.processor.save_results(result, None)  # This returns the path
-                
+                _ = self.processor.save_results(result, None)  # This returns the path
+
                 # Instead, let's convert manually
                 serializable_result = result.copy()
                 serializable_result["shots"] = []
-                
+
                 for shot in result["shots"]:
                     shot_dict = {
                         "shot_id": shot.shot_id,
                         "keyframes_ms": shot.keyframes_ms,
-                        "crops": {}
+                        "crops": {},
                     }
-                    
+
                     # Convert crops dict
                     for timestamp, crops_list in shot.crops.items():
                         shot_dict["crops"][str(timestamp)] = []
@@ -159,12 +164,14 @@ class VideoShotProcessingPipeline:
                                 "quality": {
                                     "blur": crop.quality.blur if crop.quality else None,
                                     "pose": crop.quality.pose if crop.quality else None,
-                                } if crop.quality else None
+                                }
+                                if crop.quality
+                                else None,
                             }
                             shot_dict["crops"][str(timestamp)].append(crop_dict)
-                    
+
                     serializable_result["shots"].append(shot_dict)
-                
+
                 serializable_results.append(serializable_result)
             else:
                 serializable_results.append(result)

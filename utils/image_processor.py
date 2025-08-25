@@ -42,11 +42,11 @@ class ImageProcessor:
 
     def _download_image(self, url: str, timeout: int = 30) -> Image.Image | None:
         """Download image from URL or load from local file with retry logic"""
-        
+
         # Handle local file URLs
-        if url.startswith('file://'):
+        if url.startswith("file://"):
             try:
-                local_path = url.replace('file://', '')
+                local_path = url.replace("file://", "")
                 if os.path.exists(local_path):
                     return Image.open(local_path)
                 else:
@@ -55,7 +55,7 @@ class ImageProcessor:
             except Exception as e:
                 logger.error(f"Failed to load local image {url}: {e}")
                 return None
-        
+
         # Handle remote URLs (existing logic)
         for attempt in range(3):
             try:
