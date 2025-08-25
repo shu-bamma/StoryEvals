@@ -1,0 +1,2055 @@
+[
+  {
+    "project_id": "PROJvg5wy5R8zFQ9kh6K",
+    "video_url": "https://content.dashtoon.ai/frameo-merged-videos/shot_final_merged_final_video_final_merged_b5de2af54f28a8d4.mp4",
+    "character_vault": [
+      {
+        "char_id": "Ganesha",
+        "name": "Ganesha",
+        "ref_image": "https://content.dashtoon.ai/stability-images/81370a19-86f6-45f9-a485-7992332bbe3c.webp",
+        "description": "Deity, male, 3 years old, South Asian, chubby build, short, heavy, light blue-gray skin, dark brown round eyes, arched eyebrows, short trunk (elephant) nose, small lips, clean_shaven, wearing yellow yellow silk dhoti (loose fit, sleeveless sleeves), yellow yellow silk dhoti (loose fit, knee length), barefoot, gold golden crown, necklace, anklets, armlets (gold, beaded), light blue-gray skin with solid, elephant head, trunk, large ears, ears, single tusk, large elephant ears, red tilak mark on forehead, smiling, sacred thread, traditional style, divine, cute, festive aesthetic , high quality , detailed character design , consistent style , professional illustration headshot , head and shoulders view",
+        "embedding": [],
+        "traits": {
+          "core": [
+            "elephant head with short trunk",
+            "single tusk",
+            "large elephant ears",
+            "dark brown round eyes",
+            "arched eyebrows",
+            "red tilak mark on forehead",
+            "light blue-gray skin"
+          ],
+          "supportive": [
+            "small lips",
+            "youthful/toddler facial proportions",
+            "smooth, chubby cheeks",
+            "no visible facial hair"
+          ],
+          "volatile": [
+            "gold crown",
+            "smiling expression"
+          ],
+          "age_band": "toddler",
+          "skin_tone": "gray",
+          "type": "mix",
+          "notes": [
+            "Hair not specified; likely obscured by crown",
+            "Eyebrows on an elephant head are stylized/anthropomorphic",
+            "Single tusk side not specified",
+            "\"Clean-shaven\" is atypical for an elephant head but interpreted as no facial hair",
+            "Depicted as a deity yet age given as 3; categorized as toddler"
+          ]
+        }
+      },
+      {
+        "char_id": "Moosh",
+        "name": "Moosh",
+        "ref_image": "https://content.dashtoon.ai/stability-images/2216501b-a253-454a-8c35-0f4ccb682ea2.webp",
+        "description": "Mouse, male, 2 years old, slim build, short, light, gray skin, short gray straight hair, black round eyes, small nose, small lips, white whiskers (straight), gray fur with solid, tail, whiskers, mouse ears, long pink tail, large round ears, smiling, cute, playful aesthetic , high quality , detailed character design , consistent style , professional illustration headshot , head and shoulders view",
+        "embedding": [],
+        "traits": {
+          "core": [
+            "black round eyes",
+            "short gray straight facial fur",
+            "white straight whiskers",
+            "large round mouse ears"
+          ],
+          "supportive": [
+            "small nose",
+            "small lips",
+            "solid gray facial fur",
+            "no visible eyebrows"
+          ],
+          "volatile": [
+            "smiling",
+            "cute, playful aesthetic",
+            "professional illustration headshot",
+            "head and shoulders view"
+          ],
+          "age_band": "adult",
+          "skin_tone": "gray",
+          "type": "animal",
+          "notes": [
+            "Age given as 2 years; for a mouse this maps to adult/elderly—age_band is approximate",
+            "Described as light gray; mapped to skin_tone 'gray'",
+            "'Hair' interpreted as facial fur for an animal"
+          ]
+        }
+      }
+    ],
+    "number_of_shots": 6,
+    "shots": [
+      {
+        "shot_id": "shot_0001",
+        "keyframes_ms": [
+          0,
+          420,
+          840,
+          1260,
+          1680,
+          2100,
+          2520,
+          2940,
+          3360,
+          3780,
+          4200,
+          4620,
+          5040,
+          5460,
+          5880,
+          6300,
+          6720,
+          7140,
+          7560,
+          7980,
+          8400,
+          8820,
+          9240,
+          9660
+        ],
+        "crops": {
+          "0": [
+            {
+              "crop_id": "c_shot_0001_t0000_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t0000_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.879,
+              "detection_confidence": 0.879,
+              "quality": {
+                "blur": 20.4,
+                "pose": null
+              }
+            }
+          ],
+          "420": [
+            {
+              "crop_id": "c_shot_0001_t0420_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t0420_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.879,
+              "detection_confidence": 0.879,
+              "quality": {
+                "blur": 24.5,
+                "pose": null
+              }
+            }
+          ],
+          "840": [
+            {
+              "crop_id": "c_shot_0001_t0840_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t0840_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.874,
+              "detection_confidence": 0.874,
+              "quality": {
+                "blur": 27.6,
+                "pose": null
+              }
+            }
+          ],
+          "1260": [
+            {
+              "crop_id": "c_shot_0001_t1260_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t1260_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.891,
+              "detection_confidence": 0.891,
+              "quality": {
+                "blur": 31.6,
+                "pose": null
+              }
+            }
+          ],
+          "1680": [
+            {
+              "crop_id": "c_shot_0001_t1680_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t1680_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.89,
+              "detection_confidence": 0.89,
+              "quality": {
+                "blur": 25.1,
+                "pose": null
+              }
+            }
+          ],
+          "2100": [
+            {
+              "crop_id": "c_shot_0001_t2100_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t2100_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.876,
+              "detection_confidence": 0.876,
+              "quality": {
+                "blur": 26.2,
+                "pose": null
+              }
+            }
+          ],
+          "2520": [
+            {
+              "crop_id": "c_shot_0001_t2520_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t2520_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.864,
+              "detection_confidence": 0.864,
+              "quality": {
+                "blur": 22.6,
+                "pose": null
+              }
+            }
+          ],
+          "2940": [
+            {
+              "crop_id": "c_shot_0001_t2940_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t2940_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.826,
+              "detection_confidence": 0.826,
+              "quality": {
+                "blur": 25.2,
+                "pose": null
+              }
+            }
+          ],
+          "3360": [
+            {
+              "crop_id": "c_shot_0001_t3360_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t3360_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.875,
+              "detection_confidence": 0.875,
+              "quality": {
+                "blur": 27.2,
+                "pose": null
+              }
+            }
+          ],
+          "3780": [
+            {
+              "crop_id": "c_shot_0001_t3780_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t3780_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.848,
+              "detection_confidence": 0.848,
+              "quality": {
+                "blur": 25.7,
+                "pose": null
+              }
+            }
+          ],
+          "4200": [
+            {
+              "crop_id": "c_shot_0001_t4200_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t4200_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.811,
+              "detection_confidence": 0.811,
+              "quality": {
+                "blur": 25.5,
+                "pose": null
+              }
+            }
+          ],
+          "4620": [
+            {
+              "crop_id": "c_shot_0001_t4620_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.9240153133193382
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t4620_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.839,
+              "detection_confidence": 0.839,
+              "quality": {
+                "blur": 26.7,
+                "pose": null
+              }
+            }
+          ],
+          "5040": [
+            {
+              "crop_id": "c_shot_0001_t5040_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.9133155459449405
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t5040_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.837,
+              "detection_confidence": 0.837,
+              "quality": {
+                "blur": 29.5,
+                "pose": null
+              }
+            }
+          ],
+          "5460": [
+            {
+              "crop_id": "c_shot_0001_t5460_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t5460_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.785,
+              "detection_confidence": 0.785,
+              "quality": {
+                "blur": 26.2,
+                "pose": null
+              }
+            }
+          ],
+          "5880": [
+            {
+              "crop_id": "c_shot_0001_t5880_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.8194189785289115
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t5880_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.808,
+              "detection_confidence": 0.808,
+              "quality": {
+                "blur": 27.5,
+                "pose": null
+              }
+            }
+          ],
+          "6300": [
+            {
+              "crop_id": "c_shot_0001_t6300_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.799140774473852
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t6300_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.816,
+              "detection_confidence": 0.816,
+              "quality": {
+                "blur": 32.4,
+                "pose": null
+              }
+            }
+          ],
+          "6720": [
+            {
+              "crop_id": "c_shot_0001_t6720_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.8349342951698909
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t6720_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.738,
+              "detection_confidence": 0.738,
+              "quality": {
+                "blur": 32.6,
+                "pose": null
+              }
+            }
+          ],
+          "7140": [
+            {
+              "crop_id": "c_shot_0001_t7140_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.8579698073891014
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t7140_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.734,
+              "detection_confidence": 0.734,
+              "quality": {
+                "blur": 31.7,
+                "pose": null
+              }
+            }
+          ],
+          "7560": [
+            {
+              "crop_id": "c_shot_0001_t7560_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.7586199356044501
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t7560_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.781,
+              "detection_confidence": 0.781,
+              "quality": {
+                "blur": 34.9,
+                "pose": null
+              }
+            }
+          ],
+          "7980": [
+            {
+              "crop_id": "c_shot_0001_t7980_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.7757328924408305
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t7980_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.781,
+              "detection_confidence": 0.781,
+              "quality": {
+                "blur": 36.0,
+                "pose": null
+              }
+            }
+          ],
+          "8400": [
+            {
+              "crop_id": "c_shot_0001_t8400_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.740751374605832
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t8400_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.745,
+              "detection_confidence": 0.745,
+              "quality": {
+                "blur": 33.0,
+                "pose": null
+              }
+            }
+          ],
+          "8820": [
+            {
+              "crop_id": "c_shot_0001_t8820_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.7323017423115079
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t8820_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.718,
+              "detection_confidence": 0.718,
+              "quality": {
+                "blur": 32.8,
+                "pose": null
+              }
+            }
+          ],
+          "9240": [
+            {
+              "crop_id": "c_shot_0001_t9240_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.6634705558655754
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t9240_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.709,
+              "detection_confidence": 0.709,
+              "quality": {
+                "blur": 27.1,
+                "pose": null
+              }
+            }
+          ],
+          "9660": [
+            {
+              "crop_id": "c_shot_0001_t9660_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.679517058288159
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0001_t9660_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.696,
+              "detection_confidence": 0.696,
+              "quality": {
+                "blur": 21.4,
+                "pose": null
+              }
+            }
+          ]
+        }
+      },
+      {
+        "shot_id": "shot_0002",
+        "keyframes_ms": [
+          10058,
+          10478,
+          10898,
+          11318,
+          11738,
+          12158,
+          12578,
+          12998,
+          13418,
+          13838,
+          14258,
+          14678,
+          15098,
+          15518,
+          15938,
+          16358,
+          16778,
+          17198,
+          17618,
+          18038,
+          18458,
+          18878,
+          19298,
+          19718
+        ],
+        "crops": {
+          "10058": [
+            {
+              "crop_id": "c_shot_0002_t10058_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.6861151524411848
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t10058_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.652,
+              "detection_confidence": 0.652,
+              "quality": {
+                "blur": 30.1,
+                "pose": null
+              }
+            }
+          ],
+          "10478": [
+            {
+              "crop_id": "c_shot_0002_t10478_0",
+              "bbox_norm": [
+                0.4278715483996333,
+                0.0,
+                0.5721284516003667,
+                0.8507845439608135
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t10478_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.74,
+              "detection_confidence": 0.74,
+              "quality": {
+                "blur": 77.3,
+                "pose": null
+              }
+            }
+          ],
+          "10898": [
+            {
+              "crop_id": "c_shot_0002_t10898_0",
+              "bbox_norm": [
+                0.4291443078696322,
+                0.0,
+                0.5708556921303678,
+                0.851419807831987
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t10898_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.625,
+              "detection_confidence": 0.625,
+              "quality": {
+                "blur": 80.9,
+                "pose": null
+              }
+            }
+          ],
+          "11318": [
+            {
+              "crop_id": "c_shot_0002_t11318_0",
+              "bbox_norm": [
+                0.4194851310885682,
+                0.0,
+                0.5805148689114318,
+                0.8518938337053571
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t11318_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.75,
+              "detection_confidence": 0.75,
+              "quality": {
+                "blur": 77.9,
+                "pose": null
+              }
+            }
+          ],
+          "11738": [
+            {
+              "crop_id": "c_shot_0002_t11738_0",
+              "bbox_norm": [
+                0.42175147646949407,
+                0.0,
+                0.5782485235305059,
+                0.8538100746483489
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t11738_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.722,
+              "detection_confidence": 0.722,
+              "quality": {
+                "blur": 73.3,
+                "pose": null
+              }
+            }
+          ],
+          "12158": [
+            {
+              "crop_id": "c_shot_0002_t12158_0",
+              "bbox_norm": [
+                0.49187744555830143,
+                0.0,
+                0.5081225544416985,
+                0.7709631541418651
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t12158_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.868,
+              "detection_confidence": 0.868,
+              "quality": {
+                "blur": 48.3,
+                "pose": null
+              }
+            }
+          ],
+          "12578": [
+            {
+              "crop_id": "c_shot_0002_t12578_0",
+              "bbox_norm": [
+                0.3336026717205437,
+                0.0,
+                0.6663973282794563,
+                0.762918831269487
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t12578_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.608,
+              "detection_confidence": 0.608,
+              "quality": {
+                "blur": 67.1,
+                "pose": null
+              }
+            }
+          ],
+          "12998": [
+            {
+              "crop_id": "c_shot_0002_t12998_0",
+              "bbox_norm": [
+                0.30703774277044804,
+                0.0,
+                0.692962257229552,
+                0.9358466531143708
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t12998_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.696,
+              "detection_confidence": 0.696,
+              "quality": {
+                "blur": 73.3,
+                "pose": null
+              }
+            }
+          ],
+          "13418": [
+            {
+              "crop_id": "c_shot_0002_t13418_0",
+              "bbox_norm": [
+                0.2917635132666348,
+                0.0,
+                0.7082364867333653,
+                0.921468375761763
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t13418_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.636,
+              "detection_confidence": 0.636,
+              "quality": {
+                "blur": 78.2,
+                "pose": null
+              }
+            }
+          ],
+          "13838": [
+            {
+              "crop_id": "c_shot_0002_t13838_0",
+              "bbox_norm": [
+                0.28113353495695154,
+                0.0,
+                0.7188664650430485,
+                0.9250531877790179
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t13838_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.68,
+              "detection_confidence": 0.68,
+              "quality": {
+                "blur": 79.2,
+                "pose": null
+              }
+            }
+          ],
+          "14258": [
+            {
+              "crop_id": "c_shot_0002_t14258_0",
+              "bbox_norm": [
+                0.2776493669367161,
+                0.0,
+                0.722350633063284,
+                0.9258560561268778
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t14258_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.632,
+              "detection_confidence": 0.632,
+              "quality": {
+                "blur": 78.0,
+                "pose": null
+              }
+            }
+          ],
+          "14678": [
+            {
+              "crop_id": "c_shot_0002_t14678_0",
+              "bbox_norm": [
+                0.3086757011154071,
+                0.0,
+                0.6913242988845929,
+                0.7776557766661352
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t14678_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.628,
+              "detection_confidence": 0.628,
+              "quality": {
+                "blur": 87.2,
+                "pose": null
+              }
+            }
+          ],
+          "15098": [
+            {
+              "crop_id": "c_shot_0002_t15098_0",
+              "bbox_norm": [
+                0.302016459354738,
+                0.0,
+                0.697983540645262,
+                0.7631211745766014
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t15098_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.576,
+              "detection_confidence": 0.576,
+              "quality": {
+                "blur": 93.8,
+                "pose": null
+              }
+            }
+          ],
+          "15518": [
+            {
+              "crop_id": "c_shot_0002_t15518_0",
+              "bbox_norm": [
+                0.3043996071328922,
+                0.0,
+                0.6956003928671077,
+                0.7527912165842899
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t15518_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.757,
+              "detection_confidence": 0.757,
+              "quality": {
+                "blur": 91.1,
+                "pose": null
+              }
+            }
+          ],
+          "15938": [
+            {
+              "crop_id": "c_shot_0002_t15938_0",
+              "bbox_norm": [
+                0.34997203074344974,
+                0.0,
+                0.6500279692565503,
+                0.7844115795732356
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t15938_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.82,
+              "detection_confidence": 0.82,
+              "quality": {
+                "blur": 81.1,
+                "pose": null
+              }
+            }
+          ],
+          "16358": [
+            {
+              "crop_id": "c_shot_0002_t16358_0",
+              "bbox_norm": [
+                0.35070372600944677,
+                0.0,
+                0.6492962739905532,
+                0.7770914436738237
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t16358_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.764,
+              "detection_confidence": 0.764,
+              "quality": {
+                "blur": 99.1,
+                "pose": null
+              }
+            }
+          ],
+          "16778": [
+            {
+              "crop_id": "c_shot_0002_t16778_0",
+              "bbox_norm": [
+                0.36761536890146684,
+                0.0,
+                0.6323846310985332,
+                0.7667377497874149
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t16778_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.803,
+              "detection_confidence": 0.803,
+              "quality": {
+                "blur": 105.5,
+                "pose": null
+              }
+            }
+          ],
+          "17198": [
+            {
+              "crop_id": "c_shot_0002_t17198_0",
+              "bbox_norm": [
+                0.35800041146829825,
+                0.0,
+                0.6419995885317017,
+                0.7806901650634211
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t17198_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.801,
+              "detection_confidence": 0.801,
+              "quality": {
+                "blur": 85.8,
+                "pose": null
+              }
+            }
+          ],
+          "17618": [
+            {
+              "crop_id": "c_shot_0002_t17618_0",
+              "bbox_norm": [
+                0.42043304443359375,
+                0.0,
+                0.5795669555664062,
+                0.8534380508388251
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t17618_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.729,
+              "detection_confidence": 0.729,
+              "quality": {
+                "blur": 76.0,
+                "pose": null
+              }
+            }
+          ],
+          "18038": [
+            {
+              "crop_id": "c_shot_0002_t18038_0",
+              "bbox_norm": [
+                0.4293594619854778,
+                0.0,
+                0.5706405380145222,
+                0.8670171966898739
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t18038_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.749,
+              "detection_confidence": 0.749,
+              "quality": {
+                "blur": 88.0,
+                "pose": null
+              }
+            }
+          ],
+          "18458": [
+            {
+              "crop_id": "c_shot_0002_t18458_0",
+              "bbox_norm": [
+                0.3852617951477466,
+                0.0,
+                0.6147382048522534,
+                0.8702849303784014
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t18458_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.703,
+              "detection_confidence": 0.703,
+              "quality": {
+                "blur": 84.1,
+                "pose": null
+              }
+            }
+          ],
+          "18878": [
+            {
+              "crop_id": "c_shot_0002_t18878_0",
+              "bbox_norm": [
+                0.431119594444223,
+                0.0,
+                0.568880405555777,
+                0.8707461540931477
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t18878_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.704,
+              "detection_confidence": 0.704,
+              "quality": {
+                "blur": 80.2,
+                "pose": null
+              }
+            }
+          ],
+          "19298": [
+            {
+              "crop_id": "c_shot_0002_t19298_0",
+              "bbox_norm": [
+                0.4774969191778274,
+                0.0,
+                0.5225030808221727,
+                0.8611232904620182
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t19298_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.697,
+              "detection_confidence": 0.697,
+              "quality": {
+                "blur": 58.3,
+                "pose": null
+              }
+            }
+          ],
+          "19718": [
+            {
+              "crop_id": "c_shot_0002_t19718_0",
+              "bbox_norm": [
+                0.43731253487723215,
+                0.0,
+                0.5626874651227679,
+                0.9251419032782384
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0002_t19718_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.737,
+              "detection_confidence": 0.737,
+              "quality": {
+                "blur": 69.7,
+                "pose": null
+              }
+            }
+          ]
+        }
+      },
+      {
+        "shot_id": "shot_0003",
+        "keyframes_ms": [
+          20117,
+          20537,
+          20957,
+          21377,
+          21797,
+          22217,
+          22637,
+          23057,
+          23477,
+          23897,
+          24317,
+          24737,
+          25157,
+          25577,
+          25997,
+          26417,
+          26837,
+          27257,
+          27677,
+          28097,
+          28517,
+          28937,
+          29357,
+          29777
+        ],
+        "crops": {
+          "20117": [
+            {
+              "crop_id": "c_shot_0003_t20117_0",
+              "bbox_norm": [
+                0.45816802978515625,
+                0.0,
+                0.5418319702148438,
+                0.9162551983684099
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t20117_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.582,
+              "detection_confidence": 0.582,
+              "quality": {
+                "blur": 79.1,
+                "pose": null
+              }
+            }
+          ],
+          "20537": [
+            {
+              "crop_id": "c_shot_0003_t20537_0",
+              "bbox_norm": [
+                0.09669015556573868,
+                0.1530207395553589,
+                0.8190097808837891,
+                0.8362359404563904
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t20537_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.537,
+              "detection_confidence": 0.537,
+              "quality": {
+                "blur": 84.8,
+                "pose": null
+              }
+            }
+          ],
+          "20957": [
+            {
+              "crop_id": "c_shot_0003_t20957_0",
+              "bbox_norm": [
+                0.08312740921974182,
+                0.16655312478542328,
+                0.8444300889968872,
+                0.8187951445579529
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t20957_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.877,
+              "detection_confidence": 0.877,
+              "quality": {
+                "blur": 87.0,
+                "pose": null
+              }
+            }
+          ],
+          "21377": [
+            {
+              "crop_id": "c_shot_0003_t21377_0",
+              "bbox_norm": [
+                0.09891045093536377,
+                0.16704730689525604,
+                0.8492752909660339,
+                0.820521354675293
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t21377_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.862,
+              "detection_confidence": 0.862,
+              "quality": {
+                "blur": 91.2,
+                "pose": null
+              }
+            }
+          ],
+          "21797": [
+            {
+              "crop_id": "c_shot_0003_t21797_0",
+              "bbox_norm": [
+                0.12900787591934204,
+                0.16431812942028046,
+                0.829287052154541,
+                0.8266944289207458
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t21797_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.856,
+              "detection_confidence": 0.856,
+              "quality": {
+                "blur": 84.4,
+                "pose": null
+              }
+            }
+          ],
+          "22217": [
+            {
+              "crop_id": "c_shot_0003_t22217_0",
+              "bbox_norm": [
+                0.15986444056034088,
+                0.15331263840198517,
+                0.7949962019920349,
+                0.8430245518684387
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t22217_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.877,
+              "detection_confidence": 0.877,
+              "quality": {
+                "blur": 88.7,
+                "pose": null
+              }
+            }
+          ],
+          "22637": [],
+          "23057": [],
+          "23477": [],
+          "23897": [],
+          "24317": [
+            {
+              "crop_id": "c_shot_0003_t24317_0",
+              "bbox_norm": [
+                0.1819822999084888,
+                0.08421630167366426,
+                0.7181508979018854,
+                0.9157836983263358
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t24317_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.764,
+              "detection_confidence": 0.764,
+              "quality": {
+                "blur": 106.3,
+                "pose": null
+              }
+            }
+          ],
+          "24737": [],
+          "25157": [
+            {
+              "crop_id": "c_shot_0003_t25157_0",
+              "bbox_norm": [
+                0.18674510514655082,
+                0.08981901069347009,
+                0.7076968757473693,
+                0.9101809893065299
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t25157_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.538,
+              "detection_confidence": 0.538,
+              "quality": {
+                "blur": 103.7,
+                "pose": null
+              }
+            }
+          ],
+          "25577": [],
+          "25997": [],
+          "26417": [
+            {
+              "crop_id": "c_shot_0003_t26417_0",
+              "bbox_norm": [
+                0.17762673306627338,
+                0.08441624890109038,
+                0.7311098267431972,
+                0.9155837510989097
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t26417_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.759,
+              "detection_confidence": 0.759,
+              "quality": {
+                "blur": 110.8,
+                "pose": null
+              }
+            }
+          ],
+          "26837": [],
+          "27257": [
+            {
+              "crop_id": "c_shot_0003_t27257_0",
+              "bbox_norm": [
+                0.10516317198876621,
+                0.09193531996538849,
+                0.788271832628315,
+                0.9080646800346115
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0003_t27257_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.707,
+              "detection_confidence": 0.707,
+              "quality": {
+                "blur": 105.6,
+                "pose": null
+              }
+            }
+          ],
+          "27677": [],
+          "28097": [],
+          "28517": [],
+          "28937": [],
+          "29357": [],
+          "29777": []
+        }
+      },
+      {
+        "shot_id": "shot_0004",
+        "keyframes_ms": [
+          30176,
+          30596,
+          31016,
+          31436,
+          31856,
+          32276,
+          32696,
+          33116,
+          33536,
+          33956,
+          34376,
+          34796
+        ],
+        "crops": {
+          "30176": [
+            {
+              "crop_id": "c_shot_0004_t30176_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.8911224849640377
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t30176_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.747,
+              "detection_confidence": 0.747,
+              "quality": {
+                "blur": 43.9,
+                "pose": null
+              }
+            }
+          ],
+          "30596": [
+            {
+              "crop_id": "c_shot_0004_t30596_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.9060463418765944
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t30596_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.773,
+              "detection_confidence": 0.773,
+              "quality": {
+                "blur": 49.3,
+                "pose": null
+              }
+            }
+          ],
+          "31016": [
+            {
+              "crop_id": "c_shot_0004_t31016_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.8781320308071145
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t31016_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.793,
+              "detection_confidence": 0.793,
+              "quality": {
+                "blur": 44.9,
+                "pose": null
+              }
+            }
+          ],
+          "31436": [
+            {
+              "crop_id": "c_shot_0004_t31436_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.8822369564687854
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t31436_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.789,
+              "detection_confidence": 0.789,
+              "quality": {
+                "blur": 48.7,
+                "pose": null
+              }
+            }
+          ],
+          "31856": [
+            {
+              "crop_id": "c_shot_0004_t31856_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.8808330094733205
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t31856_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.786,
+              "detection_confidence": 0.786,
+              "quality": {
+                "blur": 49.2,
+                "pose": null
+              }
+            }
+          ],
+          "32276": [
+            {
+              "crop_id": "c_shot_0004_t32276_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.885400819670316
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t32276_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.808,
+              "detection_confidence": 0.808,
+              "quality": {
+                "blur": 49.7,
+                "pose": null
+              }
+            }
+          ],
+          "32696": [
+            {
+              "crop_id": "c_shot_0004_t32696_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.8694095395319587
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t32696_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.824,
+              "detection_confidence": 0.824,
+              "quality": {
+                "blur": 56.7,
+                "pose": null
+              }
+            }
+          ],
+          "33116": [
+            {
+              "crop_id": "c_shot_0004_t33116_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.8684653630332341
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t33116_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.787,
+              "detection_confidence": 0.787,
+              "quality": {
+                "blur": 59.0,
+                "pose": null
+              }
+            }
+          ],
+          "33536": [
+            {
+              "crop_id": "c_shot_0004_t33536_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                0.8618425641741071
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t33536_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.789,
+              "detection_confidence": 0.789,
+              "quality": {
+                "blur": 55.8,
+                "pose": null
+              }
+            }
+          ],
+          "33956": [
+            {
+              "crop_id": "c_shot_0004_t33956_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t33956_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.743,
+              "detection_confidence": 0.743,
+              "quality": {
+                "blur": 29.2,
+                "pose": null
+              }
+            }
+          ],
+          "34376": [
+            {
+              "crop_id": "c_shot_0004_t34376_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t34376_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.781,
+              "detection_confidence": 0.781,
+              "quality": {
+                "blur": 42.1,
+                "pose": null
+              }
+            }
+          ],
+          "34796": [
+            {
+              "crop_id": "c_shot_0004_t34796_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                1.0,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0004_t34796_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.771,
+              "detection_confidence": 0.771,
+              "quality": {
+                "blur": 48.5,
+                "pose": null
+              }
+            }
+          ]
+        }
+      },
+      {
+        "shot_id": "shot_0005",
+        "keyframes_ms": [
+          35142,
+          35562,
+          35982,
+          36402,
+          36822,
+          37242,
+          37662,
+          38082,
+          38502,
+          38922,
+          39342,
+          39762,
+          40182,
+          40602,
+          41022,
+          41442,
+          41862,
+          42282,
+          42702,
+          43122,
+          43542,
+          43962,
+          44382,
+          44802
+        ],
+        "crops": {
+          "35142": [
+            {
+              "crop_id": "c_shot_0005_t35142_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5394453191432823,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t35142_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.795,
+              "detection_confidence": 0.795,
+              "quality": {
+                "blur": 27.3,
+                "pose": null
+              }
+            }
+          ],
+          "35562": [
+            {
+              "crop_id": "c_shot_0005_t35562_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5476847019325308,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t35562_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.807,
+              "detection_confidence": 0.807,
+              "quality": {
+                "blur": 36.2,
+                "pose": null
+              }
+            }
+          ],
+          "35982": [
+            {
+              "crop_id": "c_shot_0005_t35982_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5496068422486182,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t35982_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.776,
+              "detection_confidence": 0.776,
+              "quality": {
+                "blur": 39.0,
+                "pose": null
+              }
+            }
+          ],
+          "36402": [
+            {
+              "crop_id": "c_shot_0005_t36402_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5567459833054316,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t36402_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.791,
+              "detection_confidence": 0.791,
+              "quality": {
+                "blur": 44.6,
+                "pose": null
+              }
+            }
+          ],
+          "36822": [
+            {
+              "crop_id": "c_shot_0005_t36822_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5587293663803412,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t36822_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.778,
+              "detection_confidence": 0.778,
+              "quality": {
+                "blur": 46.7,
+                "pose": null
+              }
+            }
+          ],
+          "37242": [
+            {
+              "crop_id": "c_shot_0005_t37242_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.563098414414594,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t37242_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.779,
+              "detection_confidence": 0.779,
+              "quality": {
+                "blur": 45.9,
+                "pose": null
+              }
+            }
+          ],
+          "37662": [
+            {
+              "crop_id": "c_shot_0005_t37662_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5935352870396206,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t37662_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.793,
+              "detection_confidence": 0.793,
+              "quality": {
+                "blur": 40.3,
+                "pose": null
+              }
+            }
+          ],
+          "38082": [
+            {
+              "crop_id": "c_shot_0005_t38082_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5773997923143867,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t38082_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.804,
+              "detection_confidence": 0.804,
+              "quality": {
+                "blur": 41.0,
+                "pose": null
+              }
+            }
+          ],
+          "38502": [
+            {
+              "crop_id": "c_shot_0005_t38502_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5621942533116763,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t38502_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.803,
+              "detection_confidence": 0.803,
+              "quality": {
+                "blur": 43.0,
+                "pose": null
+              }
+            }
+          ],
+          "38922": [
+            {
+              "crop_id": "c_shot_0005_t38922_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5620457655718537,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t38922_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.778,
+              "detection_confidence": 0.778,
+              "quality": {
+                "blur": 41.1,
+                "pose": null
+              }
+            }
+          ],
+          "39342": [
+            {
+              "crop_id": "c_shot_0005_t39342_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5664524415723321,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t39342_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.757,
+              "detection_confidence": 0.757,
+              "quality": {
+                "blur": 50.5,
+                "pose": null
+              }
+            }
+          ],
+          "39762": [
+            {
+              "crop_id": "c_shot_0005_t39762_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5610875758995004,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t39762_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.757,
+              "detection_confidence": 0.757,
+              "quality": {
+                "blur": 53.2,
+                "pose": null
+              }
+            }
+          ],
+          "40182": [
+            {
+              "crop_id": "c_shot_0005_t40182_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5820128252717103,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t40182_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.784,
+              "detection_confidence": 0.784,
+              "quality": {
+                "blur": 46.3,
+                "pose": null
+              }
+            }
+          ],
+          "40602": [
+            {
+              "crop_id": "c_shot_0005_t40602_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.581561549180219,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t40602_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.809,
+              "detection_confidence": 0.809,
+              "quality": {
+                "blur": 49.9,
+                "pose": null
+              }
+            }
+          ],
+          "41022": [
+            {
+              "crop_id": "c_shot_0005_t41022_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5822629344706632,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t41022_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.777,
+              "detection_confidence": 0.777,
+              "quality": {
+                "blur": 51.1,
+                "pose": null
+              }
+            }
+          ],
+          "41442": [
+            {
+              "crop_id": "c_shot_0005_t41442_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5797686414653752,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t41442_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.783,
+              "detection_confidence": 0.783,
+              "quality": {
+                "blur": 56.0,
+                "pose": null
+              }
+            }
+          ],
+          "41862": [
+            {
+              "crop_id": "c_shot_0005_t41862_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5726313169310693,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t41862_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.812,
+              "detection_confidence": 0.812,
+              "quality": {
+                "blur": 50.7,
+                "pose": null
+              }
+            }
+          ],
+          "42282": [
+            {
+              "crop_id": "c_shot_0005_t42282_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5704612991436809,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t42282_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.801,
+              "detection_confidence": 0.801,
+              "quality": {
+                "blur": 51.0,
+                "pose": null
+              }
+            }
+          ],
+          "42702": [
+            {
+              "crop_id": "c_shot_0005_t42702_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5643447564572704,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t42702_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.824,
+              "detection_confidence": 0.824,
+              "quality": {
+                "blur": 49.2,
+                "pose": null
+              }
+            }
+          ],
+          "43122": [
+            {
+              "crop_id": "c_shot_0005_t43122_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5554469102093963,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t43122_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.805,
+              "detection_confidence": 0.805,
+              "quality": {
+                "blur": 51.1,
+                "pose": null
+              }
+            }
+          ],
+          "43542": [
+            {
+              "crop_id": "c_shot_0005_t43542_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5461130466590933,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t43542_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.804,
+              "detection_confidence": 0.804,
+              "quality": {
+                "blur": 54.0,
+                "pose": null
+              }
+            }
+          ],
+          "43962": [
+            {
+              "crop_id": "c_shot_0005_t43962_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5444576237477413,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t43962_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.787,
+              "detection_confidence": 0.787,
+              "quality": {
+                "blur": 55.8,
+                "pose": null
+              }
+            }
+          ],
+          "44382": [
+            {
+              "crop_id": "c_shot_0005_t44382_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5430050285495057,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t44382_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.814,
+              "detection_confidence": 0.814,
+              "quality": {
+                "blur": 54.4,
+                "pose": null
+              }
+            }
+          ],
+          "44802": [
+            {
+              "crop_id": "c_shot_0005_t44802_0",
+              "bbox_norm": [
+                0.0,
+                0.0,
+                0.5467260451543898,
+                1.0
+              ],
+              "crop_url": "file:///Users/sakshamaggarwal/Dev/tinkering/dash/StoryEvals/temp/crops/PROJvg5wy5R8zFQ9kh6K/c_shot_0005_t44802_0.jpg",
+              "detector": "yolov8n.pt",
+              "face_conf": 0.831,
+              "detection_confidence": 0.831,
+              "quality": {
+                "blur": 55.6,
+                "pose": null
+              }
+            }
+          ]
+        }
+      },
+      {
+        "shot_id": "shot_0006",
+        "keyframes_ms": [
+          45201,
+          45621,
+          46041,
+          46461,
+          46881,
+          47301,
+          47721,
+          48141,
+          48561,
+          48981
+        ],
+        "crops": {
+          "45201": [],
+          "45621": [],
+          "46041": [],
+          "46461": [],
+          "46881": [],
+          "47301": [],
+          "47721": [],
+          "48141": [],
+          "48561": [],
+          "48981": []
+        }
+      }
+    ],
+    "job_id": "job_2025_08_22_282"
+  }
+]

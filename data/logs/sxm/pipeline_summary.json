@@ -1,0 +1,33 @@
+{
+  "run_name": "sxm",
+  "timestamp": "2025-08-25T13:21:13.755379",
+  "total_projects": 1,
+  "steps": {
+    "character_enrichment": {
+      "total": 1,
+      "successful": 1,
+      "failed": 0,
+      "errors": [],
+      "duration_s": 0,
+      "skipped": true
+    },
+    "video_shot_processing": {
+      "total": 1,
+      "successful": 1,
+      "failed": 0,
+      "errors": [],
+      "duration_s": 0,
+      "skipped": true
+    },
+    "character_identification": {
+      "total": 1,
+      "successful": 1,
+      "failed": 0,
+      "errors": [],
+      "duration_s": 0,
+      "skipped": true
+    }
+  },
+  "total_duration_s": 0.0,
+  "final_success_rate": 1.0
+}
