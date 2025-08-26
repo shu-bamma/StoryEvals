@@ -98,28 +98,28 @@ from visualizer.process_results import PipelineResultsProcessor
 def test_data_processing():
     """Test the data processing functionality"""
     print("🧪 Testing Pipeline Results Processor...")
-    
+
     processor = PipelineResultsProcessor()
-    
+
     # Test with sample file
     sample_files = [
         "data/logs/test_run_20/3-character_identification/PROJadRsvgvJffe8YQEf.json",
         "data/logs/test_run_20/3-character_identification/PROJvg5wy5R8zFQ9kh6K.json"
     ]
-    
+
     for sample_file in sample_files:
         if Path(sample_file).exists():
             print(f"\n📂 Testing with: {sample_file}")
-            
+
             try:
                 # Load project data
                 project_data = processor.load_project_results(sample_file)
                 print(f"✅ Loaded project: {project_data.project_id}")
-                
+
                 # Validate data
                 is_valid = processor.validate_data_integrity(project_data)
                 print(f"✅ Data validation: {'PASSED' if is_valid else 'FAILED'}")
-                
+
                 # Get stats
                 stats = processor.get_processing_stats(project_data)
                 print(f"📊 Statistics:")
@@ -129,43 +129,43 @@ def test_data_processing():
                 print(f"  • Identification rate: {stats['identification_rate']:.1%}")
                 print(f"  • Avg YOLO confidence: {stats['avg_yolo_confidence']:.3f}")
                 print(f"  • Timeline duration: {stats['timeline_duration_ms']:,} ms")
-                
+
                 # Show character vault
                 print(f"👥 Characters in vault: {len(project_data.character_vault)}")
                 for char in project_data.character_vault:
                     print(f"  • {char.name} ({char.char_id})")
-                
+
                 # Show sample keyframes
                 print(f"🎞️ Sample keyframes:")
                 for i, keyframe in enumerate(project_data.keyframes[:3]):
                     print(f"  • {keyframe.timestamp_ms}ms ({keyframe.shot_id}): {len(keyframe.crops)} detections")
-                
+
             except Exception as e:
                 print(f"❌ Error processing {sample_file}: {e}")
         else:
             print(f"⚠️ Sample file not found: {sample_file}")
-    
+
     print("\n✅ Data processing test complete!")
 
 
 def test_viewer_components():
     """Test viewer component imports"""
     print("\n🧪 Testing Viewer Components...")
-    
+
     try:
         from visualizer.streamlit_viewer import StreamlitViewer
         print("✅ StreamlitViewer import successful")
-        
+
         from visualizer.extract_keyframes import KeyframeExtractor
         print("✅ KeyframeExtractor import successful")
-        
+
         # Test extractor initialization
         extractor = KeyframeExtractor()
         print("✅ KeyframeExtractor initialization successful")
-        
+
     except Exception as e:
         print(f"❌ Component test failed: {e}")
-    
+
     print("✅ Component test complete!")
 
 
@@ -173,10 +173,10 @@ def main():
     """Run all tests"""
     print("🎬 Pipeline Results Viewer - Test Suite")
     print("=" * 50)
-    
+
     test_data_processing()
     test_viewer_components()
-    
+
     print("\n" + "=" * 50)
     print("🎉 All tests complete!")
     print("\n💡 To launch the viewer:")

@@ -19,26 +19,20 @@ class KeyframeExtractor:
     """Extracts keyframes from videos at specified timestamps"""
 
     def __init__(self, cache_dir: str | None = None):
-        self.cache_dir = (
-            Path(cache_dir)
-            if cache_dir
-            else Path(tempfile.gettempdir()) / "video_cache"
-        )
+        self.cache_dir = Path(cache_dir) if cache_dir else Path(tempfile.gettempdir()) / "video_cache"
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.logger = logging.getLogger(__name__)
 
-    def extract_keyframes(
-        self, video_url: str, timestamps_ms: list[int], output_dir: str
-    ) -> dict[int, str]:
+    def extract_keyframes(self, video_url: str, timestamps_ms: list[int], output_dir: str) -> dict[int, str]:
         """
         Extract keyframes from video at specified timestamps
 
         Args:
-                        video_url: URL of the video to process
+            video_url: URL of the video to process
             timestamps_ms: List of timestamps in milliseconds
             output_dir: Directory to save extracted keyframes
 
-            Returns:
+        Returns:
             Dictionary mapping timestamp_ms -> saved_image_path
         """
         self.logger.info(f"Extracting {len(timestamps_ms)} keyframes from video")
@@ -63,14 +57,10 @@ class KeyframeExtractor:
             total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
             duration_ms = (total_frames / fps) * 1000 if fps > 0 else 0
 
-            self.logger.info(
-                f"Video: {fps:.2f} FPS, {total_frames} frames, {duration_ms:.0f}ms duration"
-            )
+            self.logger.info(f"Video: {fps:.2f} FPS, {total_frames} frames, {duration_ms:.0f}ms duration")
 
             for timestamp_ms in sorted(timestamps_ms):
-                frame_path = self._extract_frame_at_timestamp(
-                    cap, timestamp_ms, fps, output_path
-                )
+                frame_path = self._extract_frame_at_timestamp(cap, timestamp_ms, fps, output_path)
                 if frame_path:
                     extracted_frames[timestamp_ms] = frame_path
 
@@ -78,7 +68,7 @@ class KeyframeExtractor:
             self.logger.error(f"Error extracting keyframes: {e}")
             raise
         finally:
-            if "cap" in locals():
+            if 'cap' in locals():
                 cap.release()
 
         self.logger.info(f"✅ Successfully extracted {len(extracted_frames)} keyframes")
@@ -87,9 +77,9 @@ class KeyframeExtractor:
     def _download_video_if_needed(self, video_url: str) -> str:
         """Download video to cache if not already present"""
         # Create cache filename from URL
-        video_filename = video_url.split("/")[-1]
-        if not video_filename.endswith((".mp4", ".avi", ".mov", ".mkv")):
-            video_filename += ".mp4"
+        video_filename = video_url.split('/')[-1]
+        if not video_filename.endswith(('.mp4', '.avi', '.mov', '.mkv')):
+            video_filename += '.mp4'
 
         cache_path = self.cache_dir / video_filename
 
@@ -104,7 +94,7 @@ class KeyframeExtractor:
             response = requests.get(video_url, stream=True, timeout=300)
             response.raise_for_status()
 
-            with open(cache_path, "wb") as f:
+            with open(cache_path, 'wb') as f:
                 for chunk in response.iter_content(chunk_size=8192):
                     f.write(chunk)
 
@@ -117,9 +107,8 @@ class KeyframeExtractor:
                 cache_path.unlink()  # Remove partial file
             raise
 
-    def _extract_frame_at_timestamp(
-        self, cap: cv2.VideoCapture, timestamp_ms: int, fps: float, output_dir: Path
-    ) -> str | None:
+    def _extract_frame_at_timestamp(self, cap: cv2.VideoCapture, timestamp_ms: int,
+                                  fps: float, output_dir: Path) -> str | None:
         """Extract a single frame at the specified timestamp"""
         try:
             # Calculate frame number
@@ -131,9 +120,7 @@ class KeyframeExtractor:
             # Read frame
             ret, frame = cap.read()
             if not ret:
-                self.logger.warning(
-                    f"Could not read frame at {timestamp_ms}ms (frame {frame_number})"
-                )
+                self.logger.warning(f"Could not read frame at {timestamp_ms}ms (frame {frame_number})")
                 return None
 
             # Save frame
@@ -143,7 +130,7 @@ class KeyframeExtractor:
             # Convert BGR to RGB for saving
             frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             image = Image.fromarray(frame_rgb)
-            image.save(output_path, "JPEG", quality=95)
+            image.save(output_path, 'JPEG', quality=95)
 
             self.logger.debug(f"Saved frame: {output_path}")
             return str(output_path)
@@ -180,9 +167,7 @@ def main():
     output_dir = "test_keyframes"
 
     try:
-        extracted_frames = extractor.extract_keyframes(
-            video_url, timestamps, output_dir
-        )
+        extracted_frames = extractor.extract_keyframes(video_url, timestamps, output_dir)
 
         print(f"✅ Extracted {len(extracted_frames)} frames:")
         for timestamp, path in extracted_frames.items():

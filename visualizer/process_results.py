@@ -16,7 +16,6 @@ logger = logging.getLogger(__name__)
 @dataclass
 class CropData:
     """Individual crop detection data"""
-
     crop_id: str
     bbox_norm: list[float]  # [x, y, w, h] normalized coordinates
     crop_url: str
@@ -28,7 +27,7 @@ class CropData:
     quality: dict[str, Any] | None
 
     @classmethod
-    def from_dict(cls, data: dict[str, Any]) -> "CropData":
+    def from_dict(cls, data: dict[str, Any]) -> 'CropData':
         return cls(
             crop_id=data["crop_id"],
             bbox_norm=data["bbox_norm"],
@@ -38,14 +37,13 @@ class CropData:
             pred_char_id=data.get("pred_char_id"),
             confidence=data.get("confidence"),
             reason=data.get("reason"),
-            quality=data.get("quality"),
+            quality=data.get("quality")
         )
 
 
 @dataclass
 class KeyframeData:
     """Data for a single keyframe"""
-
     timestamp_ms: int
     shot_id: str
     crops: list[CropData]
@@ -55,36 +53,31 @@ class KeyframeData:
 
     def get_identified_characters(self) -> list[str]:
         """Get list of identified characters (non-Unknown)"""
-        return [
-            crop.pred_char_id
-            for crop in self.crops
-            if crop.pred_char_id and crop.pred_char_id != "Unknown"
-        ]
+        return [crop.pred_char_id for crop in self.crops
+                if crop.pred_char_id and crop.pred_char_id != "Unknown"]
 
 
 @dataclass
 class CharacterData:
     """Character reference data"""
-
     char_id: str
     name: str
     ref_image: str
     traits: dict[str, Any]
 
     @classmethod
-    def from_dict(cls, data: dict[str, Any]) -> "CharacterData":
+    def from_dict(cls, data: dict[str, Any]) -> 'CharacterData':
         return cls(
             char_id=data["char_id"],
             name=data["name"],
             ref_image=data["ref_image"],
-            traits=data["traits"],
+            traits=data["traits"]
         )
 
 
 @dataclass
 class ProjectData:
     """Complete project visualization data"""
-
     project_id: str
     video_url: str
     character_vault: list[CharacterData]
@@ -120,14 +113,12 @@ class PipelineResultsProcessor:
         if not json_file.exists():
             raise FileNotFoundError(f"Results file not found: {json_path}")
 
-        with open(json_file, encoding="utf-8") as f:
+        with open(json_file, encoding='utf-8') as f:
             data = json.load(f)
 
         return self._process_project_data(data, json_file.stem)
 
-    def _process_project_data(
-        self, data: dict[str, Any], project_id: str
-    ) -> ProjectData:
+    def _process_project_data(self, data: dict[str, Any], project_id: str) -> ProjectData:
         """Process raw JSON data into structured ProjectData"""
         self.logger.info(f"Processing project data for: {project_id}")
 
@@ -153,11 +144,11 @@ class PipelineResultsProcessor:
                     for crop_data in crops_data[timestamp_str]:
                         crops.append(CropData.from_dict(crop_data))
 
-                keyframes.append(
-                    KeyframeData(
-                        timestamp_ms=timestamp_ms, shot_id=shot_id, crops=crops
-                    )
-                )
+                keyframes.append(KeyframeData(
+                    timestamp_ms=timestamp_ms,
+                    shot_id=shot_id,
+                    crops=crops
+                ))
 
         # Sort keyframes by timestamp
         keyframes.sort(key=lambda x: x.timestamp_ms)
@@ -169,7 +160,7 @@ class PipelineResultsProcessor:
             "total_shots": len(data.get("shots", [])),
             "total_characters": len(character_vault),
             "identification_metadata": data.get("identification_metadata", {}),
-            "critique_agent_result": data.get("critique_agent_result", {}),
+            "critique_agent_result": data.get("critique_agent_result", {})
         }
 
         project_data = ProjectData(
@@ -177,12 +168,10 @@ class PipelineResultsProcessor:
             video_url=data.get("video_url", ""),
             character_vault=character_vault,
             keyframes=keyframes,
-            metadata=metadata,
+            metadata=metadata
         )
 
-        self.logger.info(
-            f"✅ Processed {len(keyframes)} keyframes, {len(character_vault)} characters"
-        )
+        self.logger.info(f"✅ Processed {len(keyframes)} keyframes, {len(character_vault)} characters")
         return project_data
 
     def validate_data_integrity(self, project_data: ProjectData) -> bool:
@@ -200,9 +189,7 @@ class PipelineResultsProcessor:
             issues.append("No characters in vault")
 
         # Check keyframe data integrity
-        keyframes_with_detections = sum(
-            1 for kf in project_data.keyframes if kf.has_detections()
-        )
+        keyframes_with_detections = sum(1 for kf in project_data.keyframes if kf.has_detections())
         if keyframes_with_detections == 0:
             issues.append("No keyframes have detections")
 
@@ -226,35 +213,23 @@ class PipelineResultsProcessor:
 
     def get_processing_stats(self, project_data: ProjectData) -> dict[str, Any]:
         """Generate processing statistics for the project"""
-        keyframes_with_detections = [
-            kf for kf in project_data.keyframes if kf.has_detections()
-        ]
+        keyframes_with_detections = [kf for kf in project_data.keyframes if kf.has_detections()]
         total_detections = sum(len(kf.crops) for kf in project_data.keyframes)
 
         # Character identification stats
-        identified_crops = sum(
-            1
-            for kf in project_data.keyframes
-            for crop in kf.crops
-            if crop.pred_char_id and crop.pred_char_id != "Unknown"
-        )
+        identified_crops = sum(1 for kf in project_data.keyframes
+                             for crop in kf.crops
+                             if crop.pred_char_id and crop.pred_char_id != "Unknown")
 
         # Confidence score stats
-        confidence_scores = [
-            crop.confidence
-            for kf in project_data.keyframes
-            for crop in kf.crops
-            if crop.confidence is not None
-        ]
+        confidence_scores = [crop.confidence for kf in project_data.keyframes
+                           for crop in kf.crops
+                           if crop.confidence is not None]
 
-        avg_confidence = (
-            sum(confidence_scores) / len(confidence_scores) if confidence_scores else 0
-        )
+        avg_confidence = sum(confidence_scores) / len(confidence_scores) if confidence_scores else 0
 
         # YOLO confidence stats
-        yolo_scores = [
-            crop.face_conf for kf in project_data.keyframes for crop in kf.crops
-        ]
+        yolo_scores = [crop.face_conf for kf in project_data.keyframes for crop in kf.crops]
         avg_yolo_confidence = sum(yolo_scores) / len(yolo_scores) if yolo_scores else 0
 
         return {
@@ -262,13 +237,11 @@ class PipelineResultsProcessor:
             "keyframes_with_detections": len(keyframes_with_detections),
             "total_detections": total_detections,
             "identified_characters": identified_crops,
-            "identification_rate": identified_crops / total_detections
-            if total_detections > 0
-            else 0,
+            "identification_rate": identified_crops / total_detections if total_detections > 0 else 0,
             "avg_llm_confidence": round(avg_confidence, 3),
             "avg_yolo_confidence": round(avg_yolo_confidence, 3),
             "character_appearances": project_data.get_character_appearance_stats(),
-            "timeline_duration_ms": project_data.get_timeline_duration_ms(),
+            "timeline_duration_ms": project_data.get_timeline_duration_ms()
         }
 
 
@@ -277,9 +250,7 @@ def main():
     processor = PipelineResultsProcessor()
 
     # Test with the sample file
-    sample_file = (
-        "data/logs/test_run_20/3-character_identification/PROJadRsvgvJffe8YQEf.json"
-    )
+    sample_file = "data/logs/test_run_20/3-character_identification/PROJadRsvgvJffe8YQEf.json"
 
     try:
         project_data = processor.load_project_results(sample_file)
@@ -296,9 +267,7 @@ def main():
 
         print("\n🎬 Sample keyframes:")
         for _i, keyframe in enumerate(project_data.keyframes[:5]):  # Show first 5
-            print(
-                f"  Frame {keyframe.timestamp_ms}ms ({keyframe.shot_id}): {len(keyframe.crops)} detections"
-            )
+            print(f"  Frame {keyframe.timestamp_ms}ms ({keyframe.shot_id}): {len(keyframe.crops)} detections")
 
     except Exception as e:
         print(f"❌ Error processing file: {e}")
