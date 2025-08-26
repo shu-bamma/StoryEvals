@@ -1,6 +1,8 @@
+import base64
 import logging
 import time
 
+import requests
 from portkey_ai import Portkey
 
 from config import Config
@@ -19,46 +21,121 @@ class CharacterIdentifier:
     def __init__(self) -> None:
         self.config = Config.get_character_identification_config()
         self.client = Portkey(
-            api_key=self.config["api_key"],
-            virtual_key=self.config["virtual_key"],
+            api_key=self.config["api_key"], virtual_key=self.config["virtual_key"]
         )
         self.max_retries = self.config["max_retries"]
         self.retry_timeout = self.config["retry_timeout"]
         self.exponential_backoff_base = self.config["exponential_backoff_base"]
 
-    def _create_prompt(self, batch: CharacterIdentificationBatch) -> str:
-        """Create the prompt for character identification"""
+    def _encode_image(self, image_path: str) -> str:
+        """Encode image to base64 string"""
+        try:
+            if image_path.startswith("http"):
+                # Download remote image
+                response = requests.get(
+                    image_path, timeout=Config.IMAGE_DOWNLOAD_TIMEOUT
+                )
+                response.raise_for_status()
+                image_data = response.content
+            elif image_path.startswith("file://"):
+                # Local file path
+                local_path = image_path.replace("file://", "")
+                with open(local_path, "rb") as f:
+                    image_data = f.read()
+            else:
+                # Assume local file path
+                with open(image_path, "rb") as f:
+                    image_data = f.read()
+
+            return base64.b64encode(image_data).decode("utf-8")
+        except Exception as e:
+            logger.error(f"Failed to encode image {image_path}: {e}")
+            raise
+
+    def _create_prompt_with_images(
+        self, batch: CharacterIdentificationBatch
+    ) -> tuple[str, list[dict]]:
+        """Create the prompt for character identification with images"""
         character_info = []
-        for char in batch.character_vault:
-            char_desc = f"Character ID: {char.char_id}\n"
-            char_desc += f"Name: {char.name}\n"
+        images = []
+
+        # Add character reference images
+        for i, char in enumerate(batch.character_vault, 1):
+            char_desc = f"Character {i} - ID: {char.char_id}, Name: {char.name}\n"
             char_desc += f"Core Traits: {', '.join(char.traits.core)}\n"
             char_desc += f"Supportive Traits: {', '.join(char.traits.supportive)}\n"
-            char_desc += f"Age: {char.traits.age_band}, Skin: {char.traits.skin_tone}, Type: {char.traits.type}\n"
+            char_desc += f"Age: {char.traits.age_band}, Skin: {char.traits.skin_tone}, Type: {char.traits.type}"
             character_info.append(char_desc)
 
+            # Encode character reference image
+            try:
+                image_base64 = self._encode_image(char.ref_image)
+                images.append(
+                    {
+                        "type": "input_image",
+                        "image_url": f"data:image/jpeg;base64,{image_base64}",
+                    }
+                )
+            except Exception as e:
+                logger.warning(
+                    f"Failed to encode character image for {char.char_id}: {e}"
+                )
+
         crop_info = []
-        for crop in batch.crops:
-            crop_desc = f"Crop ID: {crop.crop_id}\n"
-            crop_desc += f"URL: {crop.crop_url}\n"
+        # Add crop images
+        for i, crop in enumerate(batch.crops):
+            crop_desc = f"Crop {i+1} - ID: {crop.crop_id}"
             crop_info.append(crop_desc)
 
-        prompt = f"""You are a precise character identifier. Analyze the provided face crops and identify the best matching characters from the character vault.
+            # Encode crop image
+            try:
+                image_base64 = self._encode_image(crop.crop_url)
+                images.append(
+                    {
+                        "type": "input_image",
+                        "image_url": f"data:image/jpeg;base64,{image_base64}",
+                    }
+                )
+            except Exception as e:
+                logger.warning(f"Failed to encode crop image for {crop.crop_id}: {e}")
 
-Character Vault:
+        prompt = f"""You are a precise character identifier specializing in facial and body feature analysis. Analyze the provided character crops and identify the best matching characters from the character vault.
+
+Character References (images 1-{len(batch.character_vault)}):
 {chr(10).join(character_info)}
 
-Face Crops to Identify:
+Character Crops to Identify (images {len(batch.character_vault)+1}-{len(batch.character_vault)+len(batch.crops)}):
 {chr(10).join(crop_info)}
 
 Instructions:
-- Choose the best match among the provided characters_vault, or "Unknown" if no match is found
-- Cite 1–3 visible CORE traits in your reasoning (ignore VOLATILE traits like clothing, accessories, mood)
-- Provide a confidence score between 0.0 and 1.0 based on how well the visible traits match
-- Focus on distinctive physical characteristics that are clearly visible in the crop
+- Compare each crop image with the character reference images
+- Choose the best match among the provided characters, or "Unknown" if no match is found
+- Focus EXCLUSIVELY on permanent facial and body characteristics:
+  * Facial features: eye color, eye shape, nose shape, lip shape, facial structure
+  * Hair characteristics: color, texture, length, style (but not temporary styling)
+  * Skin tone and complexion
+  * Facial hair: beard, mustache, stubble
+  * Age-related features: wrinkles, facial structure
+  * Unique facial marks: scars, birthmarks, moles
+  * Body build and facial proportions
 
-Analyze each crop carefully and provide accurate identifications with clear reasoning."""
+- IGNORE these temporary/variable traits:
+  * Clothing, accessories, jewelry
+  * Makeup, temporary styling
+  * Mood, expression, emotion
+  * Lighting, shadows, image quality
+  * Background, context, props
 
+- Provide a confidence score between 0.0 and 1.0 based on how well the permanent characteristics match
+- In your reasoning, cite 1-3 specific permanent traits that led to your identification
+
+Analyze each crop carefully and provide accurate identifications based solely on permanent physical characteristics."""
+
+        return prompt, images
+
+    def _create_prompt(self, batch: CharacterIdentificationBatch) -> str:
+        """Create the prompt for character identification (for backwards compatibility)"""
+        prompt, _ = self._create_prompt_with_images(batch)
         return prompt
 
     def _parse_llm_response(
@@ -86,29 +163,35 @@ Analyze each crop carefully and provide accurate identifications with clear reas
             logger.error(f"Failed to parse structured LLM response: {e}")
             raise ValueError(f"Invalid structured response format: {e}") from e
 
-    def _make_llm_call(self, prompt: str) -> CharacterIdentificationBatchResponse:
-        """Make a single LLM call with structured output
+    def _make_llm_call(
+        self, prompt: str, images: list[dict]
+    ) -> CharacterIdentificationBatchResponse:
+        """Make a single LLM call with structured output and images
         Returns:
             CharacterIdentificationBatchResponse: The parsed response from the LLM
         Raises:
-            Exception: If there's a Portkey API error
+            openai.APIError: If there's an OpenAI API error
             ValueError: If no parsed output is received
             RuntimeError: If an unexpected error occurs
         """
         try:
-            # Use OpenAI's structured outputs API
+            # Prepare content with text and images
+            content = [{"type": "input_text", "text": prompt}]
+            content.extend(images)
+
+            # Use OpenAI's structured outputs API (same as working old version)
             response = self.client.responses.parse(
                 model=self.config["model"],
                 input=[
                     {
                         "role": "user",
-                        "content": [{"type": "input_text", "text": prompt}],
+                        "content": content,
                     }
                 ],
                 text_format=CharacterIdentificationBatchResponse,
             )
 
-            # Extract the parsed output
+            # Extract the parsed output (same as working old version)
             if response.output_parsed:
                 # The output_parsed is already of type CharacterIdentificationBatchResponse
                 # but we need to ensure type safety
@@ -130,13 +213,10 @@ Analyze each crop carefully and provide accurate identifications with clear reas
                 raise ValueError("No parsed output received from OpenAI")
 
         except Exception as e:
-            logger.error(f"Portkey API error: {e}")
-            # Re-raise to maintain the function's contract - this function never returns Any
+            logger.error(f"Unexpected error in LLM call: {e}")
             raise
 
         # This should never be reached, but just in case
-        # This ensures the function always either returns the expected type or raises an exception
-        # This function never returns Any - it either returns CharacterIdentificationBatchResponse or raises an exception
         raise RuntimeError("Unexpected error in LLM call")
 
     def identify_characters(
@@ -144,7 +224,7 @@ Analyze each crop carefully and provide accurate identifications with clear reas
     ) -> list[CharacterIdentificationResponse]:
         """Identify characters in a batch of crops with retry logic"""
 
-        prompt = self._create_prompt(batch)
+        prompt, images = self._create_prompt_with_images(batch)
         start_time = time.time()
 
         for attempt in range(self.max_retries + 1):
@@ -153,7 +233,7 @@ Analyze each crop carefully and provide accurate identifications with clear reas
                     f"Attempting character identification (attempt {attempt + 1}/{self.max_retries + 1})"
                 )
 
-                structured_response = self._make_llm_call(prompt)
+                structured_response = self._make_llm_call(prompt, images)
                 results = self._parse_llm_response(structured_response)
 
                 # Validate that we got results for all crops
@@ -172,7 +252,24 @@ Analyze each crop carefully and provide accurate identifications with clear reas
                 )
                 return results
 
-            except (ValueError, Exception) as e:
+            except Exception as e:
+                if (
+                    "rate limit" in str(e).lower()
+                    or "too many requests" in str(e).lower()
+                ):
+                    # Exponential backoff for rate limiting
+                    wait_time = min(
+                        self.retry_timeout * (2**attempt), 60
+                    )  # Max 60 seconds
+                    logger.warning(
+                        f"Rate limited. Waiting {wait_time}s before retry..."
+                    )
+                    time.sleep(wait_time)
+                    continue
+                else:
+                    # Re-raise if it's not a rate limit error
+                    raise
+            except ValueError as e:
                 elapsed_time = time.time() - start_time
 
                 if attempt == self.max_retries or elapsed_time >= self.retry_timeout:

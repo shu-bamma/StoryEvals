@@ -75,3 +75,7 @@ htmlcov/
 
 temp/crops/
 temp/videos/
+
+
+logs/*.jpeg
+*.jpeg
