@@ -117,7 +117,7 @@ class VideoShotProcessor:
             boundaries.append(duration)
 
         # Create shot data structures
-        shots = []
+        shots: list[dict[str, Any]] = []
         for i in range(len(boundaries) - 1):
             start_ms = int(boundaries[i] * 1000)
             end_ms = int(boundaries[i + 1] * 1000)
@@ -180,7 +180,8 @@ class VideoShotProcessor:
             gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         else:
             gray = image
-        return cv2.Laplacian(gray, cv2.CV_64F).var()
+        result = cv2.Laplacian(gray, cv2.CV_64F).var()
+        return float(result)
 
     def apply_nms(
         self,
@@ -212,7 +213,14 @@ class VideoShotProcessor:
         # Handle the case where indices is empty or None
         if indices is not None and len(indices) > 0:
             # OpenCV returns indices as nested arrays, flatten them
-            return indices.flatten().tolist()
+            if hasattr(indices, "flatten"):
+                result = indices.flatten().tolist()
+            elif hasattr(indices, "tolist"):
+                result = indices.tolist()
+            else:
+                result = list(indices)
+            # Ensure we return a list of integers
+            return [int(x) for x in result]
         else:
             return []
 
@@ -255,7 +263,7 @@ class VideoShotProcessor:
         processed_shots = []
 
         for shot in shots:
-            shot_crops = {}
+            shot_crops: dict[int, list[Crop]] = {}
 
             logger.info(
                 f"Processing shot {shot['shot_id']} with {len(shot['keyframes_ms'])} keyframes"
@@ -442,7 +450,7 @@ class VideoShotProcessor:
             frame_idx = 0
 
             # Create shot boundary lookup
-            shot_boundaries = []
+            shot_boundaries: list[dict[str, Any]] = []
             for shot in shots:
                 shot_boundaries.append(
                     {
@@ -453,9 +461,9 @@ class VideoShotProcessor:
                 )
 
             # Create crops lookup by timestamp
-            crops_by_timestamp = {}
-            for shot in processed_shots:
-                for timestamp_ms, crops_list in shot.crops.items():
+            crops_by_timestamp: dict[int, list[Crop]] = {}
+            for processed_shot in processed_shots:
+                for timestamp_ms, crops_list in processed_shot.crops.items():
                     # Convert string timestamp to int for matching
                     crops_by_timestamp[int(timestamp_ms)] = crops_list
 
@@ -467,8 +475,8 @@ class VideoShotProcessor:
                 current_time_ms = int((frame_idx / fps) * 1000)
 
                 # Draw shot boundaries
-                current_shot = None
-                for shot in enumerate(shot_boundaries):
+                current_shot: dict[str, Any] | None = None
+                for shot in shot_boundaries:
                     if shot["start_ms"] <= current_time_ms <= shot["end_ms"]:
                         current_shot = shot
                         break

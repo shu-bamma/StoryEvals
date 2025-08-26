@@ -11,14 +11,14 @@ from pathlib import Path
 def main():
     """Launch the Streamlit viewer"""
     viewer_path = Path(__file__).parent / "streamlit_viewer.py"
-    
+
     print("🎬 Launching Pipeline Results Viewer...")
     print(f"📂 Viewer path: {viewer_path}")
     print("🌐 Opening in browser...")
-    
+
     # Launch streamlit
     cmd = [sys.executable, "-m", "streamlit", "run", str(viewer_path)]
-    
+
     try:
         subprocess.run(cmd, check=True)
     except subprocess.CalledProcessError as e:

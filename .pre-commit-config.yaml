@@ -25,3 +25,11 @@ repos:
         exclude: ^visualizer/
       - id: end-of-file-fixer
       - id: trailing-whitespace
+
+  # MyPy for static type checking
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.8.0
+    hooks:
+      - id: mypy
+        additional_dependencies: [types-requests]
+        exclude: ^visualizer/
